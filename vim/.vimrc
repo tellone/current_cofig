@@ -17,8 +17,7 @@ syntax enable
 set history=700
 
 " Enable filetype plugin
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -60,8 +59,6 @@ set complete-=i     " Searching includes can be slow
 set dictionary+=/usr/share/dict/words
 set display=lastline
 
-set ai "Auto indent
-set si "Smart indet
 set wrap "Wrap lines
 
 
@@ -182,7 +179,6 @@ func! DeleteTrailingWS()
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
 
 func! Cwd()
   let cwd = getcwd()
@@ -302,7 +298,6 @@ cmap ½ $
 """"""""""""""""""""""""""""""""
 "{{{
 " Map space to / (search) and c-space to ? (backgwards search)
-map <space> /
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move btw. windows
@@ -318,8 +313,8 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :1,300 bd!<cr>
 
 " Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
+map <right><right> :bn<cr>
+map <left><left> :bp<cr>
 
 " When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>
@@ -349,9 +344,7 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 
 "Remap VIM 0
 map 0 ^
-
-"inser mode escape
-imap <M-x> <Esc>
+"inser mode escape on <C-c>
 
 " => Align
 let g:DrChipTopLvlMenu= "Plugin." 
@@ -462,7 +455,8 @@ augroup FTMisc " {{{2
     autocmd BufNewFile,BufRead *.txt,README,INSTALL,NEWS,TODO if &ft == ""|set ft=text|endif  
     autocmd BufNewFile,BufRead *.jinja set syntax=htmljinja
     autocmd BufNewFile,BufRead *.mako set ft=mako
- 
+    autocmd bufNewFile,BufRead *.m    set ft=matlab  
+     
  augroup END " }}}2
 
   augroup FTOptions " {{{2
@@ -470,10 +464,12 @@ augroup FTMisc " {{{2
     autocmd FileType c,cpp,cs,java          setlocal ai et sta sw=4 sts=4 si
     autocmd FileType sh,csh,tcsh,zsh        setlocal ai et sta sw=4 sts=4
     autocmd FileType tcl,perl               setlocal ai et sta sw=4 sts=4
+    autocmd FileType matlab                 setlocal ai et sta sw=4 sts=4 
+    autocmd Filetype matlab                 silent! compiler mlint
     autocmd FileType markdown,liquid        setlocal ai et sta sw=2 sts=2 tw=72
     autocmd FileType php,aspperl,aspvbs,vb  setlocal ai et sta sw=4 sts=4
     autocmd FileType apache,sql,vbnet       setlocal ai et sta sw=4 sts=4
-    autocmd FileType tex,css,scss           setlocal ai et sta sw=2 sts=2
+    autocmd FileType css,scss               setlocal ai et sta sw=2 sts=2
     autocmd FileType html,xhtml,wml,cf      setlocal ai et sta sw=2 sts=2
     autocmd FileType xml,xsd,xslt           setlocal ai et sta sw=2 sts=2 ts=2
     autocmd FileType eruby,yaml,ruby        setlocal ai et sta sw=2 sts=2
@@ -505,9 +501,12 @@ augroup END "}}}2
 """"""""""""""""""""""""""""""""
 "{{{
 let python_highlight_all = 1
-au FileType python syn keyword pythonDecorator True None False self
-au FileType python compiler pylint
-au FileType python setlocal ai et sta tw=79 sw=4 sts=4
+augroup PYset
+  au!
+  au FileType python compiler pylint
+  au BufWrite *.py :call DeleteTrailingWS()
+  au FileType python setlocal ai et sta tw=79 sw=4 sts=4
+augroup END
 "}}}
 
 """""""""""""""""""""""""""""""
