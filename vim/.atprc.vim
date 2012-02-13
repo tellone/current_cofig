@@ -5,7 +5,7 @@ colorscheme morning
 let g:atp_folding=1
 let g:atp_tab_map=1
 let b:atp_updatetime_insert = 0
-let b:atp_updatetime_normal = 8000
+let b:atp_updatetime_normal = 800
 if exists("&breakindent")
   set breakindent showbreak=""
 endif
@@ -13,3 +13,4 @@ endif
 if has("gui_running")
   set showbreak=\ \ \ \ +
 endif
+set spell

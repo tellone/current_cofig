@@ -3,7 +3,7 @@ AutomaticLaTexPlugin
 bufexplorer
 dbext.vim
 localColorSchemes.vim
-MatlabFilesEdition
+matlab.vim
 minibufexpl.vim
 mru.vim
 nerdtree
@@ -19,5 +19,8 @@ vim-ipython
 vim-pathogen
 vim-powerline
 vim-rails
+vim-ruby
 vim-surround
 vim-unimpaired
+vim-vividchalk
+YankRing.vim

@@ -4,11 +4,14 @@
 %
 %File: <+FILE DIRNAME+>
 %
-%Purpose: <+CURSOR+>
-%
 %Author: <+AUTHOR+>
 %Email: <+EMAIL+>
 %
+
+function []= main()
+%   Main function: <+CURSOR+>
+%   
+
 % => Loading is done here
 
 % => Controll parameters
