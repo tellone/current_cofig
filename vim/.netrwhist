@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/tellone/.vim/bundle/TaskList.vim/plugin'
-let g:netrw_dirhist_2='/home/tellone/bin'
-let g:netrw_dirhist_3='/home/tellone/Templates'
-let g:netrw_dirhist_4='/home/tellone/bin'
-let g:netrw_dirhist_5='/home/tellone/.vim/bundle/tskeleton_vim'
-let g:netrw_dirhist_6='/home/tellone/.vim/bundle/vim-powerline'
-let g:netrw_dirhist_7='/home/tellone/.vim/bundle/pylint.vim'
-let g:netrw_dirhist_8='/home/tellone/.vim/bundle/vim-matlab/mlint.vim--Ibbotson'
-let g:netrw_dirhist_9='/home/tellone/.vim/bundle/Align/doc'
+let g:netrw_dirhist_cnt =0
