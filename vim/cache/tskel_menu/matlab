@@ -1,0 +1,5 @@
+
+menu 90.20 TSke&l.plot :call tskeleton#ExpandBitUnderCursor("n", 'plot')<cr>
+imenu 90.20 TSke&l.plot <c-\><c-o>:call tskeleton#ExpandBitUnderCursor("i", 'plot')<cr>
+menu 90.20 TSke&l.sec :call tskeleton#ExpandBitUnderCursor("n", 'sec')<cr>
+imenu 90.20 TSke&l.sec <c-\><c-o>:call tskeleton#ExpandBitUnderCursor("i", 'sec')<cr>
