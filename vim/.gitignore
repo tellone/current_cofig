@@ -1,2 +1,5 @@
 bundle/
-undodit/
+undodir/
+cache/
+texput.log
+.VimballRecord
