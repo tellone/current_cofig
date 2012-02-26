@@ -16,6 +16,8 @@ tskeleton_vim
 vim-bundler
 vim-fugitive
 vim-ipython
+vim-liquid
+vim-markdown
 vim-pathogen
 vim-powerline
 vim-rails
@@ -24,3 +26,4 @@ vim-surround
 vim-unimpaired
 vim-vividchalk
 YankRing.vim
+zencoding-vim

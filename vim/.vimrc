@@ -152,8 +152,25 @@ function! OpenURL(url)
 endfunction
 command! -nargs=1 OpenURL :call OpenURL(<q-args>)
 " open URL under cursor in browser
-nnoremap <leader>bb :OpenURL <cfile><CR>
 
+
+function! FoldChange()
+  if &foldmethod=="marker"
+    setl foldmethod=syntax
+  elseif &foldmethod=="syntax"
+    setl foldmethod=expr
+  else
+    setl foldmethod=marker
+  endif
+  echo &foldmethod
+endfunction
+
+
+function! CmdLine(str)
+    exe "menu Foo.Bar :" . a:str
+    emenu Foo.Bar
+    unmenu Foo
+endfunction
 "" From an idea by Michael Naumann
 function! VisualSearch(direction) range
     let l:saved_reg = @"
@@ -342,11 +359,13 @@ map <leader>sn :cn<cr>
 map <leader>sp :cp<cr>
 map <leader>sl :ccl<cr>
 
+"=> foldchange
+map <leader>z :call FoldChange()<cr>
+
 " => bufExplorer plugin
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <leader>o :BufExplorer<cr>
-
 
 " => Minibuffer plugin
 let g:miniBufExplModSelTarget = 0
@@ -521,6 +540,8 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 "Quickly open a buffer for scripbble
 map <leader>q :e ~/buffer<cr>
 au BufRead,BufNewFile ~/buffer iab <buffer> xh1 ===========================================
+
+nnoremap <leader>bb :OpenURL <cfile><CR>
 
 ""In visual mode when you press * or # to search for the current selection
 vnoremap <silent> * :call VisualSearch('f')<CR>
