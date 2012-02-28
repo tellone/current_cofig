@@ -10,6 +10,10 @@ if exists("&breakindent")
   set breakindent showbreak=""
 endif
 
+imap <buffer> <M-j> <Plug>TexSyntaxMotionForward
+imap <buffer> <M-k> <Plug>TexSyntaxMotionBackward
+nmap <buffer> <M-j> <Plug>TexSyntaxMotionForward
+nmap <buffer> <M-k> <Plug>TexSyntaxMotionBackward
 if has("gui_running")
   set showbreak=\ \ \ \ +
 endif

@@ -2,6 +2,7 @@ Align
 AutomaticLaTexPlugin
 bufexplorer
 dbext.vim
+gundo
 localColorSchemes.vim
 matlab.vim
 minibufexpl.vim

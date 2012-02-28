@@ -1,5 +1,6 @@
 bundle/
 undodir/
 cache/
+misc/
 texput.log
 .VimballRecord

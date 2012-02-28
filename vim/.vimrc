@@ -362,6 +362,9 @@ map <leader>sl :ccl<cr>
 "=> foldchange
 map <leader>z :call FoldChange()<cr>
 
+"=> Gundo
+nnoremap <leader>d :GundoToggle<CR>
+
 " => bufExplorer plugin
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
@@ -383,8 +386,10 @@ map <leader>u :TMiniBufExplorer<cr>
 "NerdTree
 map <leader>n :NERDTree<cr>
 let NERDTreeShowHidden=1
+let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 
 "MRU
+let MRU_File = '/home/tellone/.vim/misc/.vim_mru_files'
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
 
@@ -392,7 +397,7 @@ map <leader>f :MRU<CR>
 let g:rails_menu=1
 
 "Tag List
-map <leader>t :TlistOpen<cr>
+map <leader>l :TlistOpen<cr>
 
 "Tskeleton
 let tskelUserName='Filip Pettersson'
@@ -406,6 +411,9 @@ let twitvim_login_b64 = "Wm9ycnJpdXg6cm9uU3RvcDg3"
 "vimGrep
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
+
+"YankRing
+let g:yankring_history_dir = '/home/tellone/.vim/misc/YankRing'
 
 "}}}
 
