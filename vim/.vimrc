@@ -20,16 +20,23 @@ set history=700
 " Enable filetype plugin
 filetype plugin indent on
 
+"to avoid confusion tell vim which shell you use
+set shell=/bin/bash
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
+"fixes for unix
+set winaltkeys=no
+set backspace=eol,start,indent
+
+" With a map leader is the shortcut for global plugins
 let mapleader = ","
 let g:mapleader = ","
 
+"Like mapleader but should be used for filetype spefic plugins
 let maplocalleader = ";"
 let g:maplocalleader = ";"
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
@@ -38,32 +45,27 @@ map <leader>e :e! ~/.vim/.vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim/.vimrc
+
+"Backup and swapfiles
 set nobackup
 set nowb
 set noswapfile
 
 set undodir=/home/tellone/.vim/undodir
 set undofile
+set hid "Change buffer - without saving
 
-set number
-set lbr
-set tw=500
-
+"no backup on these filenames
 set backupskip+=*.tmp,crontab.*
+
+"Sets hub for external eval
 if has("balloon_eval") && has("unix")
   set ballooneval
 endif
-if exists("&breakindent")
-  set breakindent showbreak=+++
-elseif has("gui_running")
-  set showbreak=\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +++
-endif
+
+set magic "Set magic on, for regular expressions
 set complete-=i     " Searching includes can be slow
-set dictionary+=/usr/share/dict/words
 set display=lastline
-
-set wrap "Wrap lines
-
 
 "}}}
 
@@ -74,27 +76,33 @@ set wrap "Wrap lines
 " Set 7 lines to the curors - when moving vertical..
 set so=7
 
-
-set ruler "Always show current position
+set number
 
 set cmdheight=1 "The commandbar height
 set laststatus=2 "comandbar visable at start
 
-set hid "Change buffer - without saving
-
-" Set backspace config
-set backspace=eol,start,indent
+"=> settings for linebreak and linewrapping
+set foldmethod=marker
+set lbr
+set tw=500
+set wrap "Wrap lines
 set whichwrap+=<,>,h,l
 
+"Set linebreak visable with +++
+if exists("&breakindent")
+  set breakindent showbreak=+++
+elseif has("gui_running")
+  set showbreak=\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +++
+endif
+
+"=> search settings and macros
 set ignorecase "Ignore case when searching
-set smartcase
+set smartcase  "Override Ingnore case in obvious situations
 
 set hlsearch "Highlight search things
 
 set incsearch "Make search act like search in modern browsers
 set lazyredraw "Don't redraw while executing macros 
-
-set magic "Set magic on, for regular expressions
 
 set showmatch "Show matching bracets when text indicator is over them
 set mat=3 "How many tenths of a second to blink
@@ -103,20 +111,18 @@ set mat=3 "How many tenths of a second to blink
 set noerrorbells
 set novisualbell
 set t_vb=
-set tm=500
+
+"wildcards and wildmenu
+set wildmenu "Turn on WiLd menu
+set wildmode=longest:full,full
+set wildignore+=*~,*.aux,tags "don't show swap, aux or tags in wildmenu
 
 set suffixes+=.dvi " Lower priority in wildcards
 set tags+=../tags,../../tags,../../../tags,../../../../tags
 
 
-set wildmenu "Turn on WiLd menu
-set wildmode=longest:full,full
-set wildignore+=*~,*.aux,tags
-set winaltkeys=no
-
-set foldmethod=marker
-
 "spelling
+set dictionary+=/usr/share/dict/words
 set spelllang=en,sv
 set nospell
 
@@ -126,7 +132,7 @@ set nospell
 " => Functions
 """""""""""""""""""""""""""""""
 "{{{
-
+"Set font when startimg gvim
 function! s:initialize_font()
     if exists("&guifont")
         if has("mac")
@@ -140,6 +146,8 @@ function! s:initialize_font()
         endif
     endif
 endfunction
+
+"Opens the url under the cursor
 function! OpenURL(url)
   if has("win32")
     exe "!start cmd /cstart /b ".a:url.""
@@ -151,9 +159,8 @@ function! OpenURL(url)
   redraw!
 endfunction
 command! -nargs=1 OpenURL :call OpenURL(<q-args>)
-" open URL under cursor in browser
 
-
+"Toogles fold between marker, syntax and expr
 function! FoldChange()
   if &foldmethod=="marker"
     setl foldmethod=syntax
@@ -171,8 +178,9 @@ function! CmdLine(str)
     emenu Foo.Bar
     unmenu Foo
 endfunction
-"" From an idea by Michael Naumann
 function! VisualSearch(direction) range
+"" From an idea by Michael Naumann
+"Preforms visaul search for reg in direction of choice
     let l:saved_reg = @"
     execute "normal! vgvy"
 
@@ -209,6 +217,7 @@ function! JavaScriptFold()
     setl foldtext=FoldText()
 endfunction
 
+"smarter way to close current buffer
 function! <SID>BufcloseCloseIt()
     let l:currentBufNum = bufnr("%")
     let l:alternateBufNum = bufnr("#")
@@ -233,8 +242,6 @@ endfunction
 " => Colors and Fonts
 """""""""""""""""""""""""""""""
 "{{{
-set shell=/bin/bash
-
 autocmd GUIEnter *  call s:initialize_font()
 
 command! -bar -nargs=0 Bigger :let &guifont = substitute(&guifont,'\d\+$','\=submatch(0)+1','')
@@ -262,7 +269,7 @@ catch
 endtry
 
 
-set ffs=unix,
+set ffs=unix,dos
 
 " standard options for different colors
 let g:lucius_style="light"
@@ -297,7 +304,7 @@ cmap ½ $
 "}}}
 
 """"""""""""""""""""""""""""""""
-" => Moving 
+" => Moving and swiching 
 """"""""""""""""""""""""""""""""
 "{{{
 "kill search hl
@@ -324,6 +331,7 @@ map <up> :tabnext<cr>
 map <down> :tabprev<cr>
 map <M-up> :tabnew<cr>
 map <M-down> :tabclose<cr>
+
 " When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>
 
@@ -335,13 +343,6 @@ try
   set stal=2
 catch
 endtry
-"}}}
-
-""""""""""""""""""""""""""""""""
-" => General Abbrevs
-""""""""""""""""""""""""""""""""
-"{{{
-iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 "}}}
 
 """"""""""""""""""""""""""""""""
@@ -369,16 +370,6 @@ nnoremap <leader>d :GundoToggle<CR>
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <leader>o :BufExplorer<cr>
-
-" => Minibuffer plugin
-let g:miniBufExplModSelTarget = 0
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplVSplit = 25
-let g:miniBufExplSplitBelow=1
-let g:bufExplorerSortBy = "name"
-let g:miniBufExplorerMoreThanOne=8
-map <leader>u :TMiniBufExplorer<cr>
 
 "Powerbar
 "let g:Powerline_symbols = 'fancy'
@@ -557,11 +548,11 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 
 " When you press gv you vimgrep after the selected text
 vnoremap <silent> gv :call VisualSearch('gv')<CR>
-map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
 map <leader>pp :setlocal paste!<cr>
 
-"Remap VIM 0
-map 0 ^
-"inser mode escape on <C-c>
+
+" => General Abbrevs "{{{2
+iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+"}}}2
 
 "}}}
