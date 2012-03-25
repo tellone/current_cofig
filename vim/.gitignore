@@ -1,6 +1,6 @@
 bundle/
-undodir/
 cache/
-misc/
+misc/cens
+misc/logs
 texput.log
 .VimballRecord

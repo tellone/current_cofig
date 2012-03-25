@@ -13,9 +13,13 @@ TaskList.vim
 tlib_vim
 tskeleton_vim
 vim-bundler
+vim-commentary
 vim-cucumber
 vim-fugitive
+vim-fuzzyfinder
 vim-git
+vim-haml
+vim-l9
 vim-liquid
 vim-markdown
 vim-pathogen

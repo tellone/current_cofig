@@ -1,0 +1,100 @@
+let twitvim_login_b64 = "Wm9ycnJpdXg6cm9uU3RvcDg3",V
+There it was, that song again. It keeps sneaking up on me. One of those you just start humming without knowing the words. Even in my worn out and uneasy state, I could not get the tune out of my head. If only I wasn't headed for a job interview and to make things worse I'm a nervous hummer. I hadn't slept well last night, restless from self doubt and anxiety. If I had been well rested and in good humor the song might neverI went on humming down the street several times catching myself and then with curses under my breath and other oaths trying to make mu subconscious understand that this had to stop. ,v
+https://github.com/tpope/vim-commentary,v
+hg clone https://bitbucket.org/ns9tks/vim-l9,v
+hg clone https://bitbucket.org/johnsmith/vim-fuzzyfinder,v
+pymode_lint_config   ,v
+,V
+undodir/,V
+"Powerbar"let g:Powerline_symbols = 'fancy',V
+"Powerbar"let g:Powerline_symbols = 'fancy'"NerdTreemap <leader>n :NERDTree<cr>let NERDTreeShowHidden=1let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks',V
+  au FileType python compiler pylint,V
+https://github.com/vim-scripts/dbext.vim,v
+ ,v
+=,v
+d,v
+        int1, int2 = int1_in, int2_in,V
+    def gcd_found(self, int1_in, int2_in):        """calcualting greates common divider reurn one if ther is none"""        int1, int2 = int1_in, int2_in        while int2 != 0 :            int1, int2 = int2, int1 % int2        return int1    def all_primes(self, cut_stop):        """finding all primes between n and 2"""        pr_nr = [2]        count = 1        for current in range(3, cut_stop, 2):            soft_limit = (current + 1) / 2            for step in range(count) :                if current % pr_nr[step] == 0:                    break                elif pr_nr[step] >= soft_limit:                    count += 1                    pr_nr.append(current)                    break        return pr_nr    def ask_algorithm(self, cut_starts, cut_stop, smaller_p):        '''implementing the ASK mod alogrithm'''        for current in range(4000, cut_stop, 2):            #check if current is an even power of another prime            if self.is_power(current, smaller_p):                continue            limiter = floor(log(current, 2))            #find a new limiter for the next step            for new_lim in range(1, limiter + 1):                if current % new_lim == 1:                    continue                limiter = new_lim            for in_common in range(2, limiter + 1):                c_gcd = self.gcd_found(in_common, current)                if c_gcd != 1:                    continue            for last_step in range(math.ceil(sqrt(limiter)) * log(current, 2)):                passif __name__ == "__main__":    myP=MyPrimes()    print myP.gcd_found(5, 55)    #find_them_faster(1, 5000, 6000),V
+from mypoly import polynomial,V
+\section*{Person information}Född den  26 oktober, 1987, i Karlskrona, där jag även är uppväxt. Har alltid haft ett sort teknik intresse och en längtan att försöka ge mig på . \section*{Färdigheter}\begin{itemize}\item Noga med tider och gillar att vara sysselsatt.\item Lätt för att förstå och tillämpa ny Kunskaper.\item Har lätt för att komma överens med mina personer i min omgivning.\item Gillar problemlösning både i verkliga livet och i teori.\end{itemize}\subsection*{Studier}\begin{itemize}\item NV-programmet i Karlskrona 2003-2006\item Teknisk Fysik, Lund Tekniska högskola  2006-\end{itemize}\subsection*{Arbetslivs erfarenheter}\begin{itemize}\item Skanska Direkt- diverse skötsle 2003-2008\end{itemize}\subsection*{Programering och Problemlösning}Färdigheter jag kan bidra med inkluderar.\\\begin{itemize}\item Mycket erfaren i problemlösning i Matlab. Både för optimering och i annan teknisk beräkning.\item Kan även använda mig av Java och C++\item Python men då främst scipy och numpy\item Finita Element Metoden, erfaren främst Comsol och Matlab\item Vana och rutin att läsa manualer, dokumentation och bruksanvisninagar \end{itemize},v
+Jag studerar Teknisk fysik och ska snart börja mitt ex-jobb och skulle verkligen vilja somarjobba på ett tekniskt inriktat företag. Min bror och två av mina kusiner har sommar-praktiserat på ABB och har alltid haft bra saker att säga om företaget och arbete som genomförs där.Jag tror jag skulle passa på ABB för att jag är flexibel och uppgifts orienterad, har väldigt lätt för att komma överens med människor i min omgivning. Jag har även ett stort intresse för teknik både i utveckling och tillämplig därav också ett stort respekt för vad ABB utvecklar och producerarABB har också ett trevligt rykte och som färdig Civilingenjör skulle jag mycket väl kunna tänka mig att jobba för någon av ABBs avdelningarna är flexibel och uppgifts orienterad, samt har väldigt lätt för att komma överens med folk som jag i min omgivning.,v
+ag studerar Teknisk fysik ska snart börja mitt ex-jobb och skulle verkligen vilja ha ett somarjobb på ett teknikinriz=zktat företag. n bror och två av mina kusiner har sommar praktiserat på ABB och har alltid haft bra saker att säg om företaget.Jag skulle passa där för att j,v
+i,v
+Jag studerar Teknisk fysik ska snart börja mitt ex-jobb och skulle verkligen vilja somarjobba på ett tekniskt inriktat företag. Min bror och två av mina kusiner har sommar-praktiserat på ABB och har alltid haft bra saker att säga om företaget och arbete som genomförs där.Jag tror jag skulle passa på ABB för att jag är flexibel och uppgifts orienterad, har väldigt lätt för att komma överens med människor i min omgivning. Jag har ett stort intresse för teknik både i utvekling och tillämpnig varav ABB har mycketABB har också ett trevligt rykte och som färdig Civil injengör skulle jag mycket väl kunna tänka mig att jobba för någon av ABB:s avdeningar,v
+M,v
+rrounded,v
+Jag studerar Teknisk fysik ska snart börja mitt ex-jobb och skulle verkliken vilja ha ett somarjobb på ett teknik inriktat företag. Min bror och två av mina kusiner har sommarpraktiserat på ABB och har alltid haft bra saker att säg om företaget.Jag skulle passa där för att jag är flexibel och uppgifts oreinterad, samt har väldigt lätt för att komma överense med folk som jag i min omgivning.,v
+Jag studerar Teknisk-fysik vid Lunds Tekniska Högskola och och känner att jag skulle behöva,v
+Skanska direkt 2003-2008, sommarjobb som diverseskötsel arbete,v
+\section{},v
+\section*{Person information}Född den  26 oktober, 1987, i Karlskrona, där jag även är uppväxt. Har alltid haft ett sort teknik intresse och en längtan att försöka ge mig på . \section*{Färdigheter}\begin{itemize}\item Noga med tider och gillar att vara sysselsatt.\item Lätt för att förstå och tillämpa ny Kunskaper.\item Har lätt för att komma överens med mina personer i min omgivning.\item Gillar problemlösning både i verkliga livet och i teori.\end{itemize}\subsection*{Studier}\begin{itemize}\item NV-programmet i Karlskrona 2003-2006\item Teknisk Fysik, Lund Tekniska högskola  2006-\end{itemize}\subsection*{Arbetslivs erfarenheter}\begin{itemize}\item Skanska Direkt- diverse skötsle 2003-2008\end{itemize}\subsection*{Programering och Problemlösning}Färdigheter jag kan bidra med inkluderar.\\\begin{itemize}\item Mycket erfaren i problemlösning i Matlab. Både för optimering och i annan teknisk beräkning.\item Kan även använda mig av Java och C++\item Python men då främst scipy och numpy\item Finita Element Metoden, erfaren främst Comsol och Matlab\item Vana och rutin att läsa manualer, dokumentation och bruksanvisninagar \end{itemize}\subsection*{Språk}\begin{itemize}Engelska flytande\end{itemize},v
+skrona, där jag även är uppväxt. Har alltid haft ett sort teknik intresse och en längtan att försöka ge mig på . \section*{Färdigheter}\begin{itemize}\item Noga med tider och gillar att vara sysselsatt.\item Lätt för att förstå och tillämpa ny Kunskaper.\item Har lätt för att komma överens med mina personer i min omgivning.\item Gillar problemlösning både i verkliga livet och i teori.\end{itemize}\subsection*{Studier}\begin{itemize}\item NV-programmet i Karlskrona 2003-2006\item Teknisk Fysik, Lund Tekniska högskola  2006-\end{itemize},v
+\end{minipage},v
+e%,v
+r me aga,v
+\,v
+l,v
+	,v
+/media/480D-C0E0/matstrukt.pdf,v
+xjc9dwq05y96,v
+calibre, version 0.8.8ERROR: Bad location: You must choose an empty folder for the calibre library. /home/tellone/keep/ebooks is not empty.,v
+l,V
+Error detected while processing function pymode#run#Run:line    3:Traceback (most recent call last):Error detected while processing function pymode#run#Run:line    3:  File "<string>", line 1, in <module>Error detected while processing function pymode#run#Run:line    3:  File "primes.py", line 15Error detected while processing function pymode#run#Run:line    3:    from mypoly importError detected while processing function pymode#run#Run:line    3:                     ^Error detected while processing function pymode#run#Run:line    3:SyntaxError: invalid syntax,v
+https://github.com/klen/python-mode,v
+" => Minibuffer pluginlet g:miniBufExplModSelTarget = 0let g:miniBufExplUseSingleClick = 1let g:miniBufExplMapWindowNavVim = 1let g:miniBufExplVSplit = 25let g:miniBufExplSplitBelow=1let g:bufExplorerSortBy = "name"let g:miniBufExplorerMoreThanOne=8map <leader>u :TMiniBufExplorer<cr>,v
+" => Minibuffer pluginlet g:miniBufExplModSelTarget = 0let g:miniBufExplUseSingleClick = 1let g:miniBufExplMapWindowNavVim = 1let g:miniBufExplVSplit = 25let g:miniBufExplSplitBelow=1let g:bufExplorerSortBy = "name"let g:miniBufExplorerMoreThanOne=8map <leader>u :TMiniBufExplorer<cr>,V
+source 'https://rubygems.org',v
+require 'capybara/rspec',v
+require 'capybara/rails',v
+group :test do  gem 'turn', :require => falseend,v
+rails generate rspec:install,v
+bundle install --binstubs,v
+,v
+cucumber-rails',v
+groupgemgemgemend:test do'cucumber-rails''capybara''database_cleaner',v
+r,v
+rspec,v
+map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>,V
+" vim:set sw=2 sts=2:,v
+"" From an idea by Michael Naumann,V
+/home/tellone/gitrepos/myProjects/tpope/.vim/templates/plugin.vim,v
+" open URL under cursor in browser,V
+set ffs=unix,windos,mac,v
+"" From an idea by Michael Naumann,v
+" like <leader>w saves the current fi,V
+e,v
+set shell=/bin/bash,V
+s,v
+------------------------------------------------------------------------------3.3 g:gundo_preview_bottom                              *gundo_preview_bottom*Force the preview window below current windows instead of below the graph.This gives the preview window more space to show the unified diff.Example:   +--------+            +--------+   !g!      !            !      !g!   !g!      !     or     !      !g!   !g!______!            !______!g!   !g!pppppp!            !pppppp!g!   +--------+            +--------+Default: 0------------------------------------------------------------------------------3.4 g:gundo_right                                                *gundo_right*Set this to 1 to make the Gundo graph (and preview) open on the right sideinstead of the left.Default: 0 (off, open on the left side)------------------------------------------------------------------------------3.5 g:gundo_help                                                  *gundo_help*Set this to 0 to disable the help text in the Gundo graph window.Default: 1 (show the help)------------------------------------------------------------------------------3.6 g:gundo_disable                                            *gundo_disable*Set this to 1 to disable Gundo entirely.Useful if you use the same ~/.vim folder on multiple machines, and some ofthem may not have Python support.Default: 0 (Gundo is enabled as usual)------------------------------------------------------------------------------3.7 g:gundo_map_move_older, g:gundo_map_move,v
+%w(tpope rubygems pry pry-editline).each do |lib|  begin    require lib  rescue LoadError  endend,v
+puts h "chris",V
+bye,v
+#",v
+ye ,v
+e ,v
+    puts {#"Hi name"}!,V
+<>,v
+för delaktighet kan ej vara möjligt, de lever ju av andras blod.\\,V
+Green, colored eyes\\this is the last goodbye\\give me a lasting beat\\and I'll return the age old speach\parLives grows swiftly bytunnels in the dusk-bins of time\\groomed like disappearing crop\\found at gallows in the knot\parDeath's parrot came to me\\and spoke his empty words\\echoes of my dying voice\\and the regrets I never head\parForce the hood down on my head\\long the last man speak's\\of fear and light hell in sight\\come which me a nice flight\par,v
+Morn the wold,an inter galactic ant-farm\\,V
+proves democracy makes us weak\par,V
+everything so fuzzy and bleak\\,V
+well that's how it works in my brain\\,V
+ people claiming they don't know\\,V
+15,v
+it the the usual show\\,V
+<p><b>  a tittle for jack</b></p><p>  Jack got a tittle long ago he was dubbed<br />  the jack of dry throats, cause he liked drinking that much<br />  but jack never gambled, since he couldn't loose<br />  the money he needed to go buying booze</p><p>  he used to say, he found his true love when he was twelve<br />  dated for two years, married his whiskey still under age<br />  His wife might been flowing loose but jack never saw other booze</p><p>  Old dry throat is unhappy the marriage took it course<br />  His hart might be happy, but the liver's demanding divorce<br /></p>,v
+TIANJIN  885 1585DALIAN   885 1585HUANGPU  910 1635NINGBO   860 1535QINGDAO  885 1585SHANGHAI 860 1535SHANTOU  10801885SHENZHEN 860 1535WUHAN    10401860HONG KONG860 1535HAIPHONG 935 1795,v
+N,v
+TIANJINDALIANHUANGPUNINGBOQINGDAOSHANGHAISHANTOUSHENZHENWUHANHONG KONGHAIPHONG885885910860885860108086010408609351585158516351535158515351885153518601535179517101710176016601610166020101660198516601920,v
+Delaktighet en svidande närvaro, vampyerens tänder i halsen. \\Pesten har kommit,jag känner den i henne. En ny judas iform av\\ töstrivna kroppar fördömmer mänskligheten med sin kysss.\par,v
+Slå en påle genom hjärtat på all skenbar onska utan minsta kval.\\,v
+Vi har alla demoner bakom ansiktetets mask. Där inom oss har\\dem legat djupt i dvala, vaknar nu vid hejlmdahls stridssignal.\\Samlade kring hatets flaga leder de vågen av utanförskap\par,V
+Delaktighet en svidande närvaro, vampyerens tänder i halsen. \\Pesten har kommit,jag känner den i henne. En ny judas iform av\\ töstrivna kroppar fördömmer mänskligheten med sin kysss.\par,v
+TIANJINDALIANHUANGPUNINGBOQINGDAOSHANGHAISHANTOUSHENZHENWUHANHONG KONGHAIPHONG,v
+Boris Gelfand vs Magnus Carlsen - Amber 2011 ,v
+  Delaktighet en svidande närvaro, vampyerens tänder i halsen. <br />  Pesten har kommit,jag känner den i henne. En ny judas iform av<br /> <,v
+,  töstrivna kroppar fördömmer mänskligheten med sin kysss.,V
+<p>,V
+,</p> ,V
+set ruler "Always show current position,V

@@ -44,7 +44,7 @@ nmap <leader>w :w!<cr>
 map <leader>e :e! ~/.vim/.vimrc<cr>
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vim/.vimrc
+autocmd! bufwritepost /home/tellone/.vim/.vimrc source /home/tellone/.vim/.vimrc
 
 "Backup and swapfiles
 set nobackup
@@ -323,12 +323,12 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :1,300 bd!<cr>
 
 " Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
+map <up> :bn<cr>
+map <down> :bp<cr>
 
 " Tab configuration
-map <up> :tabnext<cr>
-map <down> :tabprev<cr>
+map <right> :tabnext<cr>
+map <left> :tabprev<cr>
 map <M-up> :tabnew<cr>
 map <M-down> :tabclose<cr>
 
@@ -360,7 +360,7 @@ map <leader>sn :cn<cr>
 map <leader>sp :cp<cr>
 map <leader>sl :ccl<cr>
 
-"=> foldchange
+"=> Foldchange
 map <leader>z :call FoldChange()<cr>
 
 "=> Gundo
@@ -371,18 +371,21 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <leader>o :BufExplorer<cr>
 
-"Powerbar
-"let g:Powerline_symbols = 'fancy'
+"MRU
+let MRU_File = '/home/tellone/.vim/misc/.vim_mru_files'
+let MRU_Max_Entries = 400
+map <leader>f :MRU<CR>
 
 "NerdTree
 map <leader>n :NERDTree<cr>
 let NERDTreeShowHidden=1
 let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 
-"MRU
-let MRU_File = '/home/tellone/.vim/misc/.vim_mru_files'
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
+"Powerbar
+"let g:Powerline_symbols = 'fancy'
+
+"PyMode
+let pymode_lint_checker = "pep8"
 
 "rails
 let g:rails_menu=1
@@ -397,7 +400,7 @@ let tskelLicence='Free Software'
 
 "Twitvim
 let twitvim_browser_cmd = 'firefox'" 
-let twitvim_login_b64 = "Wm9ycnJpdXg6cm9uU3RvcDg3"
+source /home/tellone/.vim/misc/cens/twitinfo.vim
 
 "vimGrep
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
@@ -507,7 +510,6 @@ augroup PYset
   au!
   au FileType python syn keyword pythonDecorator self
   au FileType python setlocal linebreak nolist
-  au FileType python compiler pylint
   au FileType python setlocal ai et sta tw=79 sw=4 sts=4
   au BufWrite *.py :call DeleteTrailingWS()
 augroup END
