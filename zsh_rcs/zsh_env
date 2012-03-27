@@ -1,0 +1,99 @@
+#!/bin/zsh
+#
+#
+#Created: 2012-03-26
+#Maintainer: Filip Pettersson
+#Email: filip.diloom@gmail.com
+#Filename: env
+#
+#Purpose: bash enviorment config 
+#
+
+
+autoload -U colors
+colors
+setopt prompt_subst
+PROMPT='%{$fg_bold[black]%}$(vcprompt)%{$reset_color%}tellone:%~:$ '
+
+# Set RPROMPT to have info show up on the right, too.
+
+#############################
+# Other Options
+
+# setopt PRINT_EXIT_VALUE
+
+setopt CORRECT
+setopt CORRECTALL
+
+setopt hist_ignore_dups     # ignore duplication command history list
+setopt share_history        # share command history data
+setopt HIST_IGNORE_SPACE
+setopt APPEND_HISTORY # write history only when closing
+setopt EXTENDED_HISTORY # add more info
+
+# Other tabbing options
+# setopt NO_AUTO_MENU
+# setopt BASH_AUTO_LIST
+
+#############################
+# Variables
+
+# Quote pasted URLs
+autoload url-quote-magic
+zle -N self-insert url-quote-magic
+
+HISTFILE=~/.zsh_history
+SAVEHIST=1000
+HISTSIZE=1000
+
+REPORTTIME=10 # Show elapsed time if command took more than X seconds
+LISTMAX=0 # ask to complete if top of list would scroll off screen
+
+# Load completions for Ruby, Git, etc.
+autoload compinit
+compinit
+
+# Make CTRL-W delete after other chars, not just spaces
+WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
+
+bindkey -e
+
+setopt noclobber nonomatch
+setopt completeinword extendedglob
+setopt autocd
+
+if [[ $ZSH_VERSION == 4.<->* ]]; then
+    setopt histexpiredupsfirst histreduceblanks
+fi
+
+WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
+PERIOD=3600
+periodic() { rehash }
+
+[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
+
+#domains=(`egrep '^(search|domain)' /etc/resolv.conf 2>/dev/null`)
+#[[ -z $domains ]] || shift 1 domains
+
+
+if [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then
+    typeset home="`cygpath "$USERPROFILE"`"
+    typeset docs="$home/My Documents"
+    typeset desktop="`cygpath -D 2>/dev/null`"
+    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"
+    typeset appdata="`cygpath "$APPDATA"`"
+    : ~home ~docs ~desktop ~appdata
+elif [ -d "$HOME/Documents" ]; then
+    typeset docs="$HOME/Documents"
+    : ~docs
+fi
+
+if [ -x "`which ruby 2>/dev/null`" ]; then
+    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"
+    [ -z gems ] || : ~gems
+fi
+
+namedir() { export $1=$PWD; : ~$1 }
+
+
+

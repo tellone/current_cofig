@@ -1,0 +1,26 @@
+#!/bin/zsh
+#
+#
+#Created: 2012-03-26
+#Maintainer: Filip Pettersson
+#Email: filip.diloom@gmail.com
+#Filename: func_lib
+#
+#Purpose: To store my functions that i want souced
+#	  From the zshrc
+
+#vim section
+if [ -f ~/buffer ]; then
+    rm ~/buffer
+fi
+
+gvim(){ /usr/bin/gvim -f "$@" & true; }
+
+#random
+function take
+{
+    mkdir $1
+    cd $1
+}
+
+

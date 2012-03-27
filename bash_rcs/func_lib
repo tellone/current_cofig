@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+#
+#Created: 2012-03-26
+#Maintainer: Filip Pettersson
+#Email: filip.diloom@gmail.com
+#Filename: func_lib
+#
+#Purpose: To store my functions that i want souced
+#	  From the bashr
+
+function take
+{
+    mkdir $1
+    cd $1
+}
+
+

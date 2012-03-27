@@ -1,0 +1,18 @@
+#!/bin/zsh
+#
+#
+#Created: 2012-03-26
+#Maintainer: Filip Pettersson
+#Email: filip.diloom@gmail.com
+#Filename: config
+#
+#Purpose: configurations part of the bash shell 
+#
+zmodload -i zsh/mathfunc
+#zmodload -i zsh/complist
+autoload -U zrecompile
+autoload -U zmv
+autoload -U zsh-mime-setup
+autoload -U edit-command-line
+
+
