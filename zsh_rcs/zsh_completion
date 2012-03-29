@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Use modern completion system
 
 zstyle ':completion:*' add-space true

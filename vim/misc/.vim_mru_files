@@ -1,9 +1,74 @@
 # Most recently edited files in Vim (version 3.0)
+/home/tellone/gitrepos/pregit
+/home/tellone/gitrepos/myProjects/tpope/.zshrc
+/home/tellone/gitrepos/current_config/zsh_rcs/zsh_completion
+/home/tellone/gitrepos/current_config/zsh_rcs/zsh_config
+/home/tellone/gitrepos/current_config/zsh_rcs/zsh_env
+/home/tellone/gitrepos/current_config/zsh_rcs/func_lib
+/usr/share/vim/vim73/syntax/zsh.vim
+/home/tellone/gitrepos/current_config/zsh_rcs/aliases
+/home/tellone/spec_me/.rvmrc
+/home/tellone/gitrepos/current_config/bash_rcs/bash_config
+/home/tellone/gitrepos/current_config/bash_rcs/bash_env
+/home/tellone/keep/art/justMe/poems/lyric/låttexter.tex
+/home/tellone/stories.html
+/home/tellone/gitrepos/current_config/.git/COMMIT_EDITMSG
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles/bash/env
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles/zsh/env
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/install-key
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/gmate
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/newtab
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/git-notpushed
+/home/tellone/gitrepos/current_config/zshrc
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/vcprompt-install
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles/zsh/config
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles/zsh/aliases
+/home/tellone/Downloads/Advanced_Command_Line/peepcode-037-advanced-cmd-code/advanced_bin/dotfiles/zshrc
+/home/tellone/gitrepos/current_config/bashrc
+/home/tellone/gitrepos/current_config/zsh_rcs/zshrc
+/home/tellone/gitrepos/current_config/zsh_completion
+/home/tellone/gitrepos/current_config/zch_rcs/aliases
+/home/tellone/gitrepos/current_config/bash_rcs/aliases
+/home/tellone/gitrepos/current_config/shell_configs/aliases
+/home/tellone/gitrepos/myProjects/tpope/.shrc
+/home/tellone/gitrepos/myProjects/tpope/.profile
+/home/tellone/gitrepos/myProjects/tpope/.zlogin
+/home/tellone/gitrepos/current_config/shell_configs/bash_env
+/home/tellone/.bashrc
+/home/tellone/gitrepos/current_config/shell_configs/bash_config
+/home/tellone/.profile
+/etc/init.d/rc.local
+/etc/init.d/rc
+/etc/profile.d/bash_completion.sh
+/etc/profile
+/etc/globash.rc
+/etc/environment
+/home/tellone/.zshrc
+/home/tellone/gitrepos/myProjects/tpope/.zsh/functions/_daemons
+/home/tellone/gitrepos/myProjects/tpope/.zsh/functions/_editor
+/home/tellone/gitrepos/myProjects/tpope/.zsh/functions/_sb
+/home/tellone/gitrepos/myProjects/tpope/.zsh/functions/_tpope
+/home/tellone/gitrepos/current_config/bash_config/aliases
+/etc/zsh/zshrc
+/etc/zsh/zprofile
+/etc/zsh/zshenv
+/home/tellone/gitrepos/myProjects/tpope/.zshenv
+/home/tellone/.vim/.vimrc
+/home/tellone/gitrepos/myProjects/tpope/.ruby/lib/tpope.rb
+/home/tellone/sm-0.10.2/README.md
+/home/tellone/gitrepos/current_config/bash_config/config
+/home/tellone/gitrepos/current_config/bash_config/bashrc
+/home/tellone/gitrepos/current_config/bash_config/env
+/home/tellone/spec_me/codebreaker/features/CB_starts_game.feature
+/home/tellone/.vim/skeletons/feat.feature
+/home/tellone/gitrepos/current_config/bash_config/func_lib
+/home/tellone/gitrepos/current_config/bash_config/profile
+/home/tellone/spec_me/3/features/step_definitions/greeter_steps.rb
+/home/tellone/spec_me/3/features/say_hello.feature
 /home/tellone/spec_me/1/greeter_spec.rb
 /home/tellone/.vim/bundle/vim-fuzzyfinder/doc/fuf.txt
 /home/tellone/.vim/bundle/vim-ruby/compiler/rspec.vim
 /home/tellone/.vim/bundle/vim-markdown/ftplugin/markdown.vim
-/home/tellone/.vim/.vimrc
 /home/tellone/humming_my_grave.txt
 /home/tellone/gitrepos/myProjects/python_stuff/primes.py
 /home/tellone/.vim/.gitignore
@@ -17,7 +82,6 @@
 /home/tellone/gitrepos/myProjects/tpope/.git_template/hooks/ctags
 /home/tellone/gitrepos/myProjects/tpope/.git_template/hooks/post-commit
 /home/tellone/gitrepos/myProjects/tpope/.git_template/hooks/pre-commit
-/home/tellone/gitrepos/myProjects/tpope/.ruby/lib/tpope.rb
 /home/tellone/gitrepos/myProjects/tpope/.pryrc
 /home/tellone/gitrepos/myProjects/ruby_stuff/swich/Gemfile
 /home/tellone/.vim/bundle/dbext.vim/doc/dbext.txt
@@ -29,7 +93,6 @@
 /home/tellone/.vim/bundle/vim-powerline/doc/Powerline.txt
 /home/tellone/.vim/bundle/vim-powerline/fontpatcher/README.rst
 /home/tellone/.vim/bundle/vim-powerline/README.rst
-/home/tellone/keep/art/justMe/poems/lyric/låttexter.tex
 /home/tellone/keep/art/justMe/poems/ursäkternas mästare/ch4.tex
 /home/tellone/keep/art/justMe/poems/ursäkternas mästare/ch3.tex
 /home/tellone/keep/art/justMe/cv/Cv svenska.tex
@@ -61,7 +124,6 @@
 /home/tellone/gitrepos/myProjects/tpope/.vim/templates/syntax.vim
 /home/tellone/gitrepos/myProjects/tpope/.vim/templates/bin.rb
 /home/tellone/gitrepos/myProjects/tpope/.vim/templates/skel.pl
-/home/tellone/gitrepos/myProjects/tpope/.zshenv
 /home/tellone/.vim/skeletons/skel.html
 /home/tellone/.vim/skeletons/skel.py
 /home/tellone/.vim/.atprc.vim
@@ -74,7 +136,6 @@
 /home/tellone/Downloads/Happy Endings Season 1 Complete 720p/Happy.Endings.S01E02.720p.HDTV.x264.srt
 /home/tellone/Downloads/Happy Endings Season 1 Complete 720p/Happy.Endings.S01E02.720p.HDTV.x264.smi
 /home/tellone/Public/myres/db/migrate/20120130101229_create_resections.rb
-/home/tellone/gitrepos/myProjects/tpope/.zshrc
 /home/tellone/gitrepos/myProjects/tpope/.tmux.conf
 /home/tellone/gitrepos/myProjects/tpope/.irbrc
 /tmp/readline-20120302-5041-tcihqk.rb
@@ -85,10 +146,8 @@
 /usr/share/vim/vimcurrent/debian.vim
 /usr/share/vim/vimcurrent/evim.vim
 /usr/share/vim/gvimrc
-/home/tellone/stories.html
 /home/tellone/gitrepos/current_config/.git/config
 /home/tellone/gitrepos/myProjects/python_stuff/.git/COMMIT_EDITMSG
-/home/tellone/gitrepos/current_config/.git/COMMIT_EDITMSG
 /home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/mappings.vim
 /home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/plaintex_atp.vim
 /home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/fd_atp.vim
@@ -129,7 +188,6 @@
 /home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/packages/beamer.vim
 /home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/packages/babel.vim
 /home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/project.vim
-/home/tellone/.profile
 /home/tellone/q.log
 /home/tellone/.atprc.vim
 /home/tellone/keep/stay.txt
@@ -207,7 +265,6 @@
 /home/tellone/.vim/bundle/vim-matlab/matlab.vim/syntax/matlab.vim
 /home/tellone/.vim/bundle/vim-matlab/mlint.vim--Ibbotson/ftplugin/matlab.vim
 /home/tellone/.vim/bundle/vim-matlab/mlint.vim--Ibbotson/README
-/home/tellone/.bashrc
 /home/tellone/myProjects/MBS/constrained truck/trcres.m
 /home/tellone/Downloads/matlab.vim
 /home/tellone/myProjects/MBS/constrained truck/trcncf.m

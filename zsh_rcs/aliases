@@ -8,14 +8,19 @@ alias purge='sudo apt-get --purge remove'
 alias ein='sudo easy_install'
 alias rmv='sudo rm -r'
 
-#shorts for usual commands
-alias ce='clear'
-alias na='nautilus .'
-alias lh="ls -d .*/" 
-alias cdr="cd ../.."
+#sytem commands
 alias rerc="source /home/tellone/.zshrc"
 alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
+
+#shorts for usual commands
+alias ce='clear'
+alias na='nautilus .'
+alias lsd='ls -ld *(-/DN)' # directories only
+alias zmv='noglob zmv'
+alias ru='noglob ru'
+alias lh="ls -d .*/" 
+alias cdr="cd ../.."
 
 #activateion
 alias fire='firefox &'

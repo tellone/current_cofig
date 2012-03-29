@@ -23,4 +23,5 @@ function take
     cd $1
 }
 
+namedir() { export $1=$PWD; : ~$1 }
 
