@@ -4,19 +4,49 @@
 #Created: 2012-03-26
 #Maintainer: Filip Pettersson
 #Email: filip.diloom@gmail.com
-#Filename: env
-#
-#Purpose: bash enviorment config 
+#File: env for zsh
+#       Deals with Promt, history
+#       and gereal option
 #
 
 
+###########################
+#setting promt
+##########################
 setopt prompt_subst
-PROMPT='%{$fg_bold[black]%}$(vcprompt)%{$reset_color%}tellone:%~:$ '
 
-# Set RPROMPT to have info show up on the right, too.
+local usercolor="$fg_bold[yellow]"
+local dircolor="$fg_bold[blue]"
+local vccolor="$fg_bold[black]"
+case "$TERM" in
+    screen*)
+    usercolor=$'\e[38;5;184m'
+    dircolor=$'\e[38;5;27m'
+    ;;
+    xterm*|rxvt-unicode)
+    usercolor=$'\e[93m'
+    dircolor=$'\e[94m'
+    ;;
+esac
+[ $UID = '0' ] && usercolor="$fg_bold[white]"
+reset_color=$'\e[00m'
+
+export PS1='%{$vccolor%}$(vcprompt)%{$usercolor%}%n:%{$dircolor%}%~:$%{$reset_color%} '
 
 #############################
-# Other Options
+# Variables
+#############################
+HISTFILE=~/.zsh_history
+SAVEHIST=1000
+HISTSIZE=1000
+
+REPORTTIME=10 # Show elapsed time if command took more than X seconds
+LISTMAX=0 # ask to complete if top of list would scroll off screen
+
+# Make CTRL-W delete after other chars, not just spaces
+WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
+
+#General options
 
 # setopt PRINT_EXIT_VALUE
 
@@ -33,21 +63,12 @@ setopt EXTENDED_HISTORY # add more info
 # setopt NO_AUTO_MENU
 # setopt BASH_AUTO_LIST
 
-#############################
-# Variables
-
-# Quote pasted URLs
-HISTFILE=~/.zsh_history
-SAVEHIST=1000
-HISTSIZE=1000
-
-REPORTTIME=10 # Show elapsed time if command took more than X seconds
-LISTMAX=0 # ask to complete if top of list would scroll off screen
-
-# Make CTRL-W delete after other chars, not just spaces
-WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
-
-bindkey -e
+setopt HASH_CMDS # save cmd location to skip PATH lookup
+setopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom
+#setopt NO_GLOBAL_RCS # ignore /etc/z{sh,profile,login,logout} files
+#setopt NO_AUTO_REMOVE_SLASH # don't remove slashes
+setopt NUMERIC_GLOB_SORT # sort numerically first, before alpha
+#unsetopt NOMATCH # stop ZSH from choking on glob-like strings (e.g. URLs passed to wget)
 
 setopt noclobber nonomatch
 setopt completeinword extendedglob
@@ -61,12 +82,11 @@ WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 PERIOD=3600
 periodic() { rehash }
 
-[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
 
 #domains=(`egrep '^(search|domain)' /etc/resolv.conf 2>/dev/null`)
 #[[ -z $domains ]] || shift 1 domains
 
-
+#Home folders shorts
 if [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then
     typeset home="`cygpath "$USERPROFILE"`"
     typeset docs="$home/My Documents"
@@ -78,12 +98,5 @@ elif [ -d "$HOME/Documents" ]; then
     typeset docs="$HOME/Documents"
     : ~docs
 fi
-
-if [ -x "`which ruby 2>/dev/null`" ]; then
-    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"
-    [ -z gems ] || : ~gems
-fi
-namedir() { export $1=$PWD; : ~$1 }
-
 
 

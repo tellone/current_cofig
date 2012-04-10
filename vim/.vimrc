@@ -21,7 +21,7 @@ set history=700
 filetype plugin indent on
 
 "to avoid confusion tell vim which shell you use
-set shell=/bin/bash
+set shell=/bin/zsh
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -45,6 +45,9 @@ map <leader>e :e! ~/.vim/.vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost /home/tellone/.vim/.vimrc source /home/tellone/.vim/.vimrc
+
+"get the viminfo-file out of the way
+:set viminfo +=n$HOME/.vim/misc/cens/.viminfo
 
 "Backup and swapfiles
 set nobackup
@@ -309,6 +312,8 @@ cmap ½ $
 "{{{
 "kill search hl
 map <silent> <leader><cr> :noh<cr>
+map Q ==
+"big Q formats text and no Ex-mode
 
 " Smart way to move btw. windows
 map <C-j> <C-W>j
@@ -355,13 +360,22 @@ let g:DrChipTopLvlMenu= "Plugin."
 
 " => Cope
 " Do :help cope if you are unsure what cope is. It's super useful!
-map <leader>sc :botright cope<cr>
-map <leader>sn :cn<cr>
-map <leader>sp :cp<cr>
-map <leader>sl :ccl<cr>
+map <leader>cc :botright cope<cr>
+map <leader>cn :cn<cr>
+map <leader>cp :cp<cr>
+map <leader>cl :ccl<cr>
 
 "=> Foldchange
 map <leader>z :call FoldChange()<cr>
+
+"=> FUF
+let g:fuf_modesDisable = []
+let g:fuf_mrufile_maxItem = 400
+let g:fuf_mrucmd_maxItem = 400
+let g:fuf_dataDir = '~/.vim/misc/vim-fuf-data'
+let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|aux|zip|rar|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)'
+map <leader>ff :FufMruFile<CR>
+map <leader>fd :FufDir<cr>
 
 "=> Gundo
 nnoremap <leader>d :GundoToggle<CR>
@@ -371,42 +385,32 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 map <leader>o :BufExplorer<cr>
 
-"MRU
-let MRU_File = '/home/tellone/.vim/misc/.vim_mru_files'
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
-
 "NerdTree
 map <leader>n :NERDTree<cr>
 let NERDTreeShowHidden=1
 let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 
-"Powerbar
+" => Powerbar
 "let g:Powerline_symbols = 'fancy'
 
-"PyMode
-let pymode_lint_checker = "pep8"
-
-"rails
-let g:rails_menu=1
-
-"Tag List
+" => Tag List
 map <leader>l :TlistOpen<cr>
 
-"Tskeleton
+" => Tskeleton
 let tskelUserName='Filip Pettersson'
 let tskelUserEmail='filip.diloom@gmail.com'
 let tskelLicence='Free Software'
 
-"Twitvim
+" => Twitvim
+let twitvim_token_file = "~/.vim/misc/cens/twitvim.token"
 let twitvim_browser_cmd = 'firefox'" 
 source /home/tellone/.vim/misc/cens/twitinfo.vim
 
-"vimGrep
+" => vimGrep
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
 
-"YankRing
+" => YankRing
 let g:yankring_history_dir = '/home/tellone/.vim/misc/YankRing'
 
 "}}}
@@ -481,7 +485,7 @@ augroup FTOptions " {{{2
   autocmd FileType css,scss               setlocal ai et sta sw=2 sts=2
   autocmd FileType html,xhtml,wml,cf      setlocal ai et sta sw=2 sts=2
   autocmd FileType xml,xsd,xslt           setlocal ai et sta sw=2 sts=2 ts=2
-  autocmd FileType eruby,yaml,ruby        setlocal ai et sta sw=2 sts=2
+  autocmd FileType yaml                   setlocal ai et sta sw=2 sts=2
   autocmd FileType cucumber               setlocal ai et sta sw=2 sts=2 ts=2
   autocmd FileType text,txt,mail          setlocal ai com=fb:*,fb:-,n:>
   autocmd FileType c,cpp,cs,java,perl,php,aspperl,css let b:surround_101 = "\r\n}"
@@ -498,12 +502,22 @@ augroup FTOptions " {{{2
   autocmd FileType help nnoremap <silent><buffer> q :q<CR>
   autocmd FileType html setlocal iskeyword+=~
   autocmd FileType pdf  setlocal foldmethod=syntax foldlevel=1
-  autocmd FileType ruby setlocal tw=79 isfname+=: comments=:#\
   autocmd FileType matlab,text,txt setlocal tw=78 linebreak nolist
   autocmd FileType text,txt colorscheme lucius
   autocmd FileType vbnet        runtime! indent/vb.vim
   autocmd FileType vim  setlocal ai et sta sw=2 sts=2 keywordprg=:help
 augroup END "}}}2
+
+"{{{2 " => Ruby and rails section
+augroup RubySetter
+  au!
+  au FileType ruby setlocal ai et sta sw=2 sts=2
+  au FileType ruby setlocal tw=79 isfname+=: comments=:#\
+augroup END
+
+"Rails settings
+
+"}}}2
 
 "{{{2 " => Python section
 augroup PYset
@@ -511,8 +525,10 @@ augroup PYset
   au FileType python syn keyword pythonDecorator self
   au FileType python setlocal linebreak nolist
   au FileType python setlocal ai et sta tw=79 sw=4 sts=4
-  au BufWrite *.py :call DeleteTrailingWS()
 augroup END
+"PyMode
+let pymode_lint_checker = "pep8"
+
 "}}}2
 
 "{{{2 => JavaScript section

@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files'
-let g:netrw_dirhist_2='/home/tellone/gitrepos/current_config/bash_config'
-let g:netrw_dirhist_3='/etc/zsh'
-let g:netrw_dirhist_4='/home/tellone/gitrepos/current_config/bash_config'
-let g:netrw_dirhist_5='/home/tellone/gitrepos/current_config/shell_configs'
-let g:netrw_dirhist_6='/home/tellone/gitrepos/current_config/zsh_rcs'
+let g:netrw_dirhist_cnt =0

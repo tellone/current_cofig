@@ -1,0 +1,6 @@
+#compdef pictures
+
+#lines added by compinstal'local expl;
+compdef _description files expl "picture file"; 
+_files "$expl[@]" -g "*.(#i)(png|gif|jpeg|jpg|tiff|tif|pbm|pgm|ppm|xbm|xpm|ras(|t)|tga|rle|rgb|bmp|pcx|fits|pm)(-.)"' feh
+

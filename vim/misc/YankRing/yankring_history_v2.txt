@@ -1,100 +1,100 @@
+, that song again. It keeps sneaking up on me. One of those you just start humming without knowing the words. Even in my worn out and uneasy state,v
+, I could not get the tune out of my head. If only I wasn't headed for a job interview and to make things worse I'm a nervous hummer. I hadn't slept well last night,v
+h,v
+  pending # express the regexp above with the code you wish you had,V
 ,V
-cp /home/tellone/.bash_aliases $repo/bash_aliases,V
-cp /home/tellone/.bashrc $repo/.bashrc,V
-fi,V
-   rm $repo/.bashrc,V
-if [ -f $repo/.bashrc ]; then,V
-cp -r /home/tellone/.vim $repo/vim,V
-rm -r $repo/vim,V
-    rm $repo/.bash_aliases,V
-if [ -f $repo/.bash_aliases ]; then,V
-zle self-insert url-quote-magic,V
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS},v
-zle:38: widgets can only be called when ZLE is active,v
-autoload url-quote-magiczle self-insert url-quote-magic,v
-autoload -U colors,V
-colors,V
+  @movie.update_attribute(:showtime_date, Date.parse(date)),V
+  pending # express thedregexp above with the code you wish you had,V
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd,V
+You can implement step definitions for undefined steps with these snippets:,V
+Using the wip profile...#Creation Date: 2012-04-10Feature: showtime descriptions  So that a I can fit movies the tv to my  scheduel. A moive fan want accurate time tables  @wip  Scenario: show minutes for time withour seconds                       # features/showtime_descriptions.feature:9    Given a movie listing                                               # features/showtime_descriptions.feature:10    When I set the show time to "2007-10-10" at "2:15pm"                # features/showtime_descriptions.feature:11    Then the showtime describtion shoud say "October 10 2007 at 2:15pm" # features/showtime_descriptions.feature:121 scenario (1 undefined)3 steps (3 undefined)0m0.354s,v
+    When I ,V
+    When I set the show time to "2007-10-10" at "2:15 pm",V
+   #Scenario Outline:    #Gvien "<code>"    #when "<other code>"    #then "more code"  ,v
+   ,V
+    And,V
+    #############################################,V
+#Feature Name: showtime_descriptions.feature,V
+#Creator: Filip Pettersson,V
  ,v
--,v
-N,v
-namedir() { export $1=$PWD; : ~$1 },V
-compinit,V
-autoload compinit,V
-# Load completions for Ruby, Git, etc.,V
-autoload -Uz colors && colorszmodload -i zsh/complist # colorful listings,v
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORSi},V
 ,v
-alias rerc="source /home/tellone/.zshrc"alias tu="top -o cpu" #processes sorted after cpu usagealias g="git status",V
-autoload -Uz colors && colorszmodload -i zsh/complist # colorful listingszstyle ':completion:*' list-colors ${(s.:.)LS_COLORS},v
-syn keyword zshPrecommand       glob noglob correct nocorrect exec command builtin - time,V
-alias rerc="source /home/tellone/.zshrc"alias tu="top -o cpu" #processes sorted after cpu usagealias g="git status",v
-alias sb='noglob sensible-browser',V
-if [ -x /usr/bin/dircolors ]; then    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"    alias ls='ls --color=auto'    #alias dir='dir --color=auto'    #alias vdir='vdir --color=auto'    alias grep='grep --color=auto'    alias fgrep='fgrep --color=auto'    alias egrep='egrep --color=auto'fi# some more ls aliasesalias ll='ls -alF'alias la='ls -A'alias l='ls -CF',V
-alias lsd='ls -ld *(-/DN)' # directories onlyalias sb='noglob sensible-browser'alias zmv='noglob zmv'alias ru='noglob ru,v
-http://feeds.feedburner.com/Ruby5,v
-if [ -x /usr/bin/dircolors ]; then    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"    alias ls='ls --color=auto'    #alias dir='dir --color=auto'    #alias vdir='vdir --color=auto'    alias grep='grep --color=auto'    alias fgrep='fgrep --color=auto'    alias egrep='egrep --color=auto'fi# some more ls aliasesalias ll='ls -alF'alias la='ls -A'alias l='ls -CF',v
-dd if=/dev/sd''x'' count=''number_of_records'' status=noxfer | md5sum,v
-mkdir -p ~/srccd ~/srchg clone http://vc.gerg.ca/hg/vcprompt/cd vcpromptmakecp vcprompt ~/bin/vcprompt,v
-watch=(notme)HISTSIZE=100,V
-I was razing, through my lifescraping the emtiness, with razorblades insidea dream feeder, devouring futures.The numbness society, is seeking me steadilythere were quiet lives slowly suffocatesstands a silent chair, with my name.Bell call, signals of completionline walkers, did  you wake up just nowWe already traveled any apparent enrichment.Until this world, slowly stagnated our pathsinto an edited version of timewhere all color or importance where left out.Here we must earn each wheezing breathrestarting at zero, to no effectcome let grab what we can get.,v
-<p>   I was a disease through life <br />   an emptiness scrapers, razor inside <br />   a forward suction cleaner, devouring dreams</ p><p>   The numbness sälskap looking me steadily <br />   to which quiet life slowly suffocate <br />   there is a stationary with my name</ p><p>   At call, call completed <br />   line walkers, did you wake up until now <br />   I have already traveled, in any apparent enrichment</ p><p>   Like this stagnated my sky slowly <br />   into an edited version of the time <br />   where all gay or important left out</ p><p>   Stuck, the blood deserve every wheezing breath <br />   with death ståndes just outside my grasp <br />   currency effect is wh effect, this is all they get</ p>,v
-#rvm section ,V
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM ac func,V
-setopt rmstarsilent histignoredups,V
-autoload -U colorscolorssetopt prompt_substPROMPT='%~ %{$fg_bold[black]%}$(vcprompt)→ %{$reset_color%}'# Set RPROMPT to have info show up on the right, too.############################## Other Options# setopt PRINT_EXIT_VALUEsetopt CORRECTsetopt CORRECTALLsetopt hist_ignore_dups     # ignore duplication command history listsetopt share_history        # share command history datasetopt HIST_IGNORE_SPACEsetopt APPEND_HISTORY # write history only when closingsetopt EXTENDED_HISTORY # add more info# Other tabbing options# setopt NO_AUTO_MENU# setopt BASH_AUTO_LIST############################## Variables# Quote pasted URLsautoload url-quote-magiczle -N self-insert url-quote-magicHISTFILE=~/.zsh_historySAVEHIST=10000HISTSIZE=10000REPORTTIME=10 # Show elapsed time if command took more than X secondsLISTMAX=0 # ask to complete if top of list would scroll off screen# Load completions for Ruby, Git, etc.autoload compinitcompinit# Make CTRL-W delete after other chars, not just spacesWORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}bindkey -e,V
-autoload -U colorscolorssetopt prompt_substPROMPT='%~ %{$fg_bold[black]%}$(vcprompt)→ %{$reset_color%}'# Set RPROMPT to have info show up on the right, too.############################## Other Options# setopt PRINT_EXIT_VALUEsetopt CORRECTsetopt CORRECTALLsetopt hist_ignore_dups     # ignore duplication command history listsetopt share_history        # share command history datasetopt HIST_IGNORE_SPACEsetopt APPEND_HISTORY # write history only when closingsetopt EXTENDED_HISTORY # add more info# Other tabbing options# setopt NO_AUTO_MENU# setopt BASH_AUTO_LIST############################## Variables# Quote pasted URLsautoload url-quote-magiczle -N self-insert url-quote-magicHISTFILE=~/.zsh_historySAVEHIST=10000HISTSIZE=10000REPORTTIME=10 # Show elapsed time if command took more than X secondsLISTMAX=0 # ask to complete if top of list would scroll off screen# Load completions for Ruby, Git, etc.autoload compinitcompinit# Make CTRL-W delete after other chars, not just spacesWORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}bindkey -e,v
-autoload -U colorscolorssetopt prompt_substPROMPT='%~ %{$fg_bold[black]%}$(vcprompt)→ %{$reset_color%}',v
-zmodload -i zsh/mathfunc,V
-zstyle :compinstall filename "$HOME/.zshrc",V
-# The following lines were added by compinstall,V
-zstyle ':mime:*' mailcap ~/.mailcap,V
-zstyle ':mime:*' tty-browsers sensible-browser,V
-zstyle ':mime:*' x-browsers sensible-browser,V
-# Use modern completion system,V
-zstyle ':completion:*' hosts localhost $friends tpope.us cunn.iling.us rebelongto.us,V
-zstyle ':completion:*' urls http://www.tpope.net/ http://www.google.com/,V
-if [ -n "$force_color_prompt" ]; then    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then	# We have color support; assume it's compliant with Ecma-48	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such	# a case would tend to support setf rather than setaf.)	color_prompt=yes    else	color_prompt=    fifi# Enable color support of ls and also add handy aliasesif [ -x /usr/bin/dircolors ]; then    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"    alias ls='ls --color=auto'    #alias dir='dir --color=auto'    #alias vdir='vdir --color=auto'    alias grep='grep --color=auto'    alias fgrep='fgrep --color=auto'    alias egrep='egrep --color=auto'fi# some more ls aliasesalias ll='ls -alF'alias la='ls -A'alias l='ls -CF',v
-zstyle ':mime:*' x-browsers sensible-browserzstyle ':mime:*' tty-browsers sensible-browserzstyle ':mime:*' mailcap ~/.mailcap# The following lines were added by compinstallzstyle ':completion:*' add-space truezstyle -e ':completion:*' completer '        if [[ $_last_try != "$HISTNO$BUFFER$CURSOR" ]]; then            _last_try="$HISTNO$BUFFER$CURSOR"            reply=(_complete _ignored:complete _prefix _complete:full)        else            reply=(_complete _ignored:complete _prefix _complete:full _correct _approximate)        fi' #'zstyle ':completion::prefix:*' completer _complete _ignored:completezstyle ':completion:*' format 'Completing %d'zstyle ':completion:*' glob 1zstyle ':completion::complete:*:(all-|)files' ignored-patterns '*\~' '(|*/)CVS'zstyle ':completion::complete:*:(local-|)directories' ignored-patterns '(|*/)CVS'zstyle ':completion::complete:*' ignore-parents parent pwdzstyle ':completion::complete:rm::(all-|)files' ignored-patternszstyle ':completion::complete:rmdir::(local-|)directories' ignored-patternszstyle ':completion:*' group-name ''zstyle ':completion:*' hosts localhost $friends tpope.us cunn.iling.us rebelongto.uszstyle ':completion:*' urls http://www.tpope.net/ http://www.google.com/zstyle ':completion:*' insert-unambiguous true# NO NO NO!!! This makes things SLOW#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}zstyle ':completion:*' list-colors no=00 fi=00 di=01\;34 pi=33 so=01\;35 bd=00\;35 cd=00\;34 or=00\;41 mi=00\;45 ex=01\;32zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'zstyle ':completion:*' local localhost /var/www public_htmlzstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'zstyle ':completion::full:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' '+r:|[._-/]=* r:|=* l:|[._-/]=* l:|=*'zstyle -e ':completion:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX+1)/3 )) numeric )'zstyle ':completion:*' menu selectzstyle ':completion:*:(xdvi|xpdf|gv|mpl):*' menu yes selectzstyle ':completion:*' original truezstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'zstyle ':completion:*' substitute 1zstyle ':completion:*' use-cache onzstyle ':completion:*' cache-path ~/.zsh/cachezstyle ':completion:*' users tpope root $USER ${watch/notme/}zstyle ':completion:*' verbose truezstyle ':completion:*:rm:*' ignore-line yeszstyle :compinstall filename "$HOME/.zshrc"autoload -U compinitcompinit -u# End of lines added by compinstallcompdef 'local expl; _description files expl "LaTeX aux file"; _files "$expl[@]" -g "*.aux"' bibtexcompdef 'local expl; _description files expl "picture file"; _files "$expl[@]" -g "*.(#i)(png|gif|jpeg|jpg|tiff|tif|pbm|pgm|ppm|xbm|xpm|ras(|t)|tga|rle|rgb|bmp|pcx|fits|pm)(-.)"' feh,V
-zmodload -i zsh/mathfunc#zmodload -i zsh/complistautoload -U zrecompileautoload -U zmvautoload -U zsh-mime-setupautoload -U edit-command-line,v
-},v
-friends=($boxen roxy grex),V
-fpath=($fpath ~/.zsh/functions ~/.zsh/functions.zwc ~/.rvm/scripts/zsh/Completion $HASHROCKET_DIR/dotmatrix/.zsh/functions),V
-    done,V
-        : ~${host%.tpope.us},V
-        [ -d "$HOME/friends" ] && typeset ${host%.tpope.us}=$HOME/friends/${host%.tpope.us},V
-        [ "${host%.tpope.us}" != `hostname` ] && family=($family $host),V
-    for host in $boxen; do,V
-if [ -d "$HOME/friends" ]; then,V
-boxen=(matthew todd lucas gideon),V
-. "$ENV",V
-interactive=1,V
-export ENV="$HOME/.shrc",V
-[ -f "$HOME/.friends" ] && watch=(`cat "$HOME/.friends"`),V
-setopt rmstarsilent histignoredupssetopt noclobber nonomatchsetopt completeinword extendedglobsetopt autocdif [[ $ZSH_VERSION == 4.<->* ]]; then    setopt histexpiredupsfirst histreduceblanksfifpath=($fpath ~/.zsh/functions ~/.zsh/functions.zwc ~/.rvm/scripts/zsh/Completion $HASHROCKET_DIR/dotmatrix/.zsh/functions)watch=(notme)[ -f "$HOME/.friends" ] && watch=(`cat "$HOME/.friends"`)HISTSIZE=100WORDCHARS='*?_-.[]~&;!#$%^(){}<>'PERIOD=3600periodic() { rehash }export ENV="$HOME/.shrc"interactive=1. "$ENV"[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"#domains=(`egrep '^(search|domain)' /etc/resolv.conf 2>/dev/null`)#[[ -z $domains ]] || shift 1 domainsboxen=(matthew todd lucas gideon)if [ -d "$HOME/friends" ]; then    for host in $boxen; do        [ "${host%.tpope.us}" != `hostname` ] && family=($family $host)        [ -d "$HOME/friends" ] && typeset ${host%.tpope.us}=$HOME/friends/${host%.tpope.us}        : ~${host%.tpope.us}    donefiif [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then    typeset home="`cygpath "$USERPROFILE"`"    typeset docs="$home/My Documents"    typeset desktop="`cygpath -D 2>/dev/null`"    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"    typeset appdata="`cygpath "$APPDATA"`"    : ~home ~docs ~desktop ~appdataelif [ -d "$HOME/Documents" ]; then    typeset docs="$HOME/Documents"    : ~docsfiif [ -x "`which ruby 2>/dev/null`" ]; then    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"    [ -z gems ] || : ~gemsfinamedir() { export $1=$PWD; : ~$1 }friends=($boxen roxy grex),v
-HISTCONTROL=ignoredups:ignorespace# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)HISTSIZE=1000HISTFILESIZE=2000# check the window size after each command and, if necessary,# update the values of LINES and COLUMNS.shopt -s checkwinsize# make less more friendly for non-text input files, see lesspipe(1)[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"# set variable identifying the chroot you work in (used in the prompt below)if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then    debian_chroot=$(cat /etc/debian_chroot)fiif [ -n "$force_color_prompt" ]; then    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then	# We have color support; assume it's compliant with Ecma-48	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such	# a case would tend to support setf rather than setaf.)	color_prompt=yes    else	color_prompt=    fifiunset color_prompt force_color_prompt,v
-setopt rmstarsilent histignoredupssetopt noclobber nonomatchsetopt completeinword extendedglobsetopt autocdif [[ $ZSH_VERSION == 4.<->* ]]; then    setopt histexpiredupsfirst histreduceblanksfifpath=($fpath ~/.zsh/functions ~/.zsh/functions.zwc ~/.rvm/scripts/zsh/Completion $HASHROCKET_DIR/dotmatrix/.zsh/functions)watch=(notme)[ -f "$HOME/.friends" ] && watch=(`cat "$HOME/.friends"`)HISTSIZE=100WORDCHARS='*?_-.[]~&;!#$%^(){}<>'PERIOD=3600periodic() { rehash }export ENV="$HOME/.shrc"interactive=1. "$ENV"[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"#domains=(`egrep '^(search|domain)' /etc/resolv.conf 2>/dev/null`)#[[ -z $domains ]] || shift 1 domainsboxen=(matthew todd lucas gideon)if [ -d "$HOME/friends" ]; then    for host in $boxen; do        [ "${host%.tpope.us}" != `hostname` ] && family=($family $host)        [ -d "$HOME/friends" ] && typeset ${host%.tpope.us}=$HOME/friends/${host%.tpope.us}        : ~${host%.tpope.us}    donefiif [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then    typeset home="`cygpath "$USERPROFILE"`"    typeset docs="$home/My Documents"    typeset desktop="`cygpath -D 2>/dev/null`"    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"    typeset appdata="`cygpath "$APPDATA"`"    : ~home ~docs ~desktop ~appdataelif [ -d "$HOME/Documents" ]; then    typeset docs="$HOME/Documents"    : ~docsfiif [ -x "`which ruby 2>/dev/null`" ]; then    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"    [ -z gems ] || : ~gemsfinamedir() { export $1=$PWD; : ~$1 },v
-# append to the history file, don't overwrite it,V
-shopt -s histappend,V
-# Add an "alert" alias for long running commands.  Use like so:,V
-#   sleep 10; alert,V
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '%''s/^%s*[0-9]%+%s*//;s/[;&|]%s*alert$//'%'')"',V
-# enable programmable completion features (you don't need to enable# this, if it's already enabled in /etc/bash.bashrc and /etc/profile# sources /etc/bash.bashrc).if [ -f /etc/bash_completion ] && ! shopt -oq posix; then    . /etc/bash_completionfiPS1="\u:\w$ ",v
-#force_color_prompt=yes,V
-# should be on the output of commands, not on the prompt,V
-# off by default to not distract the user: the focus in a terminal window,V
-# uncomment for a colored prompt, if the terminal has the capability; turned,V
-# set a fancy prompt (non-color, unless we know we "want" color),V
-esac,V
-    xterm-color) color_prompt=yes;;,V
-case "$TERM" in,V
-# ... or force ignoredups and ignorespace,V
-# don't put duplicate lines in the history. See bash(1) for more options,V
-# If not running interactively, don't do anything,V
-[ -z "$PS1" ] && return,V
-if [ -f $cofig1/zsh_config ]; then    . $cofig1/zsh_configelse    echo "No file zsh_config found"fi,V
-#rvm section [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM ac func#vim sectionif [ -f ~/buffer ]; then    rm ~/bufferfigvim(){ /usr/bin/gvim -f "$@" & true; },v
-if [ -n "$force_color_prompt" ]; then    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then	# We have color support; assume it's compliant with Ecma-48	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such	# a case would tend to support setf rather than setaf.)	color_prompt=yes    else	color_prompt=    fifi,v
-if [ -n "$force_color_prompt" ]; then    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then,V
-# If not running interactively, don't do anything[ -z "$PS1" ] && return# don't put duplicate lines in the history. See bash(1) for more options# ... or force ignoredups and ignorespaceHISTCONTROL=ignoredups:ignorespace# append to the history file, don't overwrite itshopt -s histappend# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)HISTSIZE=1000HISTFILESIZE=2000# check the window size after each command and, if necessary,# update the values of LINES and COLUMNS.shopt -s checkwinsize# make less more friendly for non-text input files, see lesspipe(1)[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"# set variable identifying the chroot you work in (used in the prompt below)if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then    debian_chroot=$(cat /etc/debian_chroot)fi# set a fancy prompt (non-color, unless we know we "want" color)case "$TERM" in    xterm-color) color_prompt=yes;;esac# uncomment for a colored prompt, if the terminal has the capability; turned# off by default to not distract the user: the focus in a terminal window# should be on the output of commands, not on the prompt#force_color_prompt=yes,v
-# Turn on some options.setopt auto_cd# Change directory by typing a directory name on its own.setopt extended_glob # Turn on the more powerful pattern matching features.# Set up the promptautoload -Uz promptinitpromptinitPS1="zsh|tellone:%~%%$ " setopt histignorealldups sharehistory# Use emacs keybindings even if our EDITOR is set to vibindkey -e# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:HISTSIZE=1000SAVEHIST=1000HISTFILE=~/.zsh_history,v
-# Turn on some options.setopt auto_cd# Change directory by typing a directory name on its own.setopt extended_glob # Turn on the more powerful pattern matching features.# Set up the promptautoload -Uz promptinitpromptinitPS1="zsh|tellone:%~%%$ " setopt histignorealldups sharehistory# Use emacs keybindings even if our EDITOR is set to vibindkey -e# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:HISTSIZE=1000SAVEHIST=1000HISTFILE=~/.zsh_history# Use modern completion systemautoload -Uz compinitcompinitzstyle ':completion:*' auto-description 'specify: %d'zstyle ':completion:*' completer _expand _complete _correct _approximatezstyle ':completion:*' format 'Completing %d'zstyle ':completion:*' group-name ''zstyle ':completion:*' menu select=2eval "$(dircolors -b)"zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}zstyle ':completion:*' list-colors ''zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%szstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'zstyle ':completion:*' menu select=longzstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%szstyle ':completion:*' use-compctl falsezstyle ':completion:*' verbose truezstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd',v
+group :test do,V
+gem "cucumber-rails",V
+  gem "cucumber-rails",V
+		let twitvim_token_file = "/etc/.twitvim.token",V
+let g:fuf_dataDir = '~/.vim/misc/vim-fuf-data'let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|aux|zip|rar|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)',V
+  autocmd FileType ruby setlocal tw=79 isfname+=: comments=:#\,V
+let pymode_lint_checker = "pep8",V
+"PyMode,V
+  au FileType python setlocal ai et sta tw=79 sw=4 sts=4,V
+  au FileType python setlocal linebreak nolist,V
+ setlocal ai et sta sw=2 sts=2,v
+  au FileType python syn keyword pythonDecorator self,V
+"{{{2 " => Python sectionaugroup PYset  au!  au FileType python syn keyword pythonDecorator self  au FileType python setlocal linebreak nolist  au FileType python setlocal ai et sta tw=79 sw=4 sts=4augroup END"PyModelet pymode_lint_checker = "pep8",V
+"rails,V
+"PyModelet pymode_lint_checker = "pep8",v
+  au BufWrite *.py :call DeleteTrailingWS(),V
+let g:rails_menu=1,V
+  end,V
+# Bundle gems for the local environment. Make sure to,V
+# put test-only gems in this group so their generators,V
+# and rake tasks are available in development mode:,V
+ end,V
+# group :development, :test do#   gem 'webrat'#,v
+  gem "rspec-rails",">=2.0.0",V
+# End of lines added by compinstallcompdef 'local expl; _description files expl "picture file"; _files "$expl[@]" -g "*.(#i)(png|gif|jpeg|jpg|tiff|tif|pbm|pgm|ppm|xbm|xpm|ras(|t)|tga|rle|rgb|bmp|pcx|fits|pm)(-.)"' feh,v
+zstyle ':completion:*' users tpope root $USER ${watch/notme/},V
+# End of lines added by compinstallcompdef 'local expl; _description files expl "picture file"; _files "$expl[@]" -g "*.(#i)(png|gif|jpeg|jpg|tiff|tif|pbm|pgm|ppm|xbm|xpm|ras(|t)|tga|rle|rgb|bmp|pcx|fits|pm)(-.)"' feh,V
+    @secret.include?(@guess[index]) && !exact_match?(index),V
+  def numbers_match?(index),V
+    count,V
+    end,V
+        secret.delete_at(secret.index(number)),V
+      count + (exact_match?(index) ? 1 : 0),V
+    (0..3).inject(0) do |count, index|      count + (numbers_match?(index) ?  1 : 0) ,v
+  def nr_matches    (0..3).inject(0) do |count, index|      count + (numbers_match?(index) ?  1 : 0)    end  end ,v
++++++---+ - ,2
+    Scenarios: All matches      | code | guess | mark |      | 1234 | 1234  | ++++ |      | 1234 | 1243  | ++-- |      | 1234 | 3124  | +--- |      | 1234 | 2341  | ---- |,V
+   Scenarios: All matches,v
+game.start,V
+scribe "#exact_matches" do      context "with no matches" do        it "it returns 0" do          marker = Marker.new('1234','5555')          marker.exact_matches.should == 0        end      end      context "with one match on wrong place" do        it "returns 0" do          marker = Marker.new('1234','3555')          marker.exact_matches.should == 0       end      end     context "with 1 exact match" do       it "returns 1" do          marker = Marker.new('1234','5535')          marker.exact_matches.should == 1      end     end     context "with one number match and one exact match (in that order)" do       it "returns 1" do          marker = Marker.new('1234','5135')          marker.exact_matches.should == 1       end     end    end,v
+     context "with 1 exact and one nr match" do       it "returns 1" do         game.start('1234')         output.should_receive(:puts).with('--')         game.guess('2355')       end     end,V
+atch" do       it "returns 1" do         game.start('1234')         output.should_receive(:puts).with('--')         game.guess('2355')       end     end,v
+          marker = Marker.new('1234','5535')          marker.exact_matches.should == 1,V
+          marker = Marker.new('1234','3555')          marker.exact_matches.should == 0,V
+          marker = Marker.new('1234','5555')          marker.exact_matches.should == 0,V
+          output.should_receive(:puts).with(''),V
+          game.guess('5555'),V
+    let(:output) { double('output').as_null_object }     let(:game) { Game.new(output) }          describe "#start" do    # before(:each) do    # output = double('output').as_null_object    # game = Game.new(output)    #  end      it "sends a welcome message" do        output.should_receive(:puts).with('Welcome to Codebreaker')        game.start('1234')      end      it "prompts for the first guess" do        output.should_receive(:puts).with('Enter guess: ')        game.start('1234')      end    end,V
+r,v
+require 'spec_helper'module Codebreaker  describe Game do    let(:output) { double('output').as_null_object }     let(:game) { Game.new(output) }          describe "#start" do    # before(:each) do    # output = double('output').as_null_object    # game = Game.new(output)    #  end      it "sends a welcome message" do        output.should_receive(:puts).with('Welcome to Codebreaker')        game.start('1234')      end      it "prompts for the first guess" do        output.should_receive(:puts).with('Enter guess: ')        game.start('1234')      end    end    describe "#guess" do      context "with no matches" do        it "sends a mark with ''" do          game.start('1234')          output.should_receive(:puts).with('')          game.guess('5555')        end      end      context "with one match on wrong place" do        it "sends a mark with '-'" do          game.start('1234')          output.should_receive(:puts).with('-')          game.guess('3555')        end      end     context "with 1 exact match" do       it "sends a mark with '+'" do         game.start('1234')         output.should_receive(:puts).with('+')         game.guess('1555')       end     end     context "with 2 number matches" do       it "sends a mark with '--'" do         game.start('1234')         output.should_receive(:puts).with('--')         game.guess('2355')       end     end     context "with 1 number match and 1 exact match (in that order)" do       it "sends a mark with '+-'" do         game.start('1234')         output.should_receive(:puts).with('+-')         game.guess('2535')       end     end    end  endend,v
+class Marker  def initialize(secret, guess)    @secret, @guess = secret, guess  end  def nr_matches    (0..3).inject(0) do |count, index|      count + (numbers_match?(index) ?  1 : 0)    end  end  def exact_matches    (0..3).inject(0) do |count, index|    count + (exact_match?(index) ? 1 : 0)    end  end  def exact_match?(index)    @guess[index] == @secret[index]  end  def numbers_match?(index)    @secret.include?(@guess[index]) && !exact_match?(index)  endend,v
+  def nr_matches(guess)    (0..3).inject(0) do |count, index|      count + (numbers_match?(guess, index) ?  1 : 0)    end  end  def exact_matches(guess)    (0..3).inject(0) do |count, index|    count + (exact_match?(guess, index) ? 1 : 0)    end  end  def exact_match?(guess, index)    guess[index] == @secret[index]  end  def numbers_match?(guess, index)    @secret.include?(guess[index]) && !exact_match?(guess, index)  end,V
+class Marker  def initialize(secret)    @secret=secret  end  def nr_matches(guess)    (0..3).inject(0) do |count, index|      count + (numbers_match?(guess, index) ?  1 : 0)    end  end  def exact_matches(guess)    (0..3).inject(0) do |count, index|    count + (exact_match?(guess, index) ? 1 : 0)    end  end  def exact_match?(guess, index)    guess[index] == @secret[index]  end  def numbers_match?(guess, index)    @secret.include?(guess[index]) && !exact_match?(guess, index)  endend,V
+d,v
+f nr_matches(guess)    (0..3).inject(0) do |count, index|      count + (numbers_match?(guess, index) ?  1 : 0)    end  end  def exact_matches(guess)    (0..3).inject(0) do |count, index|    count + (exact_match?(guess, index) ? 1 : 0)    end  end  def exact_match?(guess, index)    guess[index] == @secret[index]  end  def numbers_match?(guess, index)    @secret.include?(guess[index]) && !exact_match?(guess, index)  end,v
+      count + (numbers_match?(guess, index) ?  0 : 1),V
+  def exact_match?(guess, index),V
+    exact_matches,V
+    exact_matches = 0,V
+    nr_matches,V
+      end,V
+        nr_matches += 1,V
+    nr_matches = 0,V
+    def nr_matches(guess)    nr_matches = 0    (0..3).each do |index|      if numbers_match?(guess, index)        nr_matches += 1      end    end,V
+require 'codebreaker/marker',V
+end,V
+Report erratum,V
+    describe "#guess" do      context "with no matches" do        it "sends a mark with ''" do          game.start('1234')          output.should_receive(:puts).with('')          game.guess('5555')        end      end      context "with one match on wrong place" do        it "sends a mark with '-'" do          game.start('1234')          output.should_receive(:puts).with('-')          game.guess('3555')        end      end     context "with 1 exact match" do       it "sends a mark with '+'" do         game.start('1234')         output.should_receive(:puts).with('+')         game.guess('1555')       end     end     context "with 2 number matches" do       it "sends a mark with '--'" do         game.start('1234')         output.should_receive(:puts).with('--')         game.guess('2355')       end     end     context "with 1 number match and 1 exact match (in that order)" do       it "sends a mark with '+-'" do         game.start('1234')         output.should_receive(:puts).with('+-')         game.guess('2535')       end     end,V
+require 'codebreaker/game',V
+(,v
+  let g:fuf_modesDisable = [],V
+  let g:fuf_mrufile_maxItem = 400  let g:fuf_mrucmd_maxItem = 400,V
+"MRU,V
+map <leader>f :MRU<CR>,V
+let MRU_Max_Entries = 400,V
+let MRU_File = '/home/tellone/.vim/misc/.vim_mru_files',V
+let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)',v
+  let g:fuf_keyOpen = '<CR>',V
+let g:fuf_dataDir = '~/.vim-fuf-data',v
+    number_match_count,V

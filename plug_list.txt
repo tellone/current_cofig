@@ -5,7 +5,6 @@ dbext.vim
 gundo
 localColorSchemes.vim
 matlab.vim
-mru.vim
 nerdtree
 python-mode
 taglist.vim
@@ -25,6 +24,8 @@ vim-markdown
 vim-pathogen
 vim-powerline
 vim-rails
+vim-rake
+vim-repeat
 vim-ruby
 vim-surround
 vim-unimpaired
