@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+#
+#Created: 2012-02-02
+#Maintainer: Filip Pettersson
+#Email: filip.diloom@gmail.com
+#Filename: mymnt
+#
+#Purpose: Mount speciall iso files
+#
+
+if [ ! $# -eq 1 ]; then
+    echo "need 1 input parameter"
+    exit 1
+elif [ -r  "$1" ]
+    echo "file needs to be a valibe readable iso"
+    exit 1
+elif [ ! "$EURID" -eq 0 ] 
+    echo file must be run as root
+    exit 1
+fi
+
+
+mount "$1" /media/virtual/$(`basename "$1"`)  -t iso9660 -o loop
+
+

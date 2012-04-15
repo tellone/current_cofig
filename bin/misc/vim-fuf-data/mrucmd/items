@@ -1,0 +1,100 @@
+{'word': ':wq', 'time': 1334531904}
+{'word': ':w!', 'time': 1334531899}
+{'word': ':q', 'time': 1334507215}
+{'word': ':Wq', 'time': 1334505784}
+{'word': ':NERDTree', 'time': 1334497762}
+{'word': ':bn', 'time': 1334497701}
+{'word': ':%s/zsh/bash/g', 'time': 1334497495}
+{'word': ':q!', 'time': 1334496799}
+{'word': ':tabnext', 'time': 1334496792}
+{'word': ':.q', 'time': 1334496638}
+{'word': ':Q', 'time': 1334457785}
+{'word': ':set ft=zsh', 'time': 1334457613}
+{'word': ':FufBuffer', 'time': 1334419620}
+{'word': ':fuf', 'time': 1334419610}
+{'word': ':FufDir', 'time': 1334419570}
+{'word': ':FufMruFile', 'time': 1334419559}
+{'word': ':noh', 'time': 1334419507}
+{'word': ':Bigger', 'time': 1334419401}
+{'word': ':Smaller', 'time': 1334419391}
+{'word': ':help gv', 'time': 1334419309}
+{'word': ':bp', 'time': 1334418961}
+{'word': ':help ~', 'time': 1334418497}
+{'word': ':tabprev', 'time': 1334418393}
+{'word': ':help unimpaired.txt', 'time': 1334417743}
+{'word': ':help unimpaired', 'time': 1334417723}
+{'word': ':vimgrep /e/ **/*.', 'time': 1334413293}
+{'word': ':PowerlineReloadColorscheme', 'time': 1334413145}
+{'word': ':help messages', 'time': 1334412889}
+{'word': ':help echo', 'time': 1334412828}
+{'word': ':e! ~/.vim/.vimrc', 'time': 1334412517}
+{'word': ':help za', 'time': 1334412419}
+{'word': ':cd %:p:h', 'time': 1334409755}
+{'word': ':e .zshrc', 'time': 1334375250}
+{'word': ':Bclose', 'time': 1334372424}
+{'word': ':1,300 bd!', 'time': 1334361548}
+{'word': ':e tellone.zsh-theme', 'time': 1334358932}
+{'word': ':cd ..', 'time': 1334358070}
+{'word': ':cd gitrepos/current_config/zsh_rcs/', 'time': 1334358045}
+{'word': ':e compdefs/_gem', 'time': 1334350622}
+{'word': ':''<,''>noh', 'time': 1334350606}
+{'word': ':e bin/spectrum', 'time': 1334344024}
+{'word': ':e ~/bin/flib', 'time': 1334343958}
+{'word': ':', 'time': 1334244610}
+{'word': ':Gwrite', 'time': 1334177660}
+{'word': ':Gread', 'time': 1334177632}
+{'word': ':Rtree', 'time': 1334177186}
+{'word': ':Gdiff', 'time': 1334167930}
+{'word': ':cd Public/', 'time': 1334089756}
+{'word': ':help rake', 'time': 1334089655}
+{'word': ':colorscheme lucius', 'time': 1334084111}
+{'word': ':execute "Setlocalcolors " . input("Enter local colorscheme [" . (exists("b:colorscheme") ? b:colorscheme : "NONE") . "]:  ")', 'time': 1334084099}
+{'word': ':TlistOpen', 'time': 1334083916}
+{'word': ':set spell', 'time': 1334083848}
+{'word': ':call tskeleton#ExpandBitUnderCursor("n", ''standard'')', 'time': 1334081001}
+{'word': ':TSkeletonBitReset', 'time': 1334080997}
+{'word': ':tabnew', 'time': 1334080372}
+{'word': ':call atplib#motion#StartVisualMode(''V'')', 'time': 1334079786}
+{'word': ':call FoldChange()', 'time': 1334079697}
+{'word': ':TEX', 'time': 1334079668}
+{'word': ':echo &foldmethod', 'time': 1334079520}
+{'word': ':echo foldmethod', 'time': 1334079509}
+{'word': ':TSkeletonSetup feat.feature', 'time': 1334061889}
+{'word': ':e features/showtime_descriptions.feature', 'time': 1334061859}
+{'word': ':cd spec_me/bdd_learn/', 'time': 1334061443}
+{'word': ':Bundle', 'time': 1334060348}
+{'word': ':help bundler', 'time': 1334060287}
+{'word': ':help bunler', 'time': 1334060282}
+{'word': ':help twitvim', 'time': 1334051370}
+{'word': ':q:', 'time': 1334051314}
+{'word': ':e ~/buffer', 'time': 1334051022}
+{'word': ':help viminfo', 'time': 1334050701}
+{'word': ':help rails', 'time': 1334049085}
+{'word': ':Bundle install', 'time': 1333976251}
+{'word': ':call atplib#compiler#SyncTex("", 1)', 'time': 1333921281}
+{'word': ':View', 'time': 1333919349}
+{'word': ':set ft=config', 'time': 1333724020}
+{'word': ':set ft=gitconfig', 'time': 1333723997}
+{'word': '/conf', 'time': 1333723821}
+{'word': ':set ft=git', 'time': 1333723565}
+{'word': ':colorscheme mycasts', 'time': 1333721565}
+{'word': ':colorscheme oceandeep', 'time': 1333721551}
+{'word': ':colorscheme inkpot', 'time': 1333721538}
+{'word': ':colorscheme darkblue', 'time': 1333721530}
+{'word': ':colorscheme vividchalk', 'time': 1333721485}
+{'word': ':cd spec_me/codebreaker/', 'time': 1333638901}
+{'word': ':e', 'time': 1333544393}
+{'word': ':%s/exact/nr', 'time': 1333544037}
+{'word': '/%s/exact/nr', 'time': 1333544014}
+{'word': ':sav spec/codebreaker/marker_spec.rb', 'time': 1333539887}
+{'word': ':sav spec/spec_helper.rb', 'time': 1333539841}
+{'word': ':e spec/codebreaker/marker_spec.rb', 'time': 1333539803}
+{'word': ':cd', 'time': 1333539628}
+{'word': ':Cd', 'time': 1333539626}
+{'word': ':e lib/marker.rb', 'time': 1333539424}
+{'word': ':cd .config/', 'time': 1333522684}
+{'word': ':e spec/marker_spec.rb', 'time': 1333485883}
+{'word': ':cd codebreaker/', 'time': 1333485352}
+{'word': ':cd spec_me/', 'time': 1333485040}
+{'word': ':NERDTreeFromBookmark me', 'time': 1333484904}
+{'word': ':NERDTreeFromBookmark', 'time': 1333484901}

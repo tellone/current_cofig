@@ -1,0 +1,21 @@
+#!/bin/bash
+#Author: Filip Pettersson
+#Purpose: backing up vital files
+#
+
+if [[ "$EUID" = 0 ]] then;
+    echo "Don't run this as root"
+    exit 1
+fi
+
+b_host="/home/tellone/Dropbox/`date +%F`"
+if [[ -d "$b_host"  ]]; then
+    rm -r "$b_host"
+fi
+mkdir $b_host
+
+proj_dirs= "/home/tellone/my_Projects /home/tellone/Public /home/tellone/bin" 
+
+
+$proj_dirs|gzip -c|$b_host 'gzip -cd|tar xpf -' 2>/dev/null
+

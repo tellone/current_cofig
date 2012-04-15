@@ -1,0 +1,6 @@
+p=[]
+title();
+xlabel();
+ylabel();
+p=plot();
+

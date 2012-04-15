@@ -1,0 +1,34 @@
+#!/bin/bash
+#Author: tellone
+#Purpose: opening quckrefs stored in 
+#the ~/Documents/quickref folder
+
+
+if [[ "$#" -ne 1 ]]; then
+    echo "this script requirs 1 inputparameter"
+    exit 1
+fi
+
+refPath="/home/tellone/Documents/quickrefs"
+ref="$1.pdf"
+case "$1" in
+    "py")
+        evince "$refPath/py_ref.pdf" & 2>/dev/null;;
+    "bash")
+        evince "$refPath/bash_ref.pdf" & &>/dev/null;;
+    
+   "html")
+       evince "$refPath/HTML-XHTML.pdf" & &>/dev/null;;
+    *) 
+        if [[ -r "$refPath/$ref"  ]]; then
+            evince "$refPath/$ref"& &>/dev/null
+        else
+            echo "no such file or file not readable"
+            exit 1
+        fi ;;
+esac
+exit 0
+
+#End
+
+ 
