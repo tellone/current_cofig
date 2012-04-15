@@ -22,7 +22,8 @@ alias ru='noglob ru'
 alias lh="ls -d .*/" 
 alias cdr="cd ../.."
 
-#activateion
+#activtion
+alias sc_mode="source ~/bin/script_mode"
 alias fire='firefox &'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'

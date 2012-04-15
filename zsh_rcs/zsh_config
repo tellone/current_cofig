@@ -9,37 +9,37 @@
 #Purpose: configurations part of the bash shell 
 #
 
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+setopt HASH_CMDS # save cmd location to skip PATH lookup
+setopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom
+# setopt NO_GLOBAL_RCS # ignore /etc/z{sh,profile,login,logout} files
+# setopt NO_AUTO_REMOVE_SLASH # don't remove slashes
+setopt NUMERIC_GLOB_SORT # sort numerically first, before alpha
+#unsetopt NOMATCH # stop ZSH from choking on glob-like strings (e.g. URLs passed to wget)
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+setopt noclobber nonomatch
+setopt completeinword extendedglob
+setopt autocd
 
 #Auto load modules
 autoload -Uz colors && colors
 zmodload -i zsh/complist # colorful listingsh
 zmodload -i zsh/mathfunc
-#zmodload -i zsh/complist
+# zmodload -i zsh/complist
 autoload -U zrecompile
 autoload -U zmv
 autoload -U zsh-mime-setup
 
+#Grep
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
 #Edit command line settings
-bindkey -e
+# bindkey -e
 
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey '\ee' edit-command-line
+# autoload -U edit-command-line
+# zle -N edit-command-line
+# bindkey '\ee' edit-command-line
 
 # quote URLs
 autoload url-quote-magic

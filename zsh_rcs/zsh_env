@@ -63,20 +63,21 @@ setopt EXTENDED_HISTORY # add more info
 # setopt NO_AUTO_MENU
 # setopt BASH_AUTO_LIST
 
-setopt HASH_CMDS # save cmd location to skip PATH lookup
-setopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom
-#setopt NO_GLOBAL_RCS # ignore /etc/z{sh,profile,login,logout} files
-#setopt NO_AUTO_REMOVE_SLASH # don't remove slashes
-setopt NUMERIC_GLOB_SORT # sort numerically first, before alpha
-#unsetopt NOMATCH # stop ZSH from choking on glob-like strings (e.g. URLs passed to wget)
-
-setopt noclobber nonomatch
-setopt completeinword extendedglob
-setopt autocd
-
 if [[ $ZSH_VERSION == 4.<->* ]]; then
     setopt histexpiredupsfirst histreduceblanks
 fi
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+fi
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 PERIOD=3600

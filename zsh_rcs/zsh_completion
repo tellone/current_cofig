@@ -2,7 +2,7 @@
 # Use modern completion system
 # put in more of fpath here cofig1
 # cofig1 is defined in .zshrc file
-fpath=($fpath ~/.rvm/scripts/zsh/Completion $cofig1/compdefs)
+#fpath=($fpath ~/.rvm/scripts/zsh/Completion $cofig1/compdefs)
 zstyle ':completion:*' add-space true
 zstyle -e ':completion:*' completer '
         if [[ $_last_try != "$HISTNO$BUFFER$CURSOR" ]]; then
