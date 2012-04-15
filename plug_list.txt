@@ -12,6 +12,7 @@ TaskList.vim
 tlib_vim
 tskeleton_vim
 vim-bundler
+vim-colors-solarized
 vim-commentary
 vim-cucumber
 vim-fugitive
