@@ -1,0 +1,100 @@
+ ,v
+rm ~/.oh-my-zsh/themes/tellone.zsh-theme,V
+/,v
+,V
+if [ -f $cofig1/aliases ]; then,V
+fi,V
+    echo "No file bash_config found",V
+else,V
+    . $cofig1/bash_completion,V
+if [ -f $cofig1/bash_completion ]; then,V
+map _ dd2kp,V
+map - ddp,V
+  set stal=2,V
+vnoremap <silent> gv :call VisualSearch('gv')<CR>,V
+" When you press gv you vimgrep after the selected text,V
+vnoremap <silent> # :call VisualSearch('b')<CR>,V
+vnoremap <silent> * :call VisualSearch('f')<CR>,V
+""In visual mode when you press * or # to search for the current selection,V
+i,V
+[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm",V
+,v
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*),V
+setopt HASH_CMDS # save cmd location to skip PATH lookupsetopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom#setopt NO_GLOBAL_RCS # ignore /etc/z{sh,profile,login,logout} files#setopt NO_AUTO_REMOVE_SLASH # don't remove slashessetopt NUMERIC_GLOB_SORT # sort numerically first, before alpha#unsetopt NOMATCH # stop ZSH from choking on glob-like strings (e.g. URLs passed to wget)setopt noclobber nonomatchsetopt completeinword extendedglobsetopt autocd,v
+if [ -x /usr/bin/dircolors ]; then    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"    alias ls='ls --color=auto'    #alias dir='dir --color=auto'    #alias vdir='vdir --color=auto'fi# some more ls aliasesalias ll='ls -alF'alias la='ls -A'alias l='ls -CF',v
+local vccolor="$fg_bold[black]",V
+# Example aliases# alias zshconfig="mate ~/.zshrc"# alias ohmyzsh="mate ~/.oh-my-zsh"# Set to this to use case-sensitive completion# CASE_SENSITIVE="true",V
+if [ -f ~/buffer ]; then    rm ~/bufferfigvim(){ /usr/bin/gvim -f "$@" & true; },v
+setopt prompt_subst,V
+RPS1="${return_code}",V
+local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})",V
+# ZSH Theme - Preview: http://gyazo.com/8becc8a7ed5ab54a0262a470555c3eed.png,V
+",v
+${vc_info}:,v
+local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}',V
+╰─%B$%b ",V
+ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}",V
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹",V
+  fi,V
+    rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}',V
+  if which rbenv &> /dev/null; then,V
+  rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}',V
+if which rvm-prompt &> /dev/null; then,V
+local rvm_ruby='',V
+local user_host='%{$terminfo[bold]$fg[yellow]%}%n%{$reset_color%}',V
+# ZSH Theme - Preview: http://gyazo.com/8becc8a7ed5ab54a0262a470555c3eed.pnglocal return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'local rvm_ruby=''if which rvm-prompt &> /dev/null; then  rvm_ruby='%{$fg[red]%}‹$(rvm-prompt i v g)›%{$reset_color%}'else  if which rbenv &> /dev/null; then    rvm_ruby='%{$fg[red]%}‹$(rbenv version | sed -e "s/ (set.*$//")›%{$reset_color%}'  fifilocal git_branch='$(git_prompt_info)%{$reset_color%}'PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}╰─%B$%b "RPS1="${return_code}"ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}",V
+compdef gem#autoload# gem zsh completion, based on homebrew completion_gem_installed() {  installed_gems=(`gem list --local --no-versions`)}local -a _1st_arguments_1st_arguments=(  'cert:Manage RubyGems certificates and signing settings'  'check:Check installed gems'  'cleanup:Clean up old versions of installed gems in the local repository'  'contents:Display the contents of the installed gems'  'dependency:Show the dependencies of an installed gem'  'environment:Display information about the RubyGems environment'  'fetch:Download a gem and place it in the current directory'  'generate_index:Generates the index files for a gem server directory'  'help:Provide help on the `gem` command'  'install:Install a gem into the local repository'  'list:Display gems whose name starts with STRING'  'lock:Generate a lockdown list of gems'  'mirror:Mirror a gem repository'  'outdated:Display all gems that need updates'  'owner:Manage gem owners on RubyGems.org.'  'pristine:Restores installed gems to pristine condition from files located in the gem cache'  'push:Push a gem up to RubyGems.org'  'query:Query gem information in local or remote repositories'  'rdoc:Generates RDoc for pre-installed gems'  'search:Display all gems whose name contains STRING'  'server:Documentation and gem repository HTTP server'  'sources:Manage the sources and cache file RubyGems uses to search for gems'  'specification:Display gem specification (in yaml)'  'stale:List gems along with access times'  'uninstall:Uninstall gems from the local repository'  'unpack:Unpack an installed gem to the current directory'  'update:Update the named gems (or all installed gems) in the local repository'  'which:Find the location of a library file you can require')local expllocal -a gems installed_gems_arguments \  '(-v --version)'{-v,--version}'[show version]' \  '(-h --help)'{-h,--help}'[show help]' \  '*:: :->subcmds' && return 0if (( CURRENT == 1 )); then  _describe -t commands "gem subcommand" _1st_arguments  returnficase "$words[1]" in  list)      if [[ "$state" == forms ]]; then        _gem_installed        _requested installed_gems expl 'installed gems' compadd -a installed_gems      fi ;;  uninstall|update)    _gem_installed    _wanted installed_gems expl 'installed gems' compadd -a installed_gems ;;esac,v
+{,v
+${vcinfo},v
+',v
+ %~%{$reset_color%}',v
+setopt prompt_substlocal usercolor="$fg_bold[yellow]"local dircolor="$fg_bold[blue]"local vccolor="$fg_bold[black]"case "$TERM" in    screen*)    usercolor=$'\e[38;5;184m'    dircolor=$'\e[38;5;27m'    ;;    xterm*|rxvt-unicode)    usercolor=$'\e[93m'    dircolor=$'\e[94m'    ;;esac[ $UID = '0' ] && usercolor="$fg_bold[white]"reset_color=$'\e[00m'export PS1='%{$vccolor%}$(vcprompt)%{$usercolor%}%n:%{$dircolor%}%~:$%{$reset_color%} ',v
+#! /bin/zsh,V
+    alias egrep='egrep --color=auto',V
+    alias fgrep='fgrep --color=auto',V
+    alias grep='grep --color=auto',V
+e,v
+, that song again. It keeps sneaking up on me. One of those you just start humming without knowing the words. Even in my worn out and uneasy state,v
+, I could not get the tune out of my head. If only I wasn't headed for a job interview and to make things worse I'm a nervous hummer. I hadn't slept well last night,v
+h,v
+  pending # express the regexp above with the code you wish you had,V
+  @movie.update_attribute(:showtime_date, Date.parse(date)),V
+  pending # express thedregexp above with the code you wish you had,V
+ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd,V
+You can implement step definitions for undefined steps with these snippets:,V
+Using the wip profile...#Creation Date: 2012-04-10Feature: showtime descriptions  So that a I can fit movies the tv to my  scheduel. A moive fan want accurate time tables  @wip  Scenario: show minutes for time withour seconds                       # features/showtime_descriptions.feature:9    Given a movie listing                                               # features/showtime_descriptions.feature:10    When I set the show time to "2007-10-10" at "2:15pm"                # features/showtime_descriptions.feature:11    Then the showtime describtion shoud say "October 10 2007 at 2:15pm" # features/showtime_descriptions.feature:121 scenario (1 undefined)3 steps (3 undefined)0m0.354s,v
+    When I ,V
+    When I set the show time to "2007-10-10" at "2:15 pm",V
+   #Scenario Outline:    #Gvien "<code>"    #when "<other code>"    #then "more code"  ,v
+   ,V
+    And,V
+    #############################################,V
+#Feature Name: showtime_descriptions.feature,V
+#Creator: Filip Pettersson,V
+group :test do,V
+gem "cucumber-rails",V
+  gem "cucumber-rails",V
+		let twitvim_token_file = "/etc/.twitvim.token",V
+let g:fuf_dataDir = '~/.vim/misc/vim-fuf-data'let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|aux|zip|rar|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)',V
+  autocmd FileType ruby setlocal tw=79 isfname+=: comments=:#\,V
+let pymode_lint_checker = "pep8",V
+"PyMode,V
+  au FileType python setlocal ai et sta tw=79 sw=4 sts=4,V
+  au FileType python setlocal linebreak nolist,V
+ setlocal ai et sta sw=2 sts=2,v
+  au FileType python syn keyword pythonDecorator self,V
+"{{{2 " => Python sectionaugroup PYset  au!  au FileType python syn keyword pythonDecorator self  au FileType python setlocal linebreak nolist  au FileType python setlocal ai et sta tw=79 sw=4 sts=4augroup END"PyModelet pymode_lint_checker = "pep8",V
+"rails,V
+"PyModelet pymode_lint_checker = "pep8",v
+  au BufWrite *.py :call DeleteTrailingWS(),V
+let g:rails_menu=1,V
+  end,V
+# Bundle gems for the local environment. Make sure to,V
+# put test-only gems in this group so their generators,V
+# and rake tasks are available in development mode:,V
+ end,V
+# group :development, :test do#   gem 'webrat'#,v
+  gem "rspec-rails",">=2.0.0",V
+# End of lines added by compinstallcompdef 'local expl; _description files expl "picture file"; _files "$expl[@]" -g "*.(#i)(png|gif|jpeg|jpg|tiff|tif|pbm|pgm|ppm|xbm|xpm|ras(|t)|tga|rle|rgb|bmp|pcx|fits|pm)(-.)"' feh,v
+zstyle ':completion:*' users tpope root $USER ${watch/notme/},V
+# End of lines added by compinstallcompdef 'local expl; _description files expl "picture file"; _files "$expl[@]" -g "*.(#i)(png|gif|jpeg|jpg|tiff|tif|pbm|pgm|ppm|xbm|xpm|ras(|t)|tga|rle|rgb|bmp|pcx|fits|pm)(-.)"' feh,V
