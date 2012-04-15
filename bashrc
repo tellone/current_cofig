@@ -22,7 +22,6 @@ else
     echo "No file bash_config found"
 fi
 
-
 if [ -f $cofig1/aliases ]; then
     . $cofig1/aliases
 else
