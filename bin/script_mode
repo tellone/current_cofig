@@ -1,6 +1,4 @@
 #!/bin/zsh
-#
-#
 #Created: 2012-03-31
 #Maintainer: Filip Pettersson
 #Email: filip.diloom@gmail.com
@@ -18,7 +16,7 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-local user_host='%{$terminfo[bold]$fg[yellow]%}%n@%m%{$reset_color%}'
+local user_host='%{$terminfo[bold]$fg[yellow]%}%n%{$fg[green]%}@%m%{$reset_color%}'
 local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
 local rvm_ruby=''
 if which rvm-prompt &> /dev/null; then

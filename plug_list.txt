@@ -7,6 +7,7 @@ localColorSchemes.vim
 matlab.vim
 nerdtree
 python-mode
+syntastic
 taglist.vim
 TaskList.vim
 tlib_vim

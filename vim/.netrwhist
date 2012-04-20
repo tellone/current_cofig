@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/tellone/.vim/bundle/vim-colors-solarized/autoload'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/tellone/.gem'
 let g:netrw_dirhist_2='/home/tellone/gitrepos/current_config/zsh_rcs'
-let g:netrw_dirhist_3='/home/tellone/.oh-my-zsh'
-let g:netrw_dirhist_4='/home/tellone/gitrepos/current_config/zsh_rcs'
-let g:netrw_dirhist_5='/home/tellone/.oh-my-zsh'
-let g:netrw_dirhist_6='/home/tellone/gitrepos/current_config/zsh_rcs'
-let g:netrw_dirhist_7='/home/tellone/gitrepos/current_config/.git'
+let g:netrw_dirhist_3='/home/tellone/Public/myres'

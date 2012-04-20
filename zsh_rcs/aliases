@@ -30,3 +30,13 @@ alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/gitrepos/current_config/zsh_rcs"
 
+#Paths typsets
+
+if [ -d "$HOME/Documents" ]; then
+    typeset docs="$HOME/Documents"
+    : ~docs
+fi
+if [ -d "$HOME/keep/ebooks" ]; then
+    typeset books="$HOME/keep/ebooks"
+    : ~books
+fi

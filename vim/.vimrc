@@ -21,7 +21,7 @@ set history=700
 filetype plugin indent on
 
 "to avoid confusion tell vim which shell you use
-set shell=/bin/zsh
+set shell=/bin/bash
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -41,11 +41,13 @@ let g:maplocalleader = ";"
 nmap <leader>w :w!<cr>
 
 " Fast editing of the .vimrc
-nmap <leader>e :e! ~/.vim/.vimrc<cr>
+nmap <leader>ee :e! ~/.vim/.vimrc<cr>
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost /home/tellone/.vim/.vimrc source /home/tellone/.vim/.vimrc
-
+augroup vimrcs
+  au!
+  au bufwritepost /home/tellone/.vim/.vimrc source /home/tellone/.vim/.vimrc
+augroup END
 "get the viminfo-file out of the way
 :set viminfo +=n$HOME/.vim/misc/cens/.viminfo
 
@@ -175,39 +177,21 @@ function! FoldChange()
   echo &foldmethod
 endfunction
 
-
-function! CmdLine(str)
-    exe "menu Foo.Bar :" . a:str
-    emenu Foo.Bar
-    unmenu Foo
+function! QuickfixToggle()
+  if g:quickfix_is_open
+    cclose
+    let g:quickfix_is_open = 0
+  else
+    copen
+    let g:quickfix_is_open = 1
+  endif
 endfunction
-function! VisualSearch(direction) range
-"" From an idea by Michael Naumann
-"Preforms visaul search for reg in direction of choice
-    let l:saved_reg = @"
-    execute "normal! vgvy"
-
-    let l:pattern = escape(@", '\\/.*$^~[]')
-    let l:pattern = substitute(l:pattern, "\n$", "", "")
-
-    if a:direction == 'b'
-        execute "normal ?" . l:pattern . "^M"
-    elseif a:direction == 'gv'
-        call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.')
-    elseif a:direction == 'f'
-        execute "normal /" . l:pattern . "^M"
-    endif
-
-    let @/ = l:pattern
-    let @" = l:saved_reg
-endfunction
-
-"Delete trailing white space, useful for Python ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
+" "Delete trailing white space, useful for Python ;)
+" func! DeleteTrailingWS()
+"   exe "normal mz"
+"   %s/\s\+$//ge
+"   exe "normal `z"
+" endfunc
 
 function! JavaScriptFold()
     setl foldmethod=syntax
@@ -245,7 +229,10 @@ endfunction
 " => Colors and Fonts
 """""""""""""""""""""""""""""""
 "{{{
-autocmd GUIEnter *  call s:initialize_font()
+augroup Guiset
+  au!
+  au GUIEnter *  call s:initialize_font()
+augroup END
 
 command! -bar -nargs=0 Bigger :let &guifont = substitute(&guifont,'\d\+$','\=submatch(0)+1','')
 command! -bar -nargs=0 Smaller :let &guifont = substitute(&guifont,'\d\+$','\=submatch(0)-1','')
@@ -363,13 +350,14 @@ let g:DrChipTopLvlMenu= "Plugin."
 
 " => Cope
 " Do :help cope if you are unsure what cope is. It's super useful!
-nmap <leader>cc :botright cope<cr>
+let g:quickfix_is_open = 0
+nmap <leader>cc :call QuickfixToggle()<cr>
 map <leader>cn :cn<cr>
 map <leader>cp :cp<cr>
 nmap <leader>cl :ccl<cr>
 
 "=> Foldchange
-nmap <leader>z :call FoldChange()<cr>
+nmap <leader>zz :call FoldChange()<cr>
 
 "=> FUF
 let g:fuf_modesDisable = []
@@ -388,13 +376,19 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 nmap <leader>o :BufExplorer<cr>
 
-"NerdTree
+"
+" => NerdTree
 nmap <leader>n :NERDTree<cr>
 let NERDTreeShowHidden=1
 let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 
 " => Powerbar
 "let g:Powerline_symbols = 'fancy'
+" =>
+
+let g:syntastic_mode_map = { 'mode': 'active',
+      \ 'active_filetypes': ['ruby', 'html', 'javascript', 'php'],
+      \ 'passive_filetypes': ['python'] }
 
 " => Tag List
 nmap <leader>l :TlistOpen<cr>
@@ -507,15 +501,18 @@ augroup FTOptions " {{{2
   autocmd FileType pdf  setlocal foldmethod=syntax foldlevel=1
   autocmd FileType matlab,text,txt setlocal tw=78 linebreak nolist
   autocmd FileType text,txt colorscheme lucius
+  autocmd FileType markdown colorscheme jdlight 
   autocmd FileType vbnet        runtime! indent/vb.vim
   autocmd FileType vim  setlocal ai et sta sw=2 sts=2 keywordprg=:help
 augroup END "}}}2
 
 "{{{2 " => Ruby and rails section
+
 augroup RubySetter
   au!
   au FileType ruby setlocal ai et sta sw=2 sts=2
   au FileType ruby setlocal tw=79 isfname+=: comments=:#\
+  au FileType ruby iabbr <buffer> bpry binding.pry
 augroup END
 
 "Rails settings
@@ -557,17 +554,18 @@ augroup END
 " Remove the Windows ^M - when the encodings gets messed up
 nnoremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
+nnoremap <leader>j dd.
 "Quickly open a buffer for scripbble
 nmap <leader>q :e ~/buffer<cr>
-au BufRead,BufNewFile ~/buffer iab <buffer> xh1 ===========================================
-
 nnoremap <leader>bb :OpenURL <cfile><CR>
 
 nmap <leader>pp :setlocal paste!<cr>
 
+nnoremap <leader>" viw<esc>a'<esc>hbi'<esc>lel
 
 " => General Abbrevs "{{{2
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+iab @@f filip.diloom@gmail.com
 "}}}2
 
-"}}}
+"}}} 

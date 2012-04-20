@@ -10,7 +10,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name = "jhlight"
+let colors_name = "jdlight"
 
 hi Normal         guifg=#000000 guibg=#dddddd gui=none ctermfg=black    ctermbg=grey     cterm=none
 

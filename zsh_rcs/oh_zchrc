@@ -24,6 +24,19 @@ fi
 
 gvim(){ /usr/bin/gvim -f "$@" & true; }
 
+newrails() { 
+    wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"
+    if [ $# == 1 ]; then
+        rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql
+    elif [ $# == 2 ]; then
+        rails new $1 -m "$wizpath/new_rails$2.rb" -T
+    else
+        echo "This function takes one or two inputs"
+        exit 1
+    fi
+    cd $1
+    unset wizpath
+}
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -39,7 +52,7 @@ gvim(){ /usr/bin/gvim -f "$@" & true; }
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump git ruby gems rvm rake python rails3 terminator)
+plugins=(autojump git ruby gems rvm rake python pip terminator thor)
 
 source $ZSH/oh-my-zsh.sh
 source $cofig1/aliases

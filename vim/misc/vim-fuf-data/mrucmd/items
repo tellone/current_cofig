@@ -1,65 +1,180 @@
-{'word': ':wq', 'time': 1334532062}
-{'word': ':q!', 'time': 1334532040}
-{'word': ':q', 'time': 1334532037}
-{'word': ':w!', 'time': 1334531899}
-{'word': ':Wq', 'time': 1334505784}
-{'word': ':NERDTree', 'time': 1334497762}
-{'word': ':bn', 'time': 1334497701}
+{'word': ':w!', 'time': 1334954515}
+{'word': ':bn', 'time': 1334954513}
+{'word': ':tabnext', 'time': 1334954507}
+{'word': ':tabprev', 'time': 1334954493}
+{'word': ':bp', 'time': 1334954477}
+{'word': ':e features/step_definitions/links_collector_steps.rb', 'time': 1334954148}
+{'word': ':cd %:p:h', 'time': 1334954115}
+{'word': ':NERDTree', 'time': 1334952647}
+{'word': ':help ctrl-f', 'time': 1334952621}
+{'word': ':help ctrl-q', 'time': 1334952607}
+{'word': ':help wincmd', 'time': 1334952575}
+{'word': ':help ctrl-w_w', 'time': 1334952543}
+{'word': ':e! ~/.vim/.vimrc', 'time': 1334952371}
+{'word': ':FufMruFile', 'time': 1334952351}
+{'word': ':call QuickfixToggle()', 'time': 1334952340}
+{'word': ':wq', 'time': 1334952330}
+{'word': ':noh', 'time': 1334952236}
+{'word': ':setlocal foldcolumn=0', 'time': 1334952062}
+{'word': ':setlocal foldcolumn=1', 'time': 1334952059}
+{'word': ':setlocal foldcolumn=4', 'time': 1334952052}
+{'word': ':q', 'time': 1334951612}
+{'word': ':BufExplorer', 'time': 1334951604}
+{'word': ':ccl', 'time': 1334951599}
+{'word': ':botright cope', 'time': 1334951592}
+{'word': ':call FoldChange()', 'time': 1334951573}
+{'word': ':e mail_form/lib/mail_form/base.rb', 'time': 1334951228}
+{'word': ':e mail_form/lib/mail_form.rb', 'time': 1334951133}
+{'word': ':cd ..', 'time': 1334951081}
+{'word': ':e mail_from_test.rb', 'time': 1334950668}
+{'word': ':TSkeletonSetup feat.feature', 'time': 1334935559}
+{'word': ':e myres/features/links_colloctor.feature', 'time': 1334935546}
+{'word': ':Q', 'time': 1334922697}
+{'word': ':Bundle install', 'time': 1334922626}
+{'word': ':Wq', 'time': 1334922613}
+{'word': ':Bclose', 'time': 1334922483}
+{'word': ':r ~/gitrepos/myProjects/ruby_stuff/rails_wiz/console_init.rb', 'time': 1334913468}
+{'word': ':''<,''>tabprev', 'time': 1334911585}
+{'word': ':cd gogo/', 'time': 1334908385}
+{'word': ':help fuf', 'time': 1334906178}
+{'word': ':help <SID>', 'time': 1334902311}
+{'word': ':source %', 'time': 1334902151}
+{'word': ':.,.+1ccl', 'time': 1334902029}
+{'word': ':tabnew', 'time': 1334901800}
+{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1334901734}
+{'word': ':PowerlineReloadColorscheme', 'time': 1334875583}
+{'word': ':g@', 'time': 1334874714}
+{'word': ':TlistOpen', 'time': 1334874380}
+{'word': ':e job/grep-opp.vim', 'time': 1334874223}
+{'word': ':books', 'time': 1334873950}
+{'word': ':%s@\$HOME/Public@\$wizpath', 'time': 1334870363}
+{'word': ':%s/\\n//g', 'time': 1334844220}
+{'word': ':r http://railswizard.org/13c2f67d8799e95bd6f5.rb', 'time': 1334842065}
+{'word': ':e Public/new_rails2.rb', 'time': 1334842022}
+{'word': ':sav Public/new_rails1.rb', 'time': 1334840263}
+{'word': ':set ft=ruby', 'time': 1334840169}
+{'word': ':e dummy/app/views/index.html.erb', 'time': 1334772105}
+{'word': ':Rtree', 'time': 1334771839}
+{'word': ':Rgenerate controller HomeController', 'time': 1334771705}
+{'word': ':rdoc require', 'time': 1334767393}
+{'word': ':help syntastic', 'time': 1334765594}
+{'word': ':rails plugin new mail_form', 'time': 1334729085}
+{'word': ':1', 'time': 1334729042}
+{'word': ':colorscheme railscasts', 'time': 1334710291}
+{'word': ':colorscheme inkpot', 'time': 1334710253}
+{'word': ':colorscheme darkblue', 'time': 1334710236}
+{'word': ':colorscheme solarized', 'time': 1334710212}
+{'word': ':SyntasticCheck', 'time': 1334706474}
+{'word': ':help align', 'time': 1334705227}
+{'word': ':help :nohlsearch', 'time': 1334703649}
+{'word': ':help magic', 'time': 1334703561}
+{'word': ':q!', 'time': 1334700502}
+{'word': ':e ~/buffer', 'time': 1334700488}
+{'word': ':execute "Setlocalcolors " . input("Enter local colorscheme [" . (exists("b:colorscheme") ? b:colorscheme : "NONE") . "]:  ")', 'time': 1334700328}
+{'word': ':SolarizedOptions', 'time': 1334700266}
+{'word': ':set bg=light', 'time': 1334700190}
+{'word': ':TSkeletonBitReset', 'time': 1334699974}
+{'word': ':ToggleBG', 'time': 1334699766}
+{'word': ':help solarized', 'time': 1334699654}
+{'word': ':e bdd_learn/spec/controllers/movies_controller_spec.rb', 'time': 1334657751}
+{'word': ':cd spec_me/code/simulated_browser/', 'time': 1334657140}
+{'word': ':e step_definitions/SiteIcons_steps.rb', 'time': 1334652153}
+{'word': ':TSkeletonEdit feat.feature', 'time': 1334651625}
+{'word': ':e myres/features/SiteIcons.feature', 'time': 1334651605}
+{'word': ':help rails-:Rabbrev', 'time': 1334649627}
+{'word': ':Rgenerate rspec:install', 'time': 1334643124}
+{'word': ':Rails server', 'time': 1334641762}
+{'word': ':Rake db:migrate', 'time': 1334641603}
+{'word': ':Rabbrev {has_} {has_and_belongs_to_many}', 'time': 1334641192}
+{'word': ':Rabbrev {has_<Tab>} {has_and_belongs_to_many}', 'time': 1334641184}
+{'word': ':Rabbrev {has_<tab>} {has_and_belongs_to_many}', 'time': 1334641145}
+{'word': ':help Rabbrev', 'time': 1334641090}
+{'word': ':Rabbrev', 'time': 1334641075}
+{'word': ':Rabbrev has_<tab> has_and_belongs_to_many', 'time': 1334641057}
+{'word': ':help rails', 'time': 1334640817}
+{'word': ':TSkeletonBit', 'time': 1334640665}
+{'word': ':Bigger', 'time': 1334635481}
+{'word': ':Smaller', 'time': 1334635481}
+{'word': ':help NERDTree', 'time': 1334635135}
+{'word': ':RDmodel genre name:string', 'time': 1334626224}
+{'word': ':Git add .', 'time': 1334626101}
+{'word': ':Git add', 'time': 1334626096}
+{'word': ':Git', 'time': 1334626086}
+{'word': ':git', 'time': 1334626083}
+{'word': ':Gcommit', 'time': 1334626055}
+{'word': ':e genre_steps.rb', 'time': 1334625985}
+{'word': ':Rake cucumber', 'time': 1334625694}
+{'word': ':e bdd_learn/features/Display_genras.feature', 'time': 1334625350}
+{'word': ':r ../Gemjo', 'time': 1334621946}
+{'word': ':bundle', 'time': 1334619860}
+{'word': ':visual', 'time': 1334617355}
+{'word': ':', 'time': 1334617348}
+{'word': ':ls', 'time': 1334617343}
+{'word': ':help fugitive', 'time': 1334612290}
+{'word': ':Gwrite', 'time': 1334612247}
+{'word': ':helpg(undo)', 'time': 1334599013}
+{'word': ':helpg(undo sequence)', 'time': 1334598998}
+{'word': ':help helpg', 'time': 1334598881}
+{'word': ':helpg', 'time': 1334598875}
+{'word': '/undo', 'time': 1334598714}
+{'word': ':help normal', 'time': 1334598679}
+{'word': ':help :helpgrep', 'time': 1334598052}
+{'word': ':help :execute', 'time': 1334597438}
+{'word': '/String', 'time': 1334570779}
+{'word': ':help function', 'time': 1334570765}
+{'word': ':help i_CTRL-V', 'time': 1334570634}
+{'word': ':help expr-quote', 'time': 1334570466}
+{'word': ':help expt-quote', 'time': 1334570460}
+{'word': ':echom "foo^@bar"', 'time': 1334570421}
+{'word': ':echo "foo^@bar"', 'time': 1334570402}
+{'word': ':echo "got\nbar"', 'time': 1334570380}
+{'word': ':echom "foo\\bar"', 'time': 1334570362}
+{'word': ':echom foo\\bar"', 'time': 1334570337}
+{'word': ':help return', 'time': 1334562100}
+{'word': ':help E124', 'time': 1334562056}
+{'word': ':help call', 'time': 1334561964}
+{'word': ':help expr4', 'time': 1334554661}
+{'word': ':help ''ignorecase''', 'time': 1334554608}
+{'word': ':help internal-variables', 'time': 1334553982}
+{'word': ':help execute', 'time': 1334547629}
+{'word': ':help omap', 'time': 1334547185}
+{'word': ':help :map-local', 'time': 1334544676}
+{'word': ':help L', 'time': 1334543981}
+{'word': ':help $MYVIMRC', 'time': 1334542474}
+{'word': ':colorscheme jdlight', 'time': 1334542392}
+{'word': ':set ft=zsh', 'time': 1334541455}
 {'word': ':%s/zsh/bash/g', 'time': 1334497495}
-{'word': ':tabnext', 'time': 1334496792}
 {'word': ':.q', 'time': 1334496638}
-{'word': ':Q', 'time': 1334457785}
-{'word': ':set ft=zsh', 'time': 1334457613}
 {'word': ':FufBuffer', 'time': 1334419620}
 {'word': ':fuf', 'time': 1334419610}
 {'word': ':FufDir', 'time': 1334419570}
-{'word': ':FufMruFile', 'time': 1334419559}
-{'word': ':noh', 'time': 1334419507}
-{'word': ':Bigger', 'time': 1334419401}
-{'word': ':Smaller', 'time': 1334419391}
 {'word': ':help gv', 'time': 1334419309}
-{'word': ':bp', 'time': 1334418961}
 {'word': ':help ~', 'time': 1334418497}
-{'word': ':tabprev', 'time': 1334418393}
 {'word': ':help unimpaired.txt', 'time': 1334417743}
 {'word': ':help unimpaired', 'time': 1334417723}
 {'word': ':vimgrep /e/ **/*.', 'time': 1334413293}
-{'word': ':PowerlineReloadColorscheme', 'time': 1334413145}
 {'word': ':help messages', 'time': 1334412889}
 {'word': ':help echo', 'time': 1334412828}
-{'word': ':e! ~/.vim/.vimrc', 'time': 1334412517}
 {'word': ':help za', 'time': 1334412419}
-{'word': ':cd %:p:h', 'time': 1334409755}
 {'word': ':e .zshrc', 'time': 1334375250}
-{'word': ':Bclose', 'time': 1334372424}
 {'word': ':1,300 bd!', 'time': 1334361548}
 {'word': ':e tellone.zsh-theme', 'time': 1334358932}
-{'word': ':cd ..', 'time': 1334358070}
 {'word': ':cd gitrepos/current_config/zsh_rcs/', 'time': 1334358045}
 {'word': ':e compdefs/_gem', 'time': 1334350622}
 {'word': ':''<,''>noh', 'time': 1334350606}
 {'word': ':e bin/spectrum', 'time': 1334344024}
 {'word': ':e ~/bin/flib', 'time': 1334343958}
-{'word': ':', 'time': 1334244610}
-{'word': ':Gwrite', 'time': 1334177660}
 {'word': ':Gread', 'time': 1334177632}
-{'word': ':Rtree', 'time': 1334177186}
 {'word': ':Gdiff', 'time': 1334167930}
 {'word': ':cd Public/', 'time': 1334089756}
 {'word': ':help rake', 'time': 1334089655}
 {'word': ':colorscheme lucius', 'time': 1334084111}
-{'word': ':execute "Setlocalcolors " . input("Enter local colorscheme [" . (exists("b:colorscheme") ? b:colorscheme : "NONE") . "]:  ")', 'time': 1334084099}
-{'word': ':TlistOpen', 'time': 1334083916}
 {'word': ':set spell', 'time': 1334083848}
 {'word': ':call tskeleton#ExpandBitUnderCursor("n", ''standard'')', 'time': 1334081001}
-{'word': ':TSkeletonBitReset', 'time': 1334080997}
-{'word': ':tabnew', 'time': 1334080372}
 {'word': ':call atplib#motion#StartVisualMode(''V'')', 'time': 1334079786}
-{'word': ':call FoldChange()', 'time': 1334079697}
 {'word': ':TEX', 'time': 1334079668}
 {'word': ':echo &foldmethod', 'time': 1334079520}
 {'word': ':echo foldmethod', 'time': 1334079509}
-{'word': ':TSkeletonSetup feat.feature', 'time': 1334061889}
 {'word': ':e features/showtime_descriptions.feature', 'time': 1334061859}
 {'word': ':cd spec_me/bdd_learn/', 'time': 1334061443}
 {'word': ':Bundle', 'time': 1334060348}
@@ -67,10 +182,7 @@
 {'word': ':help bunler', 'time': 1334060282}
 {'word': ':help twitvim', 'time': 1334051370}
 {'word': ':q:', 'time': 1334051314}
-{'word': ':e ~/buffer', 'time': 1334051022}
 {'word': ':help viminfo', 'time': 1334050701}
-{'word': ':help rails', 'time': 1334049085}
-{'word': ':Bundle install', 'time': 1333976251}
 {'word': ':call atplib#compiler#SyncTex("", 1)', 'time': 1333921281}
 {'word': ':View', 'time': 1333919349}
 {'word': ':set ft=config', 'time': 1333724020}
@@ -79,8 +191,6 @@
 {'word': ':set ft=git', 'time': 1333723565}
 {'word': ':colorscheme mycasts', 'time': 1333721565}
 {'word': ':colorscheme oceandeep', 'time': 1333721551}
-{'word': ':colorscheme inkpot', 'time': 1333721538}
-{'word': ':colorscheme darkblue', 'time': 1333721530}
 {'word': ':colorscheme vividchalk', 'time': 1333721485}
 {'word': ':cd spec_me/codebreaker/', 'time': 1333638901}
 {'word': ':e', 'time': 1333544393}

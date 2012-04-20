@@ -5,18 +5,18 @@
 Feature: <+FILE NAME+><+CURSOR+>
 
 
-  #Scenario:
-    #Gvin
-    #when
-    #then
-    #and
+  # Scenario:
+    # Given
+    # When
+    # Then
+    # And
 
     #############################################
     
-  #Scenario Outline:
-    #Gvien "<code>"
-    #when "<other code>"
-    #then "more code"
+  # Scenario Outline:
+    # Gvien "<code>"
+    # when "<other code>"
+    # then "more code"
 
   
 
