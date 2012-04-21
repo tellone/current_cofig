@@ -1,3 +1,0 @@
-
-menu 90.20 TSke&l.standard :call tskeleton#ExpandBitUnderCursor("n", 'standard')<cr>
-imenu 90.20 TSke&l.standard <c-\><c-o>:call tskeleton#ExpandBitUnderCursor("i", 'standard')<cr>

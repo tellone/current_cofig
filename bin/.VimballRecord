@@ -1,1 +1,0 @@
-twitvim-0.7.3.vmb: call delete('/home/tellone/.vim/plugin/twitvim.vim')|call delete('/home/tellone/.vim/doc/twitvim.txt')

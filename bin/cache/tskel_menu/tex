@@ -1,5 +1,0 @@
-
-menu 90.20 TSke&l.Untitled\ Document :call tskeleton#ExpandBitUnderCursor("n", 'Untitled Document')<cr>
-imenu 90.20 TSke&l.Untitled\ Document <c-\><c-o>:call tskeleton#ExpandBitUnderCursor("i", 'Untitled Document')<cr>
-menu 90.20 TSke&l.verse :call tskeleton#ExpandBitUnderCursor("n", 'verse')<cr>
-imenu 90.20 TSke&l.verse <c-\><c-o>:call tskeleton#ExpandBitUnderCursor("i", 'verse')<cr>
