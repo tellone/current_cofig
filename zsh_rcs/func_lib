@@ -15,14 +15,20 @@ if [ -f ~/buffer ]; then
 fi
 gvim(){ /usr/bin/gvim -f "$@" & true; }
 
-#Ruby scripts
-if [ -x "`which ruby 2>/dev/null`" ]; then
-    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"
-    [ -z gems ] || : ~gems
-fi
 
-[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
-
+newrails() { 
+    wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"
+    if [ $# == 1 ]; then
+        rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql
+    elif [ $# == 2 ]; then
+        rails new $1 -m "$wizpath/new_rails$2.rb" -T
+    else
+        echo "This function takes one or two inputs"
+        exit 1
+    fi
+    cd $1
+    unset wizpath
+}
 #random
 function take {    
     mkdir $1; cd $1

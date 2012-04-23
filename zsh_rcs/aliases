@@ -40,3 +40,9 @@ if [ -d "$HOME/keep/ebooks" ]; then
     typeset books="$HOME/keep/ebooks"
     : ~books
 fi
+
+if [ -d "$HOME/gitrepos/myProjects" ]; then
+    typeset mypro="$HOME/gitrepos/myProjects"
+    : ~mypro
+fi
+

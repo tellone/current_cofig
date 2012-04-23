@@ -14,29 +14,6 @@ else
     echo "WARNING!! no zsh_configuration files"
 fi
 
-#some vim specs
-
-# export $EDITOR='vim'
-
-if [ -f ~/buffer ]; then
-    rm ~/buffer
-fi
-
-gvim(){ /usr/bin/gvim -f "$@" & true; }
-
-newrails() { 
-    wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"
-    if [ $# == 1 ]; then
-        rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql
-    elif [ $# == 2 ]; then
-        rails new $1 -m "$wizpath/new_rails$2.rb" -T
-    else
-        echo "This function takes one or two inputs"
-        exit 1
-    fi
-    cd $1
-    unset wizpath
-}
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -58,5 +35,8 @@ source $ZSH/oh-my-zsh.sh
 source $cofig1/aliases
 source $cofig1/zsh_config
 source $cofig1/zsh_completion
+source $cofig1/func_lib
 # Customize to your needs...
 export PATH=/home/tellone/.rvm/gems/ruby-1.9.2-p290/bin:/home/tellone/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/tellone/.rvm/rubies/ruby-1.9.2-p290/bin:/home/tellone/.rvm/bin:/home/tellone/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2011/bin/i386-linux:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86:/home/tellone/.sm/bin:/home/tellone/.sm/pkg/active/bin:/home/tellone/.sm/pkg/active/sbin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -1,10 +1,64 @@
-  pending # express the regexp above with the code you wish you had,V
-,V
 ,v
+#}}},V
+nmap <buffer> <M-k> <Plug>TexSyntaxMotionBackward,V
+nmap <buffer> <M-j> <Plug>TexSyntaxMotionForward,V
+cno $c e <C-\>eCurrentFileDir("e")<cr>,V
+,V
+augroup localColors,V
+augroup END,V
+au WinEnter * call s:ChangeColors(),V
+if exists("g:loaded_tempcolor") || v:version < 700 || &cp  finishendiflet g:loaded_tempcolor = 1if (!exists("g:colorscheme"))  let g:colorscheme = g:colors_nameendifaugroup localColors  au!  au WinEnter * call s:ChangeColors()  au WinEnter *         \ if exists('g:Powerline_loaded') |          \ sinlent! execute "Pl#ReloadColorscheme" |        \ endif augroup END,V
+  au FileType java iabbr <buffer> pri private,V
+  autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *    \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endifaugroup END " }}}2,V
+" -*- vim -*-" LAST MODIFICATION: "Mon, 22 Sep 2003 10:24:58 Eastern Daylight Time"" (C) 2002 by Salman Halim, <salmanhalim@hotmail.com>" Version 1.2" Usage:"" 1.2:" Added Removewindowcolors  and Setwindowcolors to set  window-specific colors" (along with mappings)."" Original:" Either  call Setlocalcolors  from  a  particular buffer  or  put inside  the" ftplugin file to affect all buffers of a particular filetype."" Call Removelocalcolors  to unlet the local  variable if it exists  (can just" unlet the local variable manually but Remove will change the color scheme if" necessary)." let the  default color  scheme be whatever  is currently in  use if  none is" explicitly specified,V
+public static void main(String[] args) {  System.out.println("come tome me");  },v
+ENV['rvm_ruby_String'],v
+#place , this file in ~/.pryrc,V
+if [ -d "$HOME/keep/ebooks" ]; then    typeset books="$HOME/keep/ebooks"    : ~booksfi,V
+},V
+class MainTest,V
+if exists("loaded_javascript_syntax_checker")    finishendiflet loaded_javascript_syntax_checker = 1let s:supported_checkers = 'jlint'call SyntasticLoadChecker(s:supported_checkers, 'java'),V
+"============================================================================"File:        jslint.vim"Description: Javascript syntax checker - using jslint"Maintainer:  Martin Grenfell <martin.grenfell at gmail dot com>"License:     This program is free software. It comes without any warranty,"             to the extent permitted by applicable law. You can redistribute"             it and/or modify it under the terms of the Do What The Fuck You"             Want To Public License, Version 2, as published by Sam Hocevar."             See http://sam.zoy.org/wtfpl/COPYING for more details.""Tested with jslint 0.1.4."============================================================================if !exists("g:syntastic_javascript_jslint_conf")    let g:syntastic_javascript_jslint_conf = "--white --undef --nomen --regexp --plusplus --bitwise --newcap --sloppy --vars"endiffunction! SyntaxCheckers_javascript_HighlightTerm(error)    let unexpected = matchstr(a:error['text'], 'Expected.*and instead saw \'\zs.*\ze\'')    if len(unexpected) < 1 | return '' | end    return '\V'.split(unexpected, "'")[1]endfunctionfunction! SyntaxCheckers_javascript_GetLocList()    let makeprg = "jslint " . g:syntastic_javascript_jslint_conf . " " . shellescape(expand('%'))    let errorformat='%E %##%n %m,%-Z%.%#Line %l\, Pos %c,%-G%.%#'    return SyntasticMake({ 'makeprg': makeprg, 'errorformat': errorformat, 'defaults': {'bufnr': bufnr("")} })endfunction,V
+"============================================================================"File:        javascript.vim"Description: Figures out which javascript syntax checker (if any) to load"             from the javascript directory."Maintainer:  Martin Grenfell <martin.grenfell at gmail dot com>"License:     This program is free software. It comes without any warranty,"             to the extent permitted by applicable law. You can redistribute"             it and/or modify it under the terms of the Do What The Fuck You"             Want To Public License, Version 2, as published by Sam Hocevar."             See http://sam.zoy.org/wtfpl/COPYING for more details."" Use g:syntastic_javascript_checker option to specify which jslint executable" should be used (see below for a list of supported checkers)." If g:syntastic_javascript_checker is not set, just use the first syntax" checker that we find installed."============================================================================if exists("loaded_javascript_syntax_checker")    finishendiflet loaded_javascript_syntax_checker = 1let s:supported_checkers = ["gjslint", "jslint", "jsl", "jshint"]call SyntasticLoadChecker(s:supported_checkers, 'javascript'),V
+  au FileType ruby iabbr <buffer> bpry binding.pry,V
+  au FileType javascript inoremap <buffer> $r return,V
+  au FileType javascript imap <c-a> alert();<esc>hi,V
+  au FileType javas imap,V
+  au FileType javascript call JavaScriptFold(),V
+  au FileType javascript setl fen nocin ai et sta sw=2 sts=2 ts=2 isk+=$,V
+"{{{2 => JavaScript section augroup JSset  au!  au FileType javascript call JavaScriptFold()  au FileType javascript setl fen nocin ai et sta sw=2 sts=2 ts=2 isk+=$  au FileType javascript imap <c-t> AJS.log();<esc>hi  au FileType javascript imap <c-a> alert();<esc>hi  au FileType javascript let b:surround_101 = "\r\n}"  au FileType javascript inoremap <buffer> $r return  au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xiaugroup END"}}}2,V
+    word = words.reverse!.pop(),V
+  require "readline"  require "irb/completion" rescue nil,V
+require ,V
+# Takes in a full sentence and returns the sorted words.,V
+end,V
+    return sort_words(words),V
+    words = break_words(sentence),V
+def sort_sentence(sentence),V
+ = sort_sentence(sentence),v
+sentence = "All god\tthings come to those who wait.,v
+    cclose,v
+ENV['HOME'] ||= ENV['USERPROFILE'] || File.dirname(__FILE__)Pry.config.history.file = if defined?(Bundler)                            Bundler.tmp.parent.join('history.rb')                          else                            File.expand_path('~/.history.rb')                          end,v
+if defined?(Rails) && Rails.en,V
+v  require 'logger'  ActiveRecord::Base.logger = Logger.new(STDOUT)  ActiveRecord::Base.clear_active_connections!  class Class    def core_ext      self.instance_methods.map {|m| [m, self.instance_method(m).source_location] }.select {|m| m[1] && m[1][0] =~/activesupport/}.map {|m| m[0]}.sort    end  endend,v
+END,V
+Pry.prompt = [proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} > " }, proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} * " }],V
+ENV['HOME'] ||= ENV['USERPROFILE'] || File.dirname(__FILE__)Pry.config.history.file = if defined?(Bundler)                            Bundler.tmp.parent.join('history.rb')                          else                            File.expand_path('~/.history.rb')                          end,V
+source $cofig1/zsh_completion,V
+#some vim specs,V
+# export $EDITOR='vim',V
+if [ -f ~/buffer ]; then,V
+    rm ~/buffer,V
+fi,V
+gvim(){ /usr/bin/gvim -f "$@" & true; },V
+newrails() {     wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"    if [ $# == 1 ]; then        rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql    elif [ $# == 2 ]; then        rails new $1 -m "$wizpath/new_rails$2.rb" -T    else        echo "This function takes one or two inputs"        exit 1    fi    cd $1    unset wizpath},V
+#Ruby scripts,V
+#Home folders shortsif [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then    typeset home="`cygpath "$USERPROFILE"`"    typeset docs="$home/My Documents"    typeset desktop="`cygpath -D 2>/dev/null`"    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"    typeset appdata="`cygpath "$APPDATA"`"    : ~home ~docs ~desktop ~appdataelif [ -d "$HOME/Documents" ]; then    typeset docs="$HOME/Documents"    : ~docsfi,V
+#Ruby scriptsif [ -x "`which ruby 2>/dev/null`" ]; then    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"    [ -z gems ] || : ~gemsfi[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm",V
+  pending # express the regexp above with the code you wish you had,V
     let g:quickfix_is_open = 0,V
 nnoremap <c-q> :call QuickfixToggle()<cr>,V
     cclose,V
-    cclose,v
 nmap <leader>cc :botright cope<cr>,V
 nnoremap <c-q> :call QuickfixToggle()<cr>    function! QuickfixToggle()        if g:quickfix_is_open            cclose            let g:quickfix_is_open = 0        else            copen            let g:quickfix_is_open = 1        endif    endfunction,v
     assert_equal "User", sample.name,V
@@ -26,7 +80,6 @@ i,v
 copy_file(pry_init_path, ,V
 create_file "config/initializers/generators.rb" do  "MyApplication::Application.configure do" do  "  # Use Pry instead of IRB" do  "  silence_warnings do" do    "begin"  "    require 'pry'"  "    IRB = Pry"  "    rescue LoadError"  "  end"  "end"end,V
 pry_init_path = relative_to_original_destination_root("/gitrepos/myProjects/ruby_stuff/rails_wiz/console.init.rb", false),V
-end,V
  "config/initializers/generators.rb",v
 after_bundler do,V
     begin,V
@@ -45,56 +98,3 @@ gvim(){ /usr/bin/gvim -f "$@" & true; }dd,V
 [ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm",V
 ",v
     let g:syntastic_auto_loc_list=0,V
-# This file is copied to spec/ when you run 'rails generate rspec:install'ENV["RAILS_ENV"] ||= 'test'require File.expand_path("../../config/environment", __FILE__)require 'rspec/rails'require 'rspec/autorun'# Requires supporting ruby files with custom matchers and macros, etc,# in spec/support/ and its subdirectories.Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}RSpec.configure do |config|  # ## Mock Framework  #  # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:  #  # config.mock_with :mocha  # config.mock_with :flexmock  # config.mock_with :rr  # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures  config.fixture_path = "#{::Rails.root}/spec/fixtures"  # If you're not using ActiveRecord, or you'd prefer not to run each of your  # examples within a transaction, remove the following line or assign false  # instead of true.  config.use_transactional_fixtures = true  # If true, the base class of anonymous controllers will be inferred  # automatically. This will be the default behavior in future versions of  # rspec-rails.  config.infer_base_class_for_anonymous_controllers = falseend,V
-gråp,V
-    let g:syntastic_mode_map = { 'mode': 'active',                               \ 'active_filetypes': ['ruby', 'php'],                               \ 'passive_filetypes': ['puppet'] },V
-# This file is copied to spec/ when you run 'rails generate rspec:install'ENV["RAILS_ENV"] ||= 'test'require File.expand_path("../../config/environment", __FILE__)require 'rspec/rails'require 'rspec/autorun'# Requires supporting ruby files with custom matchers and macros, etc,# in spec/support/ and its subdirectories.Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}RSpec.configure do |config|  # ## Mock Framework  #  # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:  #  # config.mock_with :mocha  # config.mock_with :flexmock  # config.mock_with :rr  # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures  config.fixture_path = "#{::Rails.root}/spec/fixtures"  # If you're not using ActiveRecord, or you'd prefer not to run each of your  # examples within a transaction, remove the following line or assign false  # instead of true.  config.use_transactional_fixtures = true  # If true, the base class of anonymous controllers will be inferred  # automatically. This will be the default behavior in future versions of  # rspec-rails.  config.infer_base_class_for_anonymous_controllers = falsee,v
-elif [ -d "$HOME/Documents" ]; then    typeset docs="$HOME/Documents"    : ~docs,V
- # Scenario:    # Given    # When    # Then    # And  ,v
-,V
-    #############################################      # Scenario Outline:    # Gvien "<code>"    # when "<other code>"    # then "more code",V
-require 'fivemat/minitest/autorun',V
- gem 'minitest',V
-gem 'autorun',V
-  silence_warnings do    require 'pry'    IRB = Pry  end,V
-  gem 'rspec-rails'  gem 'webrat'  gem 'selenium-client',V
-binding.pry,v
-Given# The --wip switch was used, so the failures were expected. All is good.,V
-Given /^a genre named Comedy$/ do  @genre = endWhen /^I create a movie Caddyshack in the Comedy genre$/ do  pending # express the regexp above with the code you wish you hadendThen /^Caddyshack should be in the genere Comedy$/ do  pending # express the regexp above with the code you wish you hadend,V
-||||||||||||||||||,2
-Given /^a genre named Comedy$/ do||   pending # express the regexp above with the code you wish you had|| end|| || When /^I create a movie Caddyshack in the Comedy genre$/ do||   pending # express the regexp above with the code you wish you had|| end|| || Then /^Caddyshack should be in the genere Comedy$/ do||   pending # express the regexp above with the code you wish you had|| end|| ,v
-    #when,V
-    #Gvin,V
-  #Scenario:,V
-  gem "webrat",V
-group :assets do  gem 'sass-rails',   '~> 3.2.3'  gem 'coffee-rails', '~> 3.2.1'  gem 'uglifier', '>= 1.0.3'end,V
-gem 'jquery-rails',V
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes,V
-  # gem 'therubyracer', :platform => :ruby,V
-group :asertdd do,V
-nd,V
-# Gems used only for assets and not required# in production environments by default.group :assets do  gem 'sass-rails',   '~> 3.2.3'  gem 'coffee-rails', '~> 3.2.1'  gem 'uglifier', '>= 1.0.3'e,v
-gem 'mysql2',V
-gem 'rails', '3.2.1',V
-source 'https://rubygems.org',V
-u,v
-  # gem 'therubyracer',V
-# gem 'aws-s3', :require => 'aws/s3',V
-# gem 'sqlite3-ruby', :require => 'sqlite3',V
-# Bundle the extra gems:,V
-# gem 'ruby-debug',V
-# To use debugger,V
-# gem 'capistrano',V
-# Deploy with Capistrano,V
-# gem 'unicorn',V
-# Use unicorn as the web server,V
-hhhviiii,v
-"%l:%M%p",v
-    Given a movie listing    When I set the show time to "2007-10-10" at "2:00pm"    Then the show time disribtion should say "October 10 2007 at 2pm" ,v
-    Given a movie listing    When I set the show time to "2007-10-10" at "2:15pm"    Then the showtime describtion shoud say "October 10, 2007 (2:15pm)" ,V
-  @movie = Movie.create!,V
-Given /^a movie listing$/ do,V
-  @movie.shotime.should eq(,V
-Then /^the show time disribtion should say "([^"]*)"$/ do |arg1|,V
-  ,V
-  attr_accessible :showtime_date, :showtime_time,V

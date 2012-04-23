@@ -87,17 +87,11 @@ periodic() { rehash }
 #domains=(`egrep '^(search|domain)' /etc/resolv.conf 2>/dev/null`)
 #[[ -z $domains ]] || shift 1 domains
 
-#Home folders shorts
-if [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then
-    typeset home="`cygpath "$USERPROFILE"`"
-    typeset docs="$home/My Documents"
-    typeset desktop="`cygpath -D 2>/dev/null`"
-    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"
-    typeset appdata="`cygpath "$APPDATA"`"
-    : ~home ~docs ~desktop ~appdata
-elif [ -d "$HOME/Documents" ]; then
-    typeset docs="$HOME/Documents"
-    : ~docs
+
+if [ -x "`which ruby 2>/dev/null`" ]; then
+    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"
+    [ -z gems ] || : ~gems
 fi
 
+[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
 

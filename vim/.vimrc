@@ -21,7 +21,7 @@ set history=700
 filetype plugin indent on
 
 "to avoid confusion tell vim which shell you use
-set shell=/bin/bash
+set shell=/bin/zsh
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -46,7 +46,9 @@ nmap <leader>ee :e! ~/.vim/.vimrc<cr>
 " When vimrc is edited, reload it
 augroup vimrcs
   au!
-  au bufwritepost /home/tellone/.vim/.vimrc source /home/tellone/.vim/.vimrc
+  au bufwritepost /home/tellone/.vim/.vimrc 
+        \ source /home/tellone/.vim/.vimrc |
+        \ call Pl#Load() |
 augroup END
 "get the viminfo-file out of the way
 :set viminfo +=n$HOME/.vim/misc/cens/.viminfo
@@ -177,15 +179,6 @@ function! FoldChange()
   echo &foldmethod
 endfunction
 
-function! QuickfixToggle()
-  if g:quickfix_is_open
-    cclose
-    let g:quickfix_is_open = 0
-  else
-    copen
-    let g:quickfix_is_open = 1
-  endif
-endfunction
 " "Delete trailing white space, useful for Python ;)
 " func! DeleteTrailingWS()
 "   exe "normal mz"
@@ -273,8 +266,7 @@ let g:lucius_style="light"
 " Smart mappings on the command line
 cno $h e ~/
 cno $d e ~/Desktop/
-cno $j e ./
-cno $c e <C-\>eCurrentFileDir("e")<cr>
+cno $j e /
 
 " Bash like keys for the command line
 cnoremap <C-A>      <Home>
@@ -283,6 +275,10 @@ cnoremap <C-K>      <C-U>
 
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
+
+"Fix anoying save and quit misses
+cmap Wq wq
+cmap WQ wq
 
 " Useful on some European keyboards
 nmap ½ $
@@ -299,8 +295,9 @@ cmap ½ $
 "{{{
 "kill search hl
 nmap <silent> <leader><cr> :noh<cr>
-nmap Q ==
+
 "big Q formats text and no Ex-mode
+nmap Q ==
 
 " Smart way to move btw. windows
 nmap <C-j> <C-W>j
@@ -315,14 +312,14 @@ nmap <leader>bd :Bclose<cr>
 nmap <leader>ba :1,300 bd!<cr>
 
 " Use the arrows to something usefull
-map <up> :bn<cr>
-map <down> :bp<cr>
+nmap <up> :bn<cr>
+nmap <down> :bp<cr>
 
 " Tab configuration
-map <right> :tabnext<cr>
-map <left> :tabprev<cr>
-map <M-up> :tabnew<cr>
-map <M-down> :tabclose<cr>
+nmap <right> :tabnext<cr>
+nmap <left> :tabprev<cr>
+nmap <M-up> :tabnew<cr>
+nmap <M-down> :tabclose<cr>
 
 " make space open fods
 nmap <space> za
@@ -350,8 +347,7 @@ let g:DrChipTopLvlMenu= "Plugin."
 
 " => Cope
 " Do :help cope if you are unsure what cope is. It's super useful!
-let g:quickfix_is_open = 0
-nmap <leader>cc :call QuickfixToggle()<cr>
+nmap <leader>cc :botright cope<cr>
 map <leader>cn :cn<cr>
 map <leader>cp :cp<cr>
 nmap <leader>cl :ccl<cr>
@@ -471,7 +467,7 @@ augroup END " }}}2
 
 augroup FTOptions " {{{2
   autocmd!
-  autocmd FileType c,cpp,cs,java          setlocal ai et sta sw=4 sts=4 si
+  autocmd FileType c,cpp,cs               setlocal ai et sta sw=4 sts=4 si
   autocmd FileType sh,csh,tcsh,zsh        setlocal ai et sta sw=4 sts=4
   autocmd FileType tcl,perl               setlocal ai et sta sw=4 sts=4
   autocmd FileType matlab                 setlocal ai et sta sw=4 sts=4 
@@ -545,6 +541,18 @@ augroup JSset
 augroup END
 "}}}2
 
+"{{{2 => Java section
+ 
+augroup JavaSet
+  au!
+  au FileType java setl fen nocin ai et sta sw=3 sts=3 ts=3 isk+=$
+  au FileType java let b:surround_101 = "\r\n}"
+  au FileType java inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
+  au FileType java iabbr <buffer> pri private
+  au FileType java iabbr <buffer> pu public
+  au FileType java iabbr <buffer> sys. System.out.println(" ");
+augroup END
+"}}}2
 "}}}
 
 """""""""""""""""""""""""""""""""
@@ -556,12 +564,12 @@ nnoremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 nnoremap <leader>j dd.
 "Quickly open a buffer for scripbble
-nmap <leader>q :e ~/buffer<cr>
+nmap <leader>qq :e ~/buffer<cr>
 nnoremap <leader>bb :OpenURL <cfile><CR>
 
 nmap <leader>pp :setlocal paste!<cr>
 
-nnoremap <leader>" viw<esc>a'<esc>hbi'<esc>lel
+nnoremap <leader>" viw<esc>a;<esc>lel
 
 " => General Abbrevs "{{{2
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>

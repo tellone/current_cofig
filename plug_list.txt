@@ -29,6 +29,7 @@ vim-rails
 vim-rake
 vim-repeat
 vim-ruby
+vim-rvm
 vim-surround
 vim-unimpaired
 vim-vividchalk
