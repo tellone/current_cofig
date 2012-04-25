@@ -12,7 +12,6 @@ alias rmv='sudo rm -r'
 alias rerc="source /home/tellone/.zshrc"
 alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
-
 #shorts for usual commands
 alias ce='clear'
 alias na='nautilus .'

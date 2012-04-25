@@ -1,4 +1,15 @@
+/,v
+alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man",V
 ,v
+fi,V
+    rm -r $repo/vim,V
+if [ -d $repo/vim ]; then,V
+    rm $repo/plug_list.txt,V
+if [ -f $repo/plug_list.txt ]; then,V
+rm ~/.oh-my-zsh/themes/tellone.zsh-theme,V
+if [ -f ~/.oh-my-zsh/themes/tellone.zsh-theme ]; then,V
+    rm -r $repo/bin,V
+if [ -d $repo/bin ]; then,V
   autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>")),V
  ,v
     autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\"",V
@@ -82,19 +93,8 @@ source $cofig1/zsh_completion,V
 # export $EDITOR='vim',V
 if [ -f ~/buffer ]; then,V
     rm ~/buffer,V
-fi,V
 gvim(){ /usr/bin/gvim -f "$@" & true; },V
 newrails() {     wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"    if [ $# == 1 ]; then        rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql    elif [ $# == 2 ]; then        rails new $1 -m "$wizpath/new_rails$2.rb" -T    else        echo "This function takes one or two inputs"        exit 1    fi    cd $1    unset wizpath},V
 #Ruby scripts,V
 #Home folders shortsif [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then    typeset home="`cygpath "$USERPROFILE"`"    typeset docs="$home/My Documents"    typeset desktop="`cygpath -D 2>/dev/null`"    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"    typeset appdata="`cygpath "$APPDATA"`"    : ~home ~docs ~desktop ~appdataelif [ -d "$HOME/Documents" ]; then    typeset docs="$HOME/Documents"    : ~docsfi,V
 #Ruby scriptsif [ -x "`which ruby 2>/dev/null`" ]; then    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"    [ -z gems ] || : ~gemsfi[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm",V
-  pending # express the regexp above with the code you wish you had,V
-    let g:quickfix_is_open = 0,V
-nnoremap <c-q> :call QuickfixToggle()<cr>,V
-    cclose,V
-nmap <leader>cc :botright cope<cr>,V
-nnoremap <c-q> :call QuickfixToggle()<cr>    function! QuickfixToggle()        if g:quickfix_is_open            cclose            let g:quickfix_is_open = 0        else            copen            let g:quickfix_is_open = 1        endif    endfunction,v
-    assert_equal "User", sample.name,V
-@current_recipe = nil,V
-# >---------------------------------[ Pry ]---------------------------------<@current_recipe = "pry"@before_configs["pry"].call if @before_configs["pry"]say_recipe 'pry'@configs[@current_recipe] = configgem 'pry' formated_appName = app_name.capitalizeinscript = <<-INSCRIPT!!!#{formated_appName}::Application.configure do  # Use Pry instead of IRB  silence_warnings do    begin      require 'pry'      IRB = Pry    rescue LoadError    end  endendINSCRIPTcreate_file("config/initializers/console.rb", inscript)@current_recipe = nil,V
-fomated_appName = app_Nameinscript = <<-INSCRIPT,V

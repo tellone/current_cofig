@@ -5,7 +5,7 @@
 
 set nocp
 
-"Base name of diabled bundles
+"Base name of disabled bundles
 let g:pathogen_disable=['localColorSchemes']
 
 "Load pathogen itself

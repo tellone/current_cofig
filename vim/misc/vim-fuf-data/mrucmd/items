@@ -1,8 +1,18 @@
-{'word': ':q', 'time': 1335375841}
-{'word': ':wq', 'time': 1335375776}
-{'word': ':w!', 'time': 1335375772}
-{'word': ':FufMruFile', 'time': 1335375705}
-{'word': ':bp', 'time': 1335375387}
+{'word': ':q', 'time': 1335379117}
+{'word': ':FufMruFile', 'time': 1335378973}
+{'word': ':Bclose', 'time': 1335378971}
+{'word': ':help keywordprg', 'time': 1335378847}
+{'word': ':Q', 'time': 1335378265}
+{'word': ':wq', 'time': 1335378237}
+{'word': ':w!', 'time': 1335377925}
+{'word': ':q!', 'time': 1335377779}
+{'word': ':eq', 'time': 1335377774}
+{'word': ':bn', 'time': 1335377749}
+{'word': ':bp', 'time': 1335377748}
+{'word': ':e! ~/.vim/.vimrc', 'time': 1335377644}
+{'word': ':%s/check_add/check_sync', 'time': 1335377555}
+{'word': ':set ft=sh', 'time': 1335377211}
+{'word': ':set ft=bash', 'time': 1335377178}
 {'word': ':tabnext', 'time': 1335375375}
 {'word': ':tabprev', 'time': 1335375372}
 {'word': '/chmode', 'time': 1335375089}
@@ -10,7 +20,6 @@
 {'word': ':help chmod', 'time': 1335375050}
 {'word': ':NERDTree', 'time': 1335374845}
 {'word': ':cd %:p:h', 'time': 1335374841}
-{'word': ':bn', 'time': 1335374479}
 {'word': ':help tagbar', 'time': 1335374387}
 {'word': ':TagbarToggle', 'time': 1335374197}
 {'word': ':TagbarOpen', 'time': 1335373912}
@@ -20,14 +29,12 @@
 {'word': ':help Tag', 'time': 1335373789}
 {'word': ':TagbarOpen c', 'time': 1335373753}
 {'word': ':TagbarOpen -c', 'time': 1335373746}
-{'word': ':e! ~/.vim/.vimrc', 'time': 1335373553}
 {'word': ':help tagbar.txt', 'time': 1335373480}
 {'word': ':call pathogen#helptags()', 'time': 1335373363}
 {'word': ':TbarOpen', 'time': 1335373298}
 {'word': ':TlistOpen', 'time': 1335373254}
 {'word': ':Smaller', 'time': 1335371796}
 {'word': ':Bigger', 'time': 1335371795}
-{'word': ':Q', 'time': 1335364441}
 {'word': ':help silent', 'time': 1335363530}
 {'word': ':sinlent', 'time': 1335363524}
 {'word': ':help sil!', 'time': 1335363520}
@@ -37,7 +44,6 @@
 {'word': ':call FoldChange()', 'time': 1335362932}
 {'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1335357211}
 {'word': ':a', 'time': 1335356946}
-{'word': ':Bclose', 'time': 1335356267}
 {'word': ':help PythonMode', 'time': 1335355453}
 {'word': ':ccl', 'time': 1335355422}
 {'word': ':set foldmethod=manual', 'time': 1335355340}
@@ -47,7 +53,6 @@
 {'word': ':e ~/ex_hard.rb', 'time': 1335317806}
 {'word': ':help rails', 'time': 1335317608}
 {'word': ':help pathogen', 'time': 1335310002}
-{'word': ':q!', 'time': 1335306371}
 {'word': ':colorscheme default', 'time': 1335306330}
 {'word': ':colorscheme lucius', 'time': 1335306323}
 {'word': ':colorscheme delek', 'time': 1335306288}
