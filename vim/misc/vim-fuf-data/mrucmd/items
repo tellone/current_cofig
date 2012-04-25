@@ -1,10 +1,78 @@
-{'word': ':FufMruFile', 'time': 1335193938}
-{'word': ':tabprev', 'time': 1335193902}
-{'word': ':w!', 'time': 1335193900}
-{'word': ':q', 'time': 1335193747}
-{'word': ':NERDTree', 'time': 1335193739}
-{'word': ':cd %:p:h', 'time': 1335193738}
-{'word': ':e! ~/.vim/.vimrc', 'time': 1335189854}
+{'word': ':q', 'time': 1335375841}
+{'word': ':wq', 'time': 1335375776}
+{'word': ':w!', 'time': 1335375772}
+{'word': ':FufMruFile', 'time': 1335375705}
+{'word': ':bp', 'time': 1335375387}
+{'word': ':tabnext', 'time': 1335375375}
+{'word': ':tabprev', 'time': 1335375372}
+{'word': '/chmode', 'time': 1335375089}
+{'word': ':noh', 'time': 1335375073}
+{'word': ':help chmod', 'time': 1335375050}
+{'word': ':NERDTree', 'time': 1335374845}
+{'word': ':cd %:p:h', 'time': 1335374841}
+{'word': ':bn', 'time': 1335374479}
+{'word': ':help tagbar', 'time': 1335374387}
+{'word': ':TagbarToggle', 'time': 1335374197}
+{'word': ':TagbarOpen', 'time': 1335373912}
+{'word': ':TagbarOpen[c]', 'time': 1335373903}
+{'word': ':help Tagbar', 'time': 1335373829}
+{'word': ':help TagbarOpen', 'time': 1335373817}
+{'word': ':help Tag', 'time': 1335373789}
+{'word': ':TagbarOpen c', 'time': 1335373753}
+{'word': ':TagbarOpen -c', 'time': 1335373746}
+{'word': ':e! ~/.vim/.vimrc', 'time': 1335373553}
+{'word': ':help tagbar.txt', 'time': 1335373480}
+{'word': ':call pathogen#helptags()', 'time': 1335373363}
+{'word': ':TbarOpen', 'time': 1335373298}
+{'word': ':TlistOpen', 'time': 1335373254}
+{'word': ':Smaller', 'time': 1335371796}
+{'word': ':Bigger', 'time': 1335371795}
+{'word': ':Q', 'time': 1335364441}
+{'word': ':help silent', 'time': 1335363530}
+{'word': ':sinlent', 'time': 1335363524}
+{'word': ':help sil!', 'time': 1335363520}
+{'word': ':redraw', 'time': 1335363274}
+{'word': ':setlocal buftype=nofile bufhidden=delete noswapfile nowrap previewwindow', 'time': 1335363252}
+{'word': ':pclose | botright 8new', 'time': 1335363217}
+{'word': ':call FoldChange()', 'time': 1335362932}
+{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1335357211}
+{'word': ':a', 'time': 1335356946}
+{'word': ':Bclose', 'time': 1335356267}
+{'word': ':help PythonMode', 'time': 1335355453}
+{'word': ':ccl', 'time': 1335355422}
+{'word': ':set foldmethod=manual', 'time': 1335355340}
+{'word': ':set fodmethod=manual', 'time': 1335355319}
+{'word': ':fodmethod=manual', 'time': 1335355309}
+{'word': ':w', 'time': 1335354707}
+{'word': ':e ~/ex_hard.rb', 'time': 1335317806}
+{'word': ':help rails', 'time': 1335317608}
+{'word': ':help pathogen', 'time': 1335310002}
+{'word': ':q!', 'time': 1335306371}
+{'word': ':colorscheme default', 'time': 1335306330}
+{'word': ':colorscheme lucius', 'time': 1335306323}
+{'word': ':colorscheme delek', 'time': 1335306288}
+{'word': ':colorscheme blue', 'time': 1335306282}
+{'word': ':colorscheme darkblue', 'time': 1335306278}
+{'word': ':Removewindowcolors', 'time': 1335306197}
+{'word': ':Removelocalcolors', 'time': 1335306193}
+{'word': ':execute "Setwindowcolors " . input("Enter window colorscheme [" . (exists("w:colorscheme") ? w:colorscheme : "NONE") . "]:  ")', 'time': 1335306108}
+{'word': ':execute "Setlocalcolors " . input("Enter local colorscheme [" . (exists("b:colorscheme") ? b:colorscheme : "NONE") . "]:  ")', 'time': 1335306096}
+{'word': ':colorscheme solarized', 'time': 1335305934}
+{'word': ':colorscheme desert', 'time': 1335305929}
+{'word': ':colorscheme railscasts', 'time': 1335305914}
+{'word': ':help rvm', 'time': 1335304889}
+{'word': '/map', 'time': 1335304871}
+{'word': ':help ruby', 'time': 1335304858}
+{'word': ':help ruby ri', 'time': 1335304855}
+{'word': ':ruby ri', 'time': 1335304849}
+{'word': ':help ri -T', 'time': 1335304843}
+{'word': ':help ri', 'time': 1335304192}
+{'word': ':help Rdoc', 'time': 1335303716}
+{'word': ':Rtree', 'time': 1335302246}
+{'word': ':Bundle install', 'time': 1335300150}
+{'word': ':bundle install', 'time': 1335300143}
+{'word': ':Rake spec:controllers', 'time': 1335299937}
+{'word': ':e Gemfile', 'time': 1335206063}
 {'word': ':help netrw', 'time': 1335189755}
 {'word': ':netrw', 'time': 1335189741}
 {'word': ':NetRw', 'time': 1335189734}
@@ -13,19 +81,12 @@
 {'word': ':NetrwClean', 'time': 1335189700}
 {'word': ':BufExplorer', 'time': 1335189672}
 {'word': ':help call', 'time': 1335189599}
-{'word': ':wq', 'time': 1335189532}
 {'word': ':help unimpaired', 'time': 1335189223}
 {'word': ':exe "cnext ".(v:count ? v:count : "")', 'time': 1335189173}
 {'word': ':e ', 'time': 1335188942}
 {'word': ':WQ', 'time': 1335188826}
 {'word': ':Wq', 'time': 1335188809}
-{'word': ':Bclose', 'time': 1335188686}
-{'word': ':tabnext', 'time': 1335188590}
-{'word': ':bn', 'time': 1335187743}
-{'word': ':bp', 'time': 1335187742}
-{'word': ':TlistOpen', 'time': 1335187715}
 {'word': ':set bg=light', 'time': 1335187614}
-{'word': ':colorscheme solarized', 'time': 1335187547}
 {'word': ':help powerline', 'time': 1335187455}
 {'word': ':help BufEnter', 'time': 1335186479}
 {'word': ':call Pl#ReloadColorscheme()', 'time': 1335186455}
@@ -41,7 +102,6 @@
 {'word': ':help shell', 'time': 1335127554}
 {'word': ':e ~/buffer', 'time': 1335110845}
 {'word': ':e test.java', 'time': 1335110445}
-{'word': ':q!', 'time': 1335096451}
 {'word': ':%s/javascript/java/g', 'time': 1335096198}
 {'word': ':%s/jslint/jlint/g', 'time': 1335096166}
 {'word': ':tabnew', 'time': 1335096143}
@@ -67,7 +127,6 @@
 {'word': ':sav ex_hard.rb', 'time': 1335039296}
 {'word': ':TSkeletonSetup scribting.rb', 'time': 1335033738}
 {'word': ':TSkeletonSetup', 'time': 1335033722}
-{'word': ':noh', 'time': 1335032104}
 {'word': ':set ft=config', 'time': 1335031897}
 {'word': ':e features/step_definitions/links_collector_steps.rb', 'time': 1334954148}
 {'word': ':help ctrl-f', 'time': 1334952621}
@@ -78,17 +137,13 @@
 {'word': ':setlocal foldcolumn=0', 'time': 1334952062}
 {'word': ':setlocal foldcolumn=1', 'time': 1334952059}
 {'word': ':setlocal foldcolumn=4', 'time': 1334952052}
-{'word': ':ccl', 'time': 1334951599}
 {'word': ':botright cope', 'time': 1334951592}
-{'word': ':call FoldChange()', 'time': 1334951573}
 {'word': ':e mail_form/lib/mail_form/base.rb', 'time': 1334951228}
 {'word': ':e mail_form/lib/mail_form.rb', 'time': 1334951133}
 {'word': ':cd ..', 'time': 1334951081}
 {'word': ':e mail_from_test.rb', 'time': 1334950668}
 {'word': ':TSkeletonSetup feat.feature', 'time': 1334935559}
 {'word': ':e myres/features/links_colloctor.feature', 'time': 1334935546}
-{'word': ':Q', 'time': 1334922697}
-{'word': ':Bundle install', 'time': 1334922626}
 {'word': ':r ~/gitrepos/myProjects/ruby_stuff/rails_wiz/console_init.rb', 'time': 1334913468}
 {'word': ':''<,''>tabprev', 'time': 1334911585}
 {'word': ':cd gogo/', 'time': 1334908385}
@@ -96,7 +151,6 @@
 {'word': ':help <SID>', 'time': 1334902311}
 {'word': ':source %', 'time': 1334902151}
 {'word': ':.,.+1ccl', 'time': 1334902029}
-{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1334901734}
 {'word': ':g@', 'time': 1334874714}
 {'word': ':e job/grep-opp.vim', 'time': 1334874223}
 {'word': ':books', 'time': 1334873950}
@@ -106,19 +160,15 @@
 {'word': ':e Public/new_rails2.rb', 'time': 1334842022}
 {'word': ':sav Public/new_rails1.rb', 'time': 1334840263}
 {'word': ':e dummy/app/views/index.html.erb', 'time': 1334772105}
-{'word': ':Rtree', 'time': 1334771839}
 {'word': ':Rgenerate controller HomeController', 'time': 1334771705}
 {'word': ':rdoc require', 'time': 1334767393}
 {'word': ':rails plugin new mail_form', 'time': 1334729085}
 {'word': ':1', 'time': 1334729042}
-{'word': ':colorscheme railscasts', 'time': 1334710291}
 {'word': ':colorscheme inkpot', 'time': 1334710253}
-{'word': ':colorscheme darkblue', 'time': 1334710236}
 {'word': ':SyntasticCheck', 'time': 1334706474}
 {'word': ':help align', 'time': 1334705227}
 {'word': ':help :nohlsearch', 'time': 1334703649}
 {'word': ':help magic', 'time': 1334703561}
-{'word': ':execute "Setlocalcolors " . input("Enter local colorscheme [" . (exists("b:colorscheme") ? b:colorscheme : "NONE") . "]:  ")', 'time': 1334700328}
 {'word': ':SolarizedOptions', 'time': 1334700266}
 {'word': ':TSkeletonBitReset', 'time': 1334699974}
 {'word': ':ToggleBG', 'time': 1334699766}
@@ -138,10 +188,7 @@
 {'word': ':help Rabbrev', 'time': 1334641090}
 {'word': ':Rabbrev', 'time': 1334641075}
 {'word': ':Rabbrev has_<tab> has_and_belongs_to_many', 'time': 1334641057}
-{'word': ':help rails', 'time': 1334640817}
 {'word': ':TSkeletonBit', 'time': 1334640665}
-{'word': ':Bigger', 'time': 1334635481}
-{'word': ':Smaller', 'time': 1334635481}
 {'word': ':help NERDTree', 'time': 1334635135}
 {'word': ':RDmodel genre name:string', 'time': 1334626224}
 {'word': ':Git add .', 'time': 1334626101}
@@ -212,7 +259,6 @@
 {'word': ':Gdiff', 'time': 1334167930}
 {'word': ':cd Public/', 'time': 1334089756}
 {'word': ':help rake', 'time': 1334089655}
-{'word': ':colorscheme lucius', 'time': 1334084111}
 {'word': ':call tskeleton#ExpandBitUnderCursor("n", ''standard'')', 'time': 1334081001}
 {'word': ':call atplib#motion#StartVisualMode(''V'')', 'time': 1334079786}
 {'word': ':TEX', 'time': 1334079668}

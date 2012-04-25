@@ -2,8 +2,16 @@
 " => Pathogen
 """""""""""""""""""""""""""""""
 "{{{
+
 set nocp
+
+"Base name of diabled bundles
+let g:pathogen_disable=['localColorSchemes']
+
+"Load pathogen itself
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+"run plugins in bundle folder
 call pathogen#infect()
 call pathogen#helptags()
 "}}}
@@ -48,7 +56,9 @@ augroup vimrcs
   au!
   au bufwritepost /home/tellone/.vim/.vimrc 
         \ source /home/tellone/.vim/.vimrc |
-        \ call Pl#Load() |
+        \ if exists('g:Powerline_loaded') |
+          \ silent! call Pl#Load() |
+        \ endif 
 augroup END
 "get the viminfo-file out of the way
 :set viminfo +=n$HOME/.vim/misc/cens/.viminfo
@@ -105,6 +115,7 @@ endif
 "=> search settings and macros
 set ignorecase "Ignore case when searching
 set smartcase  "Override Ingnore case in obvious situations
+
 
 set hlsearch "Highlight search things
 
@@ -365,7 +376,7 @@ nmap <leader>ff :FufMruFile<CR>
 nmap <leader>fd :FufDir<cr>
 
 "=> Gundo
-nnoremap <leader>d :GundoToggle<CR>
+nnoremap <leader>dd :GundoToggle<CR>
 
 " => bufExplorer plugin
 let g:bufExplorerDefaultHelp=0
@@ -383,11 +394,12 @@ let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 " =>
 
 let g:syntastic_mode_map = { 'mode': 'active',
-      \ 'active_filetypes': ['ruby', 'html', 'javascript', 'php'],
-      \ 'passive_filetypes': ['python'] }
+      \ 'active_filetypes': ['ruby', 'html', 'python', 'javascript'],
+      \ 'passive_filetypes': ['php'] }
 
-" => Tag List
-nmap <leader>l :TlistOpen<cr>
+" => Tagbar
+let g:tagbar_autofocus=1
+nmap <leader>l :TagbarToggle<cr>
 
 " => Tskeleton
 let tskelUserName='Filip Pettersson'
@@ -440,6 +452,8 @@ augroup FTMisc " {{{2
       \ exe "gl/^\\s*\\d\\+\\s*;\\s*Serial$/normal ^\<C-A>" |
       \ exe "normal g`tztg`s" |
       \ endif
+
+  autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\""
   autocmd BufReadPre *.pdf setlocal binary
   autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *
     \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif
@@ -453,6 +467,7 @@ augroup FTCheck " {{{2
   autocmd BufNewFile,BufRead /var/www/*.module  set ft=php
   autocmd BufNewFile,BufRead *.vb               set ft=vbnet
   autocmd BufNewFile,BufRead *.CBL,*.COB,*.LIB  set ft=cobol
+  autocmd BufNewFile,BufRead *_doc_*            setl ft=help
   autocmd BufNewFile,BufRead /var/www/*
     \ let b:url=expand("<afile>:s?^/var/www/?http://localhost/?")
   autocmd BufNewFile,BufRead /etc/udev/*.rules set ft=udev
@@ -481,7 +496,7 @@ augroup FTOptions " {{{2
   autocmd FileType yaml                   setlocal ai et sta sw=2 sts=2
   autocmd FileType cucumber               setlocal ai et sta sw=2 sts=2 ts=2
   autocmd FileType text,txt,mail          setlocal ai com=fb:*,fb:-,n:>
-  autocmd FileType c,cpp,cs,java,perl,php,aspperl,css let b:surround_101 = "\r\n}"
+  autocmd FileType c,cpp,cs,perl,php,aspperl,css let b:surround_101 = "\r\n}"
   autocmd FileType apache       setlocal commentstring=#\ %s
   autocmd FileType aspvbs,vbnet setlocal comments=sr:'\ -,mb:'\ \ ,el:'\ \ ,:',b:rem formatoptions=crq
   autocmd FileType asp*         runtime! indent/html.vim
@@ -496,7 +511,7 @@ augroup FTOptions " {{{2
   autocmd FileType html setlocal iskeyword+=~
   autocmd FileType pdf  setlocal foldmethod=syntax foldlevel=1
   autocmd FileType matlab,text,txt setlocal tw=78 linebreak nolist
-  autocmd FileType text,txt colorscheme lucius
+  autocmd FileType help,text,txt colorscheme lucius
   autocmd FileType markdown colorscheme jdlight 
   autocmd FileType vbnet        runtime! indent/vb.vim
   autocmd FileType vim  setlocal ai et sta sw=2 sts=2 keywordprg=:help
@@ -509,7 +524,17 @@ augroup RubySetter
   au FileType ruby setlocal ai et sta sw=2 sts=2
   au FileType ruby setlocal tw=79 isfname+=: comments=:#\
   au FileType ruby iabbr <buffer> bpry binding.pry
+  au FileType ruby
+        \ if expand('%') =~# '_test\.rb$' |
+        \ compiler rubyunit | setl makeprg=testrb\ \"%:p\" |
+        \ elseif expand('%') =~# '_spec\.rb$' |
+        \ compiler rspec | setl makeprg=rspec\ \"%:p\" |
+        \ else |
+        \ compiler ruby | setl makeprg=ruby\ -wc\ \"%:p\" |
+        \ endif
 augroup END
+
+
 
 "Rails settings
 
@@ -522,8 +547,6 @@ augroup PYset
   au FileType python setlocal linebreak nolist
   au FileType python setlocal ai et sta tw=79 sw=4 sts=4
 augroup END
-"PyMode
-let pymode_lint_checker = "pep8"
 
 "}}}2
 
@@ -545,7 +568,7 @@ augroup END
  
 augroup JavaSet
   au!
-  au FileType java setl fen nocin ai et sta sw=3 sts=3 ts=3 isk+=$
+  au FileType java setl fen nocin ai et si sta sw=3 sts=3 ts=3 isk+=$
   au FileType java let b:surround_101 = "\r\n}"
   au FileType java inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
   au FileType java iabbr <buffer> pri private
@@ -560,7 +583,7 @@ augroup END
 """""""""""""""""""""""""""""""""
 "{{{
 " Remove the Windows ^M - when the encodings gets messed up
-nnoremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+nnoremap <Leader>mm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 nnoremap <leader>j dd.
 "Quickly open a buffer for scripbble

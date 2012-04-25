@@ -1,9 +1,42 @@
 ,v
+  autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>")),V
+ ,v
+    autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\"",V
+    autocmd BufWritePre,FileWritePre /etc/* if &ft == "dns" |          \ exe "normal msHmt" |          \ exe "gl/^\\s*\\d\\+\\s*;\\s*Serial$/normal ^\<C-A>" |          \ exe "normal g`tztg`s" |          \ endif    autocmd BufReadPre *.pdf setlocal binary    autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\""    autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *      \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif,V
+  autocmd BufNewFile,BufRead *.CBL,*.COB,*.LIB  set ft=cobol,V
+,V
+no Python documentation found for '__add__',V
+line    8:Traceback (most recent call last):line    8:  File "<string>", line 1, in <module>line    8:NameError: name 'out' is not defined,v
+if [ -d "$HOME/gitrepos/myProjects" ]; then    typeset mypro="$HOME/gitrepos/myProjects"    : ~myprofi,V
+  autocmd FileType c,cpp,cs,perl,php,aspperl,css let b:surround_101 = "\r\n}",V
+let pymode_lint_checker = "pep8",V
+"PyMode,V
+e,v
+l,v
+x,v
+      post :create, :account => {"link" => "https://twitter.com/#!/Zorrriux"},V
+  end,V
+    redirect_to :action => index,V
+  def create,V
+        \ if exists('g:Powerline_loaded') |          \ silent! call Pl#Load() |        \ endif ,V
+" <+FILENAME+> - <+TITLE+>,V
+        \ if exists('g:Powerline_loaded') |          \ sinlent! execute "Pl#Load" |        \ endif ,V
+" if the  input parameter is  empty, display  the current local  color scheme." otherwise, set the local color scheme to what is specified and change colors" is necessary.function! <SID>SetLocalColors(colorChoice)  if (a:colorChoice == "")    echo "Local color scheme is:  " . (exists("b:colorscheme") ? b:colorscheme : "NONE")  else    le:t b:colorscheme = a:colorChoice    call s:ChangeColors()  endifendfunctionfunction! <SID>RemoveLocalColors()  " suppress the error message  silent! execute "unlet b:colorscheme"  call s:ChangeColors()endfunction" if the  input parameter is empty,  display the current window  color scheme." otherwise,  set the  window color  scheme to  what is  specified and  change" colors is necessary.function! <SID>SetWindowColors(colorChoice)  if (a:colorChoice == "")    echo "Window color scheme is:  " . (exists("w:colorscheme") ? w:colorscheme : "NONE")  else    let w:colorscheme = a:colorChoice    call s:ChangeColors()  endifendfunctionfunction! <SID>RemoveWindowColors()  " suppress the error message  silent! execute "unlet w:colorscheme"  call s:ChangeColors()endfunctioncom! -nargs=? Setwindowcolors call s:SetWindowColors(<q-args>)com! Removewindowcolors call s:RemoveWindowColors()com! -nargs=? Setlocalcolors call s:SetLocalColors(<q-args>)com! Removelocalcolors call s:RemoveLocalColors()" change the colorscheme and update the global colorscheme variablecom! -nargs=1 Globalscheme colorscheme <args> | let g:colorscheme = g:colors_namenmap <leader>öw :execute "Setwindowcolors " . input("Enter window colorscheme [" . (exists("w:colorscheme") ? w:colorscheme : "NONE") . "]:  ")<cr>nmap <leader>öö :execute "Setlocalcolors " . input("Enter local colorscheme [" . (exists("b:colorscheme") ? b:colorscheme : "NONE") . "]:  ")<cr>nmap <leader>ög :execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")<cr>nmap <leader>öd :Removewindowcolors<cr>nmap <leader>ör :Removelocalcolors<cr>,V
+augroup vimrcs  au!  au bufwritepost /home/tellone/.vim/.vimrc         \ source /home/tellone/.vim/.vimrc |        \ if exists('g:Powerline_loaded') |          \ silent! call Pl#Load() |        \ endif augroup END,V
+cno $c e <C-\>eCurrentFileDir("e")<cr>,V
+i,v
+index,v
+  def create    redirect_to :action => index  end,V
+      pending("redirection"),V
+{,v
+"link" => "https://twitter.com/#!/Zorrriux",v
+gem "pry"gem "pry-editline",V
+gem "rspec-rails", ">= 2.0.1"gem "database_cleaner", ">= 0.7.0",V
+gem "cucumber-rails", :group => [:test]gem "capybara", :group => [:test],V
+gem "rspec-rails", ">= 2.0.1"gem "database_cleaner", ">= 0.7.0", :group => [:test],V
 #}}},V
 nmap <buffer> <M-k> <Plug>TexSyntaxMotionBackward,V
 nmap <buffer> <M-j> <Plug>TexSyntaxMotionForward,V
-cno $c e <C-\>eCurrentFileDir("e")<cr>,V
-,V
 augroup localColors,V
 augroup END,V
 au WinEnter * call s:ChangeColors(),V
@@ -63,38 +96,5 @@ nmap <leader>cc :botright cope<cr>,V
 nnoremap <c-q> :call QuickfixToggle()<cr>    function! QuickfixToggle()        if g:quickfix_is_open            cclose            let g:quickfix_is_open = 0        else            copen            let g:quickfix_is_open = 1        endif    endfunction,v
     assert_equal "User", sample.name,V
 @current_recipe = nil,V
- ,v
 # >---------------------------------[ Pry ]---------------------------------<@current_recipe = "pry"@before_configs["pry"].call if @before_configs["pry"]say_recipe 'pry'@configs[@current_recipe] = configgem 'pry' formated_appName = app_name.capitalizeinscript = <<-INSCRIPT!!!#{formated_appName}::Application.configure do  # Use Pry instead of IRB  silence_warnings do    begin      require 'pry'      IRB = Pry    rescue LoadError    end  endendINSCRIPTcreate_file("config/initializers/console.rb", inscript)@current_recipe = nil,V
 fomated_appName = app_Nameinscript = <<-INSCRIPT,V
-formated_appName[1] = formated_appName[1].uppcase,V
-app_name=,V
-MyApplication::Application.configure,v
-        let saved_unnamed_register = @@,V
-f,v
-  echom shellescape(@@),V
-        silent execute "grep! -R " . shellescape(@@) . " ."        copen        let @@ = saved_unnamed_register,V
-    execute "normal! `<v`>y" ,V
-    vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>,V
-i,v
-    nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@    function! GrepOperator(type)        echom "Test"    endfunction,V
-copy_file(pry_init_path, ,V
-create_file "config/initializers/generators.rb" do  "MyApplication::Application.configure do" do  "  # Use Pry instead of IRB" do  "  silence_warnings do" do    "begin"  "    require 'pry'"  "    IRB = Pry"  "    rescue LoadError"  "  end"  "end"end,V
-pry_init_path = relative_to_original_destination_root("/gitrepos/myProjects/ruby_stuff/rails_wiz/console.init.rb", false),V
- "config/initializers/generators.rb",v
-after_bundler do,V
-    begin,V
-begin,v
-@configs[@current_recipe] = config,V
-  generate 'rspec:install',V
-after_bundler do  generate 'rspec:install'end,V
-@current_recipe = "rspec"@before_configs["rspec"].call if @before_configs["rspec"]say_recipe 'RSpec',V
-# >---------------------------------[ RSpec ]---------------------------------<,V
-        rails new $1 -m "$HOME/Public/new_rails1.rb" -T -d mysql,V
-   elif [ $,V
-    if [ $# == 1 ]; then,V
-source $cofig1/func_lib,V
-" =>,V
-gvim(){ /usr/bin/gvim -f "$@" & true; }dd,V
-[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm",V
-",v
-    let g:syntastic_auto_loc_list=0,V

@@ -1,14 +1,13 @@
 Align
 AutomaticLaTexPlugin
-bufexplorer
 dbext.vim
 gundo
 localColorSchemes.vim
 matlab.vim
 nerdtree
-python-mode
+pydoc
 syntastic
-taglist.vim
+tagbar
 TaskList.vim
 tlib_vim
 tskeleton_vim
