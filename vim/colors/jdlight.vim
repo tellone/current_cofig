@@ -64,7 +64,7 @@ hi Identifier     guifg=#000088 guibg=bg      gui=none ctermfg=darkblue   ctermb
 
 "hi Keyword       guifg=#000088 gui=none
 
-if exists("g:jh_hi_use_bold")
+if exists("g:jd_hi_use_bold")
     hi Type           guifg=#660044 guibg=bg      gui=bold ctermfg=darkmagenta ctermbg=bg    cterm=none
     hi Statement      guifg=#440066 guibg=bg      gui=bold ctermfg=darkmagenta ctermbg=bg    cterm=none
 else

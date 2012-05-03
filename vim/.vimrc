@@ -190,12 +190,12 @@ function! FoldChange()
   echo &foldmethod
 endfunction
 
-" "Delete trailing white space, useful for Python ;)
-" func! DeleteTrailingWS()
-"   exe "normal mz"
-"   %s/\s\+$//ge
-"   exe "normal `z"
-" endfunc
+"Delete trailing white space, useful for Python ;)
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
 
 function! JavaScriptFold()
     setl foldmethod=syntax
@@ -376,14 +376,8 @@ nmap <leader>ff :FufMruFile<CR>
 nmap <leader>fd :FufDir<cr>
 
 "=> Gundo
-nnoremap <leader>dd :GundoToggle<CR>
+nnoremap <leader>uu :GundoToggle<CR>
 
-" => bufExplorer plugin
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-nmap <leader>o :BufExplorer<cr>
-
-"
 " => NerdTree
 nmap <leader>n :NERDTree<cr>
 let NERDTreeShowHidden=1
@@ -395,7 +389,7 @@ let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 
 let g:syntastic_mode_map = { 'mode': 'active',
       \ 'active_filetypes': ['ruby', 'html', 'python', 'javascript'],
-      \ 'passive_filetypes': ['php'] }
+      \ 'passive_filetypes': ['tex', 'latex', 'php'] }
 
 " => Tagbar
 let g:tagbar_autofocus=1
@@ -407,7 +401,7 @@ let tskelUserEmail='filip.diloom@gmail.com'
 let tskelLicence='Free Software'
 
 " => Twitvim
-let twitvim_token_file = "~/.vim/misc/cens/twitvim.token"
+let twitvim_token_file = '/home/tellone/.vim/misc/cens/twitvim.token'
 let twitvim_browser_cmd = 'firefox'" 
 source /home/tellone/.vim/misc/cens/twitinfo.vim
 
@@ -445,8 +439,6 @@ augroup FTMisc " {{{2
         "\ silent! execute "!chmod ".b:chmod_new." <afile>"|
         "\ unlet b:chmod_new|
         "\ endif
-
-  autocmd BufWritePost,FileWritePost ~/.Xdefaults,~/.Xresources silent! !xrdb -load % >/dev/null 2>&1
   autocmd BufWritePre,FileWritePre /etc/* if &ft == "dns" |
       \ exe "normal msHmt" |
       \ exe "gl/^\\s*\\d\\+\\s*;\\s*Serial$/normal ^\<C-A>" |
@@ -484,9 +476,7 @@ augroup FTOptions " {{{2
   autocmd!
   autocmd FileType c,cpp,cs               setlocal ai et sta sw=4 sts=4 si
   autocmd FileType sh,csh,tcsh,zsh        setlocal ai et sta sw=4 sts=4
-  autocmd FileType tcl,perl               setlocal ai et sta sw=4 sts=4
-  autocmd FileType matlab                 setlocal ai et sta sw=4 sts=4 
-  autocmd Filetype matlab                 silent! compiler mlint
+  autocmd FileType tcl,perl,matlab        setlocal ai et sta sw=4 sts=4
   autocmd FileType markdown,liquid        setlocal ai et sta sw=2 sts=2 tw=72
   autocmd FileType php,aspperl,aspvbs,vb  setlocal ai et sta sw=4 sts=4
   autocmd FileType apache,sql,vbnet       setlocal ai et sta sw=4 sts=4
@@ -546,6 +536,7 @@ augroup PYset
   au FileType python syn keyword pythonDecorator self
   au FileType python setlocal linebreak nolist
   au FileType python setlocal ai et sta tw=79 sw=4 sts=4
+  au bufWrite *.py  silent! call DeleteTrialingWS()  
 augroup END
 
 "}}}2
@@ -568,7 +559,7 @@ augroup END
  
 augroup JavaSet
   au!
-  au FileType java setl fen nocin ai et si sta sw=3 sts=3 ts=3 isk+=$
+  au FileType java setl fen si ai et si sta sw=3 sts=3 ts=3 isk+=$
   au FileType java let b:surround_101 = "\r\n}"
   au FileType java inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
   au FileType java iabbr <buffer> pri private
@@ -585,7 +576,6 @@ augroup END
 " Remove the Windows ^M - when the encodings gets messed up
 nnoremap <Leader>mm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-nnoremap <leader>j dd.
 "Quickly open a buffer for scripbble
 nmap <leader>qq :e ~/buffer<cr>
 nnoremap <leader>bb :OpenURL <cfile><CR>

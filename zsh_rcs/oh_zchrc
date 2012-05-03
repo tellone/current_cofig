@@ -8,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="tellone"
 
+
 if [ -d /home/tellone/gitrepos/current_config/zsh_rcs ]; then
     cofig1=/home/tellone/gitrepos/current_config/zsh_rcs
 else
@@ -29,7 +30,18 @@ fi
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+which vim &>/dev/null && editor="$(which vim)"
+
+export EDITOR="$editor -f"
+export VISUAL="$editor
+"
+export PAGER=/usr/local/bin/vimpager
+alias less=$PAGER
+alias zless=$PAGER
+
+
 plugins=(autojump git ruby gems rvm rake python pip terminator thor)
+
 
 source $ZSH/oh-my-zsh.sh
 source $cofig1/aliases

@@ -12,6 +12,7 @@ alias rmv='sudo rm -r'
 alias rerc="source /home/tellone/.zshrc"
 alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
+
 #shorts for usual commands
 alias ce='clear'
 alias na='nautilus .'
@@ -20,7 +21,7 @@ alias zmv='noglob zmv'
 alias ru='noglob ru'
 alias lh="ls -d .*/" 
 alias cdr="cd ../.."
-
+alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 #activtion
 alias sc_mode="source ~/bin/script_mode"
 alias fire='firefox &'
@@ -30,6 +31,7 @@ alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/gitrepos/current_config/zsh_rcs"
 
 #Paths typsets
+
 
 if [ -d "$HOME/Documents" ]; then
     typeset docs="$HOME/Documents"

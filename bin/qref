@@ -4,24 +4,27 @@
 #the ~/Documents/quickref folder
 
 
+refPath="/home/tellone/Documents/quickrefs"
+ref="$1.pdf"
+pdfread=xpdf
 if [[ "$#" -ne 1 ]]; then
-    echo "this script requirs 1 inputparameter"
+    echo "this script requirs 1 inputparameter to open"
+    echo "your choises are:"
+    echo  `ls $refPath`
     exit 1
 fi
 
-refPath="/home/tellone/Documents/quickrefs"
-ref="$1.pdf"
 case "$1" in
     "py")
-        evince "$refPath/py_ref.pdf" & 2>/dev/null;;
+        $pdfread "$refPath/py_ref.pdf" & 2>/dev/null;;
     "bash")
-        evince "$refPath/bash_ref.pdf" & &>/dev/null;;
+        $pdfread "$refPath/bash_ref.pdf" & &>/dev/null;;
     
    "html")
-       evince "$refPath/HTML-XHTML.pdf" & &>/dev/null;;
+       $pdfread "$refPath/HTML.pdf" & &>/dev/null;;
     *) 
         if [[ -r "$refPath/$ref"  ]]; then
-            evince "$refPath/$ref"& &>/dev/null
+            $pdfread "$refPath/$ref"& &>/dev/null
         else
             echo "no such file or file not readable"
             exit 1

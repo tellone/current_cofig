@@ -1,14 +1,76 @@
+{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/tellone.zsh-theme', 'time': 1336056254}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/51.markdown', 'time': 1336056085}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/50.markdown', 'time': 1336056063}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/49.markdown', 'time': 1336055808}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/48.markdown', 'time': 1336055715}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/45.markdown', 'time': 1336055692}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/47.markdown', 'time': 1336055665}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/46.markdown', 'time': 1336055453}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/44.markdown', 'time': 1335992353}
+{'word': '/home/tellone/keep/ebooks/programing/vim/learnvimscriptthehardway/chapters/43.markdown', 'time': 1335992136}
+{'word': '/home/tellone/keep/art/justMe/poems/lyric/Poems.tex.project.vim', 'time': 1335967667}
+{'word': '/home/tellone/.vim/.atprc.vim', 'time': 1335966031}
+{'word': '/home/tellone/.vim/.vimrc', 'time': 1335966030}
+{'word': '/home/tellone/Documents/doc/Ny mapp/Nuc_DeComp.tex', 'time': 1335966029}
+{'word': '/home/tellone/keep/art/justMe/poems/lyric/Poems.tex', 'time': 1335965862}
+{'word': '/home/tellone/Documents/doc/Ny mapp/Nuc_DeComp.tex.project.vim', 'time': 1335951772}
+{'word': '/home/tellone/Documents/doc/nuc labb 1/nuclear lab1.tex', 'time': 1335951340}
+{'word': '/home/tellone/Documents/doc/nuc labb 1/nuclear lab1.tex.project.vim', 'time': 1335951135}
+{'word': '/home/tellone/Documents/doc/fyst18_-_ams.tex', 'time': 1335941839}
+{'word': '/home/tellone/Documents/doc/Ny mapp/Nuc_DeComp.log', 'time': 1335941224}
+{'word': '/home/tellone/Documents/doc/antec.tex', 'time': 1335941030}
+{'word': '/home/tellone/bin/some_ruby.rb', 'time': 1335913558}
+{'word': '/home/tellone/.rvm/gems/ruby-1.9.2-p290/gems/rmagick-2.13.1/README.html', 'time': 1335890112}
+{'word': '/home/tellone/.rvm/gems/ruby-1.9.2-p290/gems/rmagick-2.13.1/examples/demo.rb', 'time': 1335889474}
+{'word': '/tmp/vimpager_2766/stdin', 'time': 1335889405}
+{'word': '/home/tellone/.rvm/gems/ruby-1.9.2-p290/gems/fileutils-0.7/lib/file_utils.rb', 'time': 1335889368}
+{'word': '/home/tellone/.rvm/gems/ruby-1.9.2-p290/gems/fileutils-0.7/bin/CutyCapt', 'time': 1335889343}
+{'word': '/home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/makelatex.py', 'time': 1335888909}
+{'word': '/home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/LatexBox_latexmk.vim', 'time': 1335888908}
+{'word': '/home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/LatexBox_common.vim', 'time': 1335888906}
+{'word': '/home/tellone/.vim/bundle/AutomaticLaTexPlugin/ftplugin/ATP_files/compiler.vim', 'time': 1335888899}
+{'word': '/home/tellone/.vim/bundle/AutomaticLaTexPlugin/autoload/atplib/compiler.vim', 'time': 1335822982}
+{'word': '/home/tellone/.vim/bundle/AutomaticLaTexPlugin/doc/latexhelp.txt', 'time': 1335822926}
+{'word': '/home/tellone/bin/mymnt', 'time': 1335709164}
+{'word': '/home/tellone/bin/qref', 'time': 1335708975}
+{'word': '/home/tellone/.vim/cache/tskel_bits/java', 'time': 1335660127}
+{'word': '/home/tellone/.vim/colors/jdlight.vim', 'time': 1335660116}
+{'word': '/home/tellone/.vim/misc/cens/.viminfo', 'time': 1335659281}
+{'word': '/home/tellone/.vim/bundle/vim-ruby/ftplugin/ruby.vim', 'time': 1335658864}
+{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/oh_zchrc', 'time': 1335619056}
+{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/func_lib', 'time': 1335619052}
+{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/aliases', 'time': 1335619027}
+{'word': '/home/tellone/gitrepos/current_config/bash_rcs/bash_config', 'time': 1335618590}
+{'word': '/home/tellone/gitrepos/current_config/bash_rcs/func_lib', 'time': 1335618577}
+{'word': '/home/tellone/gitrepos/current_config/bash_rcs/bash_env', 'time': 1335618567}
+{'word': '/home/tellone/gitrepos/current_config/bashrc', 'time': 1335618409}
+{'word': '/home/tellone/.zsh-update', 'time': 1335492653}
+{'word': '/home/tellone/.pip/pip.log', 'time': 1335492599}
+{'word': '/home/tellone/regetron/exerxies/ex7.regex', 'time': 1335445038}
+{'word': '/home/tellone/regetron/exerxies/ex7.txt', 'time': 1335444993}
+{'word': '/home/tellone/regetron/exerxies/ex4.regex', 'time': 1335444914}
+{'word': '/home/tellone/regetron/exerxies/ex4.txt', 'time': 1335444163}
+{'word': '/home/tellone/regetron/exerxies/ex2.regex', 'time': 1335443733}
+{'word': '/home/tellone/regetron/exerxies/ex2.txt', 'time': 1335442890}
+{'word': '/home/tellone/regetron/bin/regetron', 'time': 1335442660}
+{'word': '/home/tellone/regetron/regetron/engine.py', 'time': 1335442602}
+{'word': '/home/tellone/regetron/regetron/__init__.py', 'time': 1335442462}
+{'word': '/home/tellone/regetron/exerxies/myfile.txt', 'time': 1335442323}
+{'word': '/tmp/vimpager_18100/stdin', 'time': 1335414074}
+{'word': '/home/tellone/.vim/job/tempcolors/plugin/tempcolor.vim', 'time': 1335410910}
+{'word': '/tmp/vimpager_14360/stdin', 'time': 1335398999}
+{'word': '/tmp/vimpager_14285/stdin', 'time': 1335398876}
+{'word': '/tmp/vimpager_14131/stdin', 'time': 1335398853}
+{'word': '/tmp/vimpager_14023/stdin', 'time': 1335398814}
+{'word': '/home/tellone/vimpager/Makefile', 'time': 1335398003}
+{'word': '/home/tellone/vimpager/vimpager.1', 'time': 1335397975}
+{'word': '/home/tellone/vimpager/README', 'time': 1335397939}
+{'word': '/home/tellone/gitrepos/current_config/.git/COMMIT_EDITMSG', 'time': 1335379170}
 {'word': '/home/tellone/gitrepos/myProjects/tpope/.ruby/lib/tpope.rb', 'time': 1335378983}
 {'word': '/home/tellone/gitrepos/pregit', 'time': 1335378971}
-{'word': '/home/tellone/.vim/bundle/vim-ruby/ftplugin/ruby.vim', 'time': 1335378950}
-{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/aliases', 'time': 1335378237}
-{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/func_lib', 'time': 1335377846}
-{'word': '/home/tellone/.vim/.vimrc', 'time': 1335377666}
 {'word': '/home/tellone/gitrepos/myProjects/tpope/.vimrc', 'time': 1335376605}
-{'word': '/home/tellone/gitrepos/current_config/.git/COMMIT_EDITMSG', 'time': 1335375929}
 {'word': '/home/tellone/gitrepos/myProjects/python_stuff/myspline.py', 'time': 1335372610}
 {'word': '/home/tellone/.vim/bundle/python-mode/autoload/pymode/doc.vim', 'time': 1335363501}
-{'word': '/home/tellone/.vim/job/tempcolors/plugin/tempcolor.vim', 'time': 1335357705}
 {'word': '/home/tellone/.vim/bundle/zencoding-vim/doc/zencoding.txt', 'time': 1335357204}
 {'word': '/home/tellone/.vim/bundle/zencoding-vim/autoload/zencoding.vim', 'time': 1335357186}
 {'word': '/home/tellone/.vim/bundle/python-mode/autoload/pymode/virtualenv.vim', 'time': 1335356974}
@@ -22,7 +84,6 @@
 {'word': '/home/tellone/.oh-my-zsh/plugins/rake/rake.plugin.zsh', 'time': 1335354633}
 {'word': '/home/tellone/.oh-my-zsh/plugins/grails/grails.plugin.zsh', 'time': 1335354605}
 {'word': '/home/tellone/.oh-my-zsh/lib/git.zsh', 'time': 1335354390}
-{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/oh_zchrc', 'time': 1335354062}
 {'word': '/home/tellone/Public/myres/spec/controllers/accounts_controller_spec.rb', 'time': 1335323643}
 {'word': '/home/tellone/Public/myres/app/controllers/accounts_controller.rb', 'time': 1335323283}
 {'word': '/home/tellone/Public/myres/app/controllers/application_controller.rb', 'time': 1335323266}
@@ -37,7 +98,6 @@
 {'word': '/home/tellone/.vim/bundle/vim-ruby/autoload/rubycomplete.vim', 'time': 1335304259}
 {'word': '/home/tellone/Public/myres/features/step_definitions/links_collector_steps.rb', 'time': 1335228158}
 {'word': '/home/tellone/Public/myres/config/cucumber.yml', 'time': 1335212450}
-{'word': '/home/tellone/.vim/.atprc.vim', 'time': 1335205975}
 {'word': '/home/tellone/.vim/.netrwhist', 'time': 1335193742}
 {'word': '/home/tellone/.vim/bundle/vim-powerline/autoload/Pl.vim', 'time': 1335188754}
 {'word': '/home/tellone/.vim/bundle/vim-powerline/autoload/Powerline/Functions/syntastic.vim', 'time': 1335188680}
@@ -178,7 +238,6 @@
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/config.py', 'time': 1334569923}
 {'word': '/home/tellone/Downloads/atp.pdf', 'time': 1334569759}
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/chapters/09.markdown', 'time': 1334554345}
-{'word': '/home/tellone/.vim/colors/jdlight.vim', 'time': 1334554343}
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/chapters/08.markdown', 'time': 1334554340}
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/chapters/07.markdown', 'time': 1334554339}
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/chapters/21.markdown', 'time': 1334554338}
@@ -193,9 +252,7 @@
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/chapters/11.markdown', 'time': 1334544721}
 {'word': '/home/tellone/keep/ebooks/programing/Shell scripting/learnvimscriptthehardway/chapters/10.markdown', 'time': 1334544385}
 {'word': '/home/tellone/bin/script_mode', 'time': 1334541731}
-{'word': '/home/tellone/gitrepos/current_config/zsh_rcs/tellone.zsh-theme', 'time': 1334541491}
 {'word': '/home/tellone/gitrepos/current_config/.gitignore', 'time': 1334530811}
-{'word': '/home/tellone/gitrepos/current_config/bashrc', 'time': 1334497543}
 {'word': '/home/tellone/gitrepos/current_config/.git/description', 'time': 1334497105}
 {'word': '/home/tellone/gitrepos/current_config/.git/logs/HEAD', 'time': 1334497089}
 {'word': '/home/tellone/gitrepos/current_config/.git/config', 'time': 1334497050}
@@ -210,7 +267,6 @@
 {'word': '/home/tellone/bin/spectrum', 'time': 1334344512}
 {'word': '/home/tellone/bin/flib', 'time': 1334343959}
 {'word': '/home/tellone/.vim/bundle/vim-colors-solarized/doc/solarized.txt', 'time': 1334244694}
-{'word': '/home/tellone/keep/art/justMe/poems/lyric/Poems.tex', 'time': 1334244623}
 {'word': '/home/tellone/.vim/skeletons/bits/cucumber/standard', 'time': 1334244600}
 {'word': '/home/tellone/.vim/bundle/zencoding-vim/.git/FETCH_HEAD', 'time': 1334178537}
 {'word': '/home/tellone/spec_me/bdd_learn/db/migrate/20120410182712_create_movies.rb', 'time': 1334177768}

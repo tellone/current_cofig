@@ -1,7 +1,66 @@
-/,v
-alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man",V
+let,v
+\,v
 ,v
+\author{Filip Pettersson}\title{\huge Hej},V
+,V
+\date{}           % Blir dagens datum om det utelämnas,V
+\author{ Filip Pettersson (tf06fp0) \\\\ <tf06fp0@student.lth.se> \\\\ 871026-3339},V
+\title{\hrule  Hartree-Fock-approximation \hrule},V
+\newpage,V
+\thispagestyle{empty} %inget sidnummer på omslagssidan,V
+\maketitle ,V
+\begin{document} ,V
+\documentclass[pdftex,a4paper]{article}\usepackage[T1]{fontenc}\usepackage[english]{babel}                                     % rubriker (t ex "Innehållsförteckning")\usepackage{fancyvrb}           % För programlistor med tabulatorer%%% remove comment delimiter ('%') and specify parameters if required\usepackage[pdftex]{graphicx}%Mathematica importerat bibliotek OBS måste adderas under MikTeX "`Settings"'%samt (för intellitype) köra "`Import TeX command"' under tools menyn i TeXnicCenter%\usepackage{notebook2e, latexsym} %\usepackage{pstricks} %för att rendera vectorgrafik exporterad som pstricks TeX-kod från Dia\fvset{tabsize=4}               % Tabulatorpositioner\fvset{fontsize=\small}         % Lagom storlek för programlistor\title{\hrule  Hartree-Fock-approximation \hrule}\author{ Filip Pettersson (tf06fp0) \\\\ <tf06fp0@student.lth.se> \\\\ 871026-3339}\date{}           % Blir dagens datum om det utelämnas%några kommandon som ska undvika att bilderna hamnar på fel ställe\renewcommand{\topfraction}{0.95}	%öka andelen av sidan som får innehålla figurer (från 70%)\renewcommand{\floatpagefraction}{1.0} %höj hur stor en figur måste vara för att få en egen sida (från 50%)\headheight     0.0in\topmargin      0.1in\textheight			22cm%OBS notera att det inte finns någon "`bottom margin"' i LaTeX - det styrs av de tre som är angivna\begin{document} \maketitle \thispagestyle{empty} %inget sidnummer på omslagssidan\newpage,V
+\begin{center},V
+\begin{left},V
+\end{center},V
+\begin{centering},V
+\usepackage{url,booktabs,graphicx},V
+\usepackage{fancyhdr,fancybox,fancyvrb},V
+\usepackage{microtype},V
+\usepackage[colorlinks=true]{hyperref},V
+\documentclass[a4paper,12pt]{article} \usepackage [utf8x]{inputenc} \usepackage[pdftex]{graphicx} \usepackage{epstopdf} \usepackage{helvet} \usepackage{latexsym}\usepackage{subfig}\usepackage{sidecap}\usepackage{float}\usepackage{wrapfig}\usepackage[T1]{fontenc},V
+\documentclass[a4paper,10pt]{article}\usepackage[utf8]{inputenc}\usepackage[english]{babel}\usepackage{amssymb,amsmath}\usepackage{url,booktabs,graphicx}\usepackage{fancyhdr,fancybox,fancyvrb}\usepackage{multicol,a4wide}\usepackage{microtype}\usepackage[colorlinks=true]{hyperref},V
+\renewcommand{\rmdefault}{ppl}\hfuzz 5pt\renewcommand{\rmdefault}{ppl}\newcommand{\degr}{$^\circ$}\newcommand{\pic}[3]{\begin{figure}[htb]\begin{center}\includegraphics[width=0.85\textwidth]{#3}\caption{\label{#2}#1}\end{center}\end{figure}},V
+\newcommand{\keywords}{AMS, SSAMS, rare isotope, meteorites},V
+\renewenvironment{abstract}{\author{Kaj Jansson \and Filip Pettersson},V
+\begin{minipage}{0.8\textwidth},V
+\noindent{\bfseries \abstractname :}}{\\ \\,V
+\noindent{\bfseries Keywords:} \keywords,V
+\noindent{\bfseries Keywords:} \keywords\author{Kaj Jansson \and Filip Pettersson},V
+\pagestyle{fancy},V
+\end{minipage},V
+\vfill,V
+\end{center}},V
+\fvset{xleftmargin=0mm, xrightmargin=0mm, samepage=false, frame=none, framerule=0.2mm, framesep=1.5mm, numbers=left, numbersep=10pt},V
+\setcounter{page}{0},V
+\thispagestyle{empty},V
+\maketitle,V
+\thispagestyle{empty},V
+\end{abstract},V
+This paper is a short summary of the basic operation and principles of an accelerator mass spectrometry system. Tandem accelerator mass spectrometry and single stage accelerator mass spectrometry are explained and compared. One of the fields where accelerator mass spectrometry has become an important tool is the examination of extraterrestrial materials which provide knowledge about things like past cosmic ray fluxes and the creation and life in space of meteorites. This field is summarized to show how accelerator mass spectrometry can be used in science.,V
+\begin{abstract},V
+\bibliography{fyst18_-_ams},V
+\bibliographystyle{unsrt},V
+\section{}\end{document},V
+" vim:fdm=marker:ff=unix:noet:ts=4:sw=4,V
+",V
+nnoremap <leader>j dd.,V
+  autocmd FileType matlddab                 setlocal ai et sta sw=4 sts=4 ,V
+  autocmd Filetype matlab                 silent! compiler mlint,V
+nmap <leader>o :BufExplorer<cr>,V
+let g:bufExplorerShowRelativePath=1,V
+let g:bufExplorerDefaultHelp=0,V
+" => bufExplorer plugin,V
+refPath="/home/tellone/Documents/quickrefs"ref="$1.pdf",V
+let g:pathogen_disable=['localColorSchemes'],V
+/,v
+let g:pathogen_disable=['localColorSchemes'],V
+"Base name of disabled bundles,V
+",v
+,V
 fi,V
+alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man",V
     rm -r $repo/vim,V
 if [ -d $repo/vim ]; then,V
     rm $repo/plug_list.txt,V
@@ -15,7 +74,6 @@ if [ -d $repo/bin ]; then,V
     autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\"",V
     autocmd BufWritePre,FileWritePre /etc/* if &ft == "dns" |          \ exe "normal msHmt" |          \ exe "gl/^\\s*\\d\\+\\s*;\\s*Serial$/normal ^\<C-A>" |          \ exe "normal g`tztg`s" |          \ endif    autocmd BufReadPre *.pdf setlocal binary    autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\""    autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *      \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif,V
   autocmd BufNewFile,BufRead *.CBL,*.COB,*.LIB  set ft=cobol,V
-,V
 no Python documentation found for '__add__',V
 line    8:Traceback (most recent call last):line    8:  File "<string>", line 1, in <module>line    8:NameError: name 'out' is not defined,v
 if [ -d "$HOME/gitrepos/myProjects" ]; then    typeset mypro="$HOME/gitrepos/myProjects"    : ~myprofi,V
@@ -40,61 +98,3 @@ index,v
   def create    redirect_to :action => index  end,V
       pending("redirection"),V
 {,v
-"link" => "https://twitter.com/#!/Zorrriux",v
-gem "pry"gem "pry-editline",V
-gem "rspec-rails", ">= 2.0.1"gem "database_cleaner", ">= 0.7.0",V
-gem "cucumber-rails", :group => [:test]gem "capybara", :group => [:test],V
-gem "rspec-rails", ">= 2.0.1"gem "database_cleaner", ">= 0.7.0", :group => [:test],V
-#}}},V
-nmap <buffer> <M-k> <Plug>TexSyntaxMotionBackward,V
-nmap <buffer> <M-j> <Plug>TexSyntaxMotionForward,V
-augroup localColors,V
-augroup END,V
-au WinEnter * call s:ChangeColors(),V
-if exists("g:loaded_tempcolor") || v:version < 700 || &cp  finishendiflet g:loaded_tempcolor = 1if (!exists("g:colorscheme"))  let g:colorscheme = g:colors_nameendifaugroup localColors  au!  au WinEnter * call s:ChangeColors()  au WinEnter *         \ if exists('g:Powerline_loaded') |          \ sinlent! execute "Pl#ReloadColorscheme" |        \ endif augroup END,V
-  au FileType java iabbr <buffer> pri private,V
-  autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *    \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endifaugroup END " }}}2,V
-" -*- vim -*-" LAST MODIFICATION: "Mon, 22 Sep 2003 10:24:58 Eastern Daylight Time"" (C) 2002 by Salman Halim, <salmanhalim@hotmail.com>" Version 1.2" Usage:"" 1.2:" Added Removewindowcolors  and Setwindowcolors to set  window-specific colors" (along with mappings)."" Original:" Either  call Setlocalcolors  from  a  particular buffer  or  put inside  the" ftplugin file to affect all buffers of a particular filetype."" Call Removelocalcolors  to unlet the local  variable if it exists  (can just" unlet the local variable manually but Remove will change the color scheme if" necessary)." let the  default color  scheme be whatever  is currently in  use if  none is" explicitly specified,V
-public static void main(String[] args) {  System.out.println("come tome me");  },v
-ENV['rvm_ruby_String'],v
-#place , this file in ~/.pryrc,V
-if [ -d "$HOME/keep/ebooks" ]; then    typeset books="$HOME/keep/ebooks"    : ~booksfi,V
-},V
-class MainTest,V
-if exists("loaded_javascript_syntax_checker")    finishendiflet loaded_javascript_syntax_checker = 1let s:supported_checkers = 'jlint'call SyntasticLoadChecker(s:supported_checkers, 'java'),V
-"============================================================================"File:        jslint.vim"Description: Javascript syntax checker - using jslint"Maintainer:  Martin Grenfell <martin.grenfell at gmail dot com>"License:     This program is free software. It comes without any warranty,"             to the extent permitted by applicable law. You can redistribute"             it and/or modify it under the terms of the Do What The Fuck You"             Want To Public License, Version 2, as published by Sam Hocevar."             See http://sam.zoy.org/wtfpl/COPYING for more details.""Tested with jslint 0.1.4."============================================================================if !exists("g:syntastic_javascript_jslint_conf")    let g:syntastic_javascript_jslint_conf = "--white --undef --nomen --regexp --plusplus --bitwise --newcap --sloppy --vars"endiffunction! SyntaxCheckers_javascript_HighlightTerm(error)    let unexpected = matchstr(a:error['text'], 'Expected.*and instead saw \'\zs.*\ze\'')    if len(unexpected) < 1 | return '' | end    return '\V'.split(unexpected, "'")[1]endfunctionfunction! SyntaxCheckers_javascript_GetLocList()    let makeprg = "jslint " . g:syntastic_javascript_jslint_conf . " " . shellescape(expand('%'))    let errorformat='%E %##%n %m,%-Z%.%#Line %l\, Pos %c,%-G%.%#'    return SyntasticMake({ 'makeprg': makeprg, 'errorformat': errorformat, 'defaults': {'bufnr': bufnr("")} })endfunction,V
-"============================================================================"File:        javascript.vim"Description: Figures out which javascript syntax checker (if any) to load"             from the javascript directory."Maintainer:  Martin Grenfell <martin.grenfell at gmail dot com>"License:     This program is free software. It comes without any warranty,"             to the extent permitted by applicable law. You can redistribute"             it and/or modify it under the terms of the Do What The Fuck You"             Want To Public License, Version 2, as published by Sam Hocevar."             See http://sam.zoy.org/wtfpl/COPYING for more details."" Use g:syntastic_javascript_checker option to specify which jslint executable" should be used (see below for a list of supported checkers)." If g:syntastic_javascript_checker is not set, just use the first syntax" checker that we find installed."============================================================================if exists("loaded_javascript_syntax_checker")    finishendiflet loaded_javascript_syntax_checker = 1let s:supported_checkers = ["gjslint", "jslint", "jsl", "jshint"]call SyntasticLoadChecker(s:supported_checkers, 'javascript'),V
-  au FileType ruby iabbr <buffer> bpry binding.pry,V
-  au FileType javascript inoremap <buffer> $r return,V
-  au FileType javascript imap <c-a> alert();<esc>hi,V
-  au FileType javas imap,V
-  au FileType javascript call JavaScriptFold(),V
-  au FileType javascript setl fen nocin ai et sta sw=2 sts=2 ts=2 isk+=$,V
-"{{{2 => JavaScript section augroup JSset  au!  au FileType javascript call JavaScriptFold()  au FileType javascript setl fen nocin ai et sta sw=2 sts=2 ts=2 isk+=$  au FileType javascript imap <c-t> AJS.log();<esc>hi  au FileType javascript imap <c-a> alert();<esc>hi  au FileType javascript let b:surround_101 = "\r\n}"  au FileType javascript inoremap <buffer> $r return  au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xiaugroup END"}}}2,V
-    word = words.reverse!.pop(),V
-  require "readline"  require "irb/completion" rescue nil,V
-require ,V
-# Takes in a full sentence and returns the sorted words.,V
-end,V
-    return sort_words(words),V
-    words = break_words(sentence),V
-def sort_sentence(sentence),V
- = sort_sentence(sentence),v
-sentence = "All god\tthings come to those who wait.,v
-    cclose,v
-ENV['HOME'] ||= ENV['USERPROFILE'] || File.dirname(__FILE__)Pry.config.history.file = if defined?(Bundler)                            Bundler.tmp.parent.join('history.rb')                          else                            File.expand_path('~/.history.rb')                          end,v
-if defined?(Rails) && Rails.en,V
-v  require 'logger'  ActiveRecord::Base.logger = Logger.new(STDOUT)  ActiveRecord::Base.clear_active_connections!  class Class    def core_ext      self.instance_methods.map {|m| [m, self.instance_method(m).source_location] }.select {|m| m[1] && m[1][0] =~/activesupport/}.map {|m| m[0]}.sort    end  endend,v
-END,V
-Pry.prompt = [proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} > " }, proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} * " }],V
-ENV['HOME'] ||= ENV['USERPROFILE'] || File.dirname(__FILE__)Pry.config.history.file = if defined?(Bundler)                            Bundler.tmp.parent.join('history.rb')                          else                            File.expand_path('~/.history.rb')                          end,V
-source $cofig1/zsh_completion,V
-#some vim specs,V
-# export $EDITOR='vim',V
-if [ -f ~/buffer ]; then,V
-    rm ~/buffer,V
-gvim(){ /usr/bin/gvim -f "$@" & true; },V
-newrails() {     wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"    if [ $# == 1 ]; then        rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql    elif [ $# == 2 ]; then        rails new $1 -m "$wizpath/new_rails$2.rb" -T    else        echo "This function takes one or two inputs"        exit 1    fi    cd $1    unset wizpath},V
-#Ruby scripts,V
-#Home folders shortsif [ -n "$USERPROFILE" ] && which cygpath >/dev/null; then    typeset home="`cygpath "$USERPROFILE"`"    typeset docs="$home/My Documents"    typeset desktop="`cygpath -D 2>/dev/null`"    [ -n "$APPDATA" ] || APPDATA="$USERPROFILE/Application Data"    typeset appdata="`cygpath "$APPDATA"`"    : ~home ~docs ~desktop ~appdataelif [ -d "$HOME/Documents" ]; then    typeset docs="$HOME/Documents"    : ~docsfi,V
-#Ruby scriptsif [ -x "`which ruby 2>/dev/null`" ]; then    gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"    [ -z gems ] || : ~gemsfi[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm",V
