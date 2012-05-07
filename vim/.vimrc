@@ -2,7 +2,6 @@
 " => Pathogen
 """""""""""""""""""""""""""""""
 "{{{
-
 set nocp
 
 "Base name of disabled bundles
@@ -92,7 +91,6 @@ set display=lastline
 "{{{
 " Set 7 lines to the curors - when moving vertical..
 set so=7
-
 set number
 
 set cmdheight=1 "The commandbar height
@@ -116,13 +114,12 @@ endif
 set ignorecase "Ignore case when searching
 set smartcase  "Override Ingnore case in obvious situations
 
-
 set hlsearch "Highlight search things
-
 set incsearch "Make search act like search in modern browsers
-set lazyredraw "Don't redraw while executing macros 
 
 set showmatch "Show matching bracets when text indicator is over them
+set lazyredraw "Don't redraw while executing macros 
+
 set mat=3 "How many tenths of a second to blink
 
 " No sound on errors
@@ -254,6 +251,7 @@ else
   set t_Co=256
   colorscheme mycasts
   set background=dark
+  nmap <leader>pp :setlocal paste!<cr>
 endif
 
 set encoding=utf8
@@ -580,7 +578,6 @@ nnoremap <Leader>mm mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 nmap <leader>qq :e ~/buffer<cr>
 nnoremap <leader>bb :OpenURL <cfile><CR>
 
-nmap <leader>pp :setlocal paste!<cr>
 
 nnoremap <leader>" viw<esc>a;<esc>lel
 

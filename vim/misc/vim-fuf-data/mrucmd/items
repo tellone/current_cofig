@@ -1,40 +1,61 @@
-{'word': ':w!', 'time': 1336056254}
-{'word': ':NERDTree', 'time': 1336056067}
+{'word': ':w!', 'time': 1336392117}
+{'word': ':bn', 'time': 1336392103}
+{'word': ':bp', 'time': 1336392032}
+{'word': ':Bclose', 'time': 1336392030}
+{'word': ':tabnext', 'time': 1336392019}
+{'word': ':tabprev', 'time': 1336392018}
+{'word': ':e step_definitions/tracker_steps.rb', 'time': 1336391697}
+{'word': ':wq', 'time': 1336391389}
+{'word': ':sav! ../app/assets/stylesheets/application.css', 'time': 1336391375}
+{'word': ':sav ../app/assets/stylesheets/application.css', 'time': 1336391367}
+{'word': ':r http://github.com/rails3book/ticketee/raw/master/app/assets/stylecheats/application.css', 'time': 1336391324}
+{'word': ':tabnew', 'time': 1336391238}
+{'word': ':TSkeletonSetup feat.feature', 'time': 1336383725}
+{'word': ':e features/tracker.feature', 'time': 1336383691}
+{'word': ':%s/root/phil/g', 'time': 1336383496}
+{'word': ':NERDTree', 'time': 1336383465}
+{'word': ':cd gitrepos/myProjects/ruby_stuff/rails_wiz/', 'time': 1336383311}
+{'word': ':FufMruFile', 'time': 1336383255}
+{'word': ':e! ~/.vim/.vimrc', 'time': 1336373618}
+{'word': ':View', 'time': 1336339592}
+{'word': ':TEX', 'time': 1336339584}
+{'word': ':cd %:p:h', 'time': 1336339398}
+{'word': ':q', 'time': 1336337457}
+{'word': ':w', 'time': 1336337454}
+{'word': ':r ../views/layouts/application.html.erb', 'time': 1336337448}
+{'word': ':e ../views/accounts/index.html.erb', 'time': 1336337430}
+{'word': ':Q', 'time': 1336337058}
+{'word': ':TagbarToggle', 'time': 1336328862}
+{'word': ':redraw', 'time': 1336328830}
+{'word': ':Redraw', 'time': 1336328824}
+{'word': ':Rake cucumber:all', 'time': 1336319358}
+{'word': ':Rake cucumber', 'time': 1336319295}
+{'word': ':cd Public/myres/', 'time': 1336319089}
+{'word': ':Rails Public/myres/', 'time': 1336318865}
+{'word': ':set nospell', 'time': 1336318797}
+{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1336318763}
+{'word': ':less', 'time': 1336060877}
+{'word': ':help source', 'time': 1336060737}
 {'word': ':help section', 'time': 1336056035}
 {'word': ':help ]]', 'time': 1336055932}
-{'word': ':tabprev', 'time': 1336055692}
-{'word': ':tabnext', 'time': 1336055665}
-{'word': ':cd %:p:h', 'time': 1336055432}
-{'word': ':FufMruFile', 'time': 1336055419}
 {'word': ':help ft', 'time': 1335992299}
-{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1335992251}
-{'word': ':wq', 'time': 1335967667}
 {'word': ':help atprc', 'time': 1335966110}
 {'word': ':help b:atp_StarEnvDefault', 'time': 1335966066}
-{'word': ':bp', 'time': 1335966032}
-{'word': ':bn', 'time': 1335966029}
 {'word': ':cp', 'time': 1335965905}
-{'word': ':e! ~/.vim/.vimrc', 'time': 1335965884}
 {'word': ':call atplib#motion#JMotion('''')', 'time': 1335965814}
 {'word': ':ccl', 'time': 1335965766}
 {'word': ':DTEX', 'time': 1335965742}
 {'word': ':LOG', 'time': 1335965725}
-{'word': ':TEX', 'time': 1335965718}
-{'word': ':Bclose', 'time': 1335965670}
 {'word': ':help atp-:TexAlign', 'time': 1335965630}
 {'word': ':help b:atp_TexFlavor', 'time': 1335965398}
 {'word': ':help atp', 'time': 1335951851}
 {'word': ':MakeLatex', 'time': 1335951807}
 {'word': ':call atplib#motion#TexSyntaxMotion(0,1)', 'time': 1335951367}
 {'word': ':call atplib#motion#TexSyntaxMotion(1,1)', 'time': 1335951364}
-{'word': ':tabnew', 'time': 1335951251}
 {'word': ':call atplib#motion#StartVisualMode(''v'')', 'time': 1335951200}
 {'word': ':call atplib#motion#StartVisualMode(''V'')', 'time': 1335951193}
-{'word': ':View', 'time': 1335951042}
 {'word': ':view', 'time': 1335951034}
-{'word': ':q', 'time': 1335941906}
 {'word': ':botright cope', 'time': 1335941896}
-{'word': ':w', 'time': 1335941869}
 {'word': ':bd!', 'time': 1335941235}
 {'word': ':ShowErrors\ o', 'time': 1335941224}
 {'word': ':bdelete', 'time': 1335941180}
@@ -45,7 +66,6 @@
 {'word': ':e Documents/doc/Ny\ mapp/NucC', 'time': 1335938926}
 {'word': ':e Documents/doc/', 'time': 1335938855}
 {'word': ':cd ~doc', 'time': 1335938730}
-{'word': ':TagbarToggle', 'time': 1335938710}
 {'word': ':q!', 'time': 1335891407}
 {'word': ':remagic', 'time': 1335889060}
 {'word': ':help ruby magic', 'time': 1335889051}
@@ -73,7 +93,6 @@
 {'word': '/blog/articles$', 'time': 1335445011}
 {'word': '/blog/article/[0-9]$', 'time': 1335445011}
 {'word': '/blog/article/1', 'time': 1335444949}
-{'word': ':Q', 'time': 1335398990}
 {'word': ':1', 'time': 1335397989}
 {'word': ':wincmd P', 'time': 1335396886}
 {'word': ':wincmd p', 'time': 1335396883}
@@ -111,7 +130,6 @@
 {'word': ':help silent', 'time': 1335363530}
 {'word': ':sinlent', 'time': 1335363524}
 {'word': ':help sil!', 'time': 1335363520}
-{'word': ':redraw', 'time': 1335363274}
 {'word': ':setlocal buftype=nofile bufhidden=delete noswapfile nowrap previewwindow', 'time': 1335363252}
 {'word': ':pclose | botright 8new', 'time': 1335363217}
 {'word': ':call FoldChange()', 'time': 1335362932}
@@ -192,7 +210,6 @@
 {'word': ':echo &completefunc', 'time': 1335047934}
 {'word': ':echo $completefunc', 'time': 1335047927}
 {'word': ':echo completefunc', 'time': 1335047919}
-{'word': ':set nospell', 'time': 1335047785}
 {'word': ':set spell', 'time': 1335041913}
 {'word': '/start_pont/start_piont', 'time': 1335040427}
 {'word': ':sav ex_hard.rb', 'time': 1335039296}
@@ -210,7 +227,6 @@
 {'word': ':e mail_form/lib/mail_form.rb', 'time': 1334951133}
 {'word': ':cd ..', 'time': 1334951081}
 {'word': ':e mail_from_test.rb', 'time': 1334950668}
-{'word': ':TSkeletonSetup feat.feature', 'time': 1334935559}
 {'word': ':e myres/features/links_colloctor.feature', 'time': 1334935546}
 {'word': ':r ~/gitrepos/myProjects/ruby_stuff/rails_wiz/console_init.rb', 'time': 1334913468}
 {'word': ':''<,''>tabprev', 'time': 1334911585}
@@ -264,7 +280,6 @@
 {'word': ':git', 'time': 1334626083}
 {'word': ':Gcommit', 'time': 1334626055}
 {'word': ':e genre_steps.rb', 'time': 1334625985}
-{'word': ':Rake cucumber', 'time': 1334625694}
 {'word': ':e bdd_learn/features/Display_genras.feature', 'time': 1334625350}
 {'word': ':r ../Gemjo', 'time': 1334621946}
 {'word': ':bundle', 'time': 1334619860}

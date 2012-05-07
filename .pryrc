@@ -1,6 +1,6 @@
 require "readline"
 require "irb/completion" rescue nil
-if ENV['rvm_ruby_string'] == "*jruby*"
+if ENV['rvm_ruby_string'] =~ /[A-Za-z0-9]jruby+/
   require 'java'
 end
   

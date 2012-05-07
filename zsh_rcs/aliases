@@ -21,6 +21,7 @@ alias zmv='noglob zmv'
 alias ru='noglob ru'
 alias lh="ls -d .*/" 
 alias cdr="cd ../.."
+alias migrate='rake db:migrate && rake db:test:prepare'
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 #activtion
 alias sc_mode="source ~/bin/script_mode"

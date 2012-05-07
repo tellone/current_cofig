@@ -1,5 +1,6 @@
-{'word': '~/.vim/.atprc.vim', 'pattern': 'atp'}
 {'word': '~/keep/art/justMe/poems/lyric/Poems.tex', 'pattern': 'poe'}
+{'word': '~/Documents/doc/Ny mapp/Nuc_DeComp.tex', 'pattern': 'nuc'}
+{'word': '~/.vim/.atprc.vim', 'pattern': 'atp'}
 {'word': ':2', 'pattern': ':2'}
 {'word': '~/keep/art/justMe/poems/lyric/Poems.tex', 'pattern': 'po'}
 {'word': '~/gitrepos/myProjects/tpope/.ruby/lib/tpope.rb', 'pattern': 'rb'}

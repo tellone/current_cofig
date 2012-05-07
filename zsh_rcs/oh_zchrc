@@ -42,7 +42,6 @@ alias zless=$PAGER
 
 plugins=(autojump git ruby gems rvm rake python pip terminator thor)
 
-
 source $ZSH/oh-my-zsh.sh
 source $cofig1/aliases
 source $cofig1/zsh_config

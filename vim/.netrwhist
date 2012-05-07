@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/tellone/Public/myres'
 let g:netrw_dirhist_2='/home/tellone/gitrepos/current_config/zsh_rcs'
 let g:netrw_dirhist_3='/home/tellone/regetron'
 let g:netrw_dirhist_4='/home/tellone/gitrepos/current_config/zsh_rcs'
 let g:netrw_dirhist_5='/home/tellone/.rvm/gems/ruby-1.9.2-p290/gems/fileutils-0.7'
+let g:netrw_dirhist_6='/home/tellone/gitrepos/current_config/zsh_rcs'
+let g:netrw_dirhist_7='/home/tellone/.oh-my-zsh/plugins'
+let g:netrw_dirhist_8='/home/tellone/gitrepos/current_config'
+let g:netrw_dirhist_9='/home/tellone/gitrepos/current_config/zsh_rcs'
