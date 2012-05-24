@@ -1,5 +1,7 @@
+ack.vim
 Align
-AutomaticLaTexPlugin
+atp
+ctrlp.vim
 dbext.vim
 gundo
 localColorSchemes.vim
@@ -15,11 +17,11 @@ vim-bundler
 vim-colors-solarized
 vim-commentary
 vim-cucumber
+vim-cute-python
+vim-eunuch
 vim-fugitive
-vim-fuzzyfinder
 vim-git
 vim-haml
-vim-l9
 vim-liquid
 vim-markdown
 vim-pathogen

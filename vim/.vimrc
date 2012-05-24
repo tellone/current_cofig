@@ -5,7 +5,7 @@
 set nocp
 
 "Base name of disabled bundles
-let g:pathogen_disable=['localColorSchemes']
+let g:pathogen_disable=['localColorSchemes.vim']
 
 "Load pathogen itself
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -295,7 +295,6 @@ imap ½ $
 vmap ½ $
 cmap ½ $
 
-
 "}}}
 
 """"""""""""""""""""""""""""""""
@@ -327,8 +326,8 @@ nmap <down> :bp<cr>
 " Tab configuration
 nmap <right> :tabnext<cr>
 nmap <left> :tabprev<cr>
-nmap <M-up> :tabnew<cr>
-nmap <M-down> :tabclose<cr>
+nmap <leader><up> :tabnew<cr>
+nmap <leader><down> :tabclose<cr>
 
 " make space open fods
 nmap <space> za
@@ -351,6 +350,9 @@ endtry
 """"""""""""""""""""""""""""""""
 "{{{
 
+" => Ack
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
 " => Align
 let g:DrChipTopLvlMenu= "Plugin." 
 
@@ -364,14 +366,17 @@ nmap <leader>cl :ccl<cr>
 "=> Foldchange
 nmap <leader>zz :call FoldChange()<cr>
 
-"=> FUF
-let g:fuf_modesDisable = []
-let g:fuf_mrufile_maxItem = 400
-let g:fuf_mrucmd_maxItem = 400
-let g:fuf_dataDir = '~/.vim/misc/vim-fuf-data'
-let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|aux|zip|rar|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)'
-nmap <leader>ff :FufMruFile<CR>
-nmap <leader>fd :FufDir<cr>
+"=> ctrl-p
+let g:ctrlp_map = '<leader>fp'
+nmap <leader>ff :CtrlPMRUFiles<cr>
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+let g:ctrlp_cache_dir =  '/home/tellone/.vim/cache/ctrlp'
+let g:ctrlp_mruf_max = 250
 
 "=> Gundo
 nnoremap <leader>uu :GundoToggle<CR>
@@ -383,8 +388,8 @@ let NERDTreeBookmarksFile =  '/home/tellone/.vim/misc/.NERDTreeBookmarks'
 
 " => Powerbar
 "let g:Powerline_symbols = 'fancy'
-" =>
 
+" => Syntastic
 let g:syntastic_mode_map = { 'mode': 'active',
       \ 'active_filetypes': ['ruby', 'html', 'python', 'javascript'],
       \ 'passive_filetypes': ['tex', 'latex', 'php'] }
@@ -498,10 +503,11 @@ augroup FTOptions " {{{2
   autocmd FileType help nnoremap <silent><buffer> q :q<CR>
   autocmd FileType html setlocal iskeyword+=~
   autocmd FileType pdf  setlocal foldmethod=syntax foldlevel=1
-  autocmd FileType matlab,text,txt setlocal tw=78 linebreak nolist
+  autocmd FileType text,txt setlocal tw=78 linebreak nolist spell
   autocmd FileType help,text,txt colorscheme lucius
-  autocmd FileType markdown colorscheme jdlight 
-  autocmd FileType vbnet        runtime! indent/vb.vim
+  autocmd FileType markdown setlocal spell linebreak nolist
+  autocmd FileType markdown colorscheme jdlight
+  autocmd FileType vbnet    runtime! indent/vb.vim
   autocmd FileType vim  setlocal ai et sta sw=2 sts=2 keywordprg=:help
 augroup END "}}}2
 

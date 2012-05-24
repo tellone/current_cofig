@@ -30,7 +30,7 @@ alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/gitrepos/current_config/zsh_rcs"
-
+alias ipy="ipython"
 #Paths typsets
 
 

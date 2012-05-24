@@ -6,7 +6,7 @@
 
 refPath="/home/tellone/Documents/quickrefs"
 ref="$1.pdf"
-pdfread=xpdf
+pdfread=evince
 if [[ "$#" -ne 1 ]]; then
     echo "this script requirs 1 inputparameter to open"
     echo "your choises are:"

@@ -1,6 +1,62 @@
-,V
-  password:,V
+T,v
+    os.rename(filename, newname),V
 ,v
+\usepackage{epstopdf},V
+\begin{minipage}{0.45\linewidth}	\includegraphics[scale=0.06]{Bild428.jpg} \\\end{minipage},V
+:,v
+<,V
+<,v
+let g:ctrlp_mruf_max = 250<,v
+},V
+    /usr/bin/gvim -f "$@" &,V
+gvim(){ ,V
+if __name__=="main",V
+(,v
+e('[a-z]/S+'),v
+    newname = re.split(,V
+    if re.match('^[a-z]', file, flags=IGNORECASE) != None:,V
+,V
+sqrt2 = math.sqrt,V
+function extract() {    if [ -f $1 ] ; then        case $1 in            *.tar.bz2) tar xvjf $1 ;;            *.tar.gz) tar xvzf $1 ;;            *.bz2) bunzip2 $1 ;;            *.rar) unrar x $1 ;;            *.gz) gunzip $1 ;;            *.tar) tar xvf $1 ;;            *.tbz2) tar xvjf $1 ;;            *.tgz) tar xvzf $1 ;;            *.zip) unzip $1 ;;            *.Z) uncompress $1 ;;            *.7z) 7z x $1 ;;            *) echo "'$1' cannot be extracted via >extract<" ;;        esac    else        echo "'$1' is not a valid file"    fi},V
+                    continue,V
+math.ceil(sqrt2(limiter)),v
+                pass,V
+                elif in_common != limiter:,V
+ ,v
+        first_limit = math.ceil(sqrt2(un_nr)),V
+url='http://ziade.org'dd,,V
+import osfrom setuptools import setup, find_packagesversion = '0.1.0'README = os.path.join(os.path.dirname(__file__), 'README.txt')long_description = open(README).read() + '\n\n'setup(name='acme.sql',version=version,description=("A package that deals with SQL, ""from ACME inc"),long_description=long_description,classifiers=["Programming Language :: Python",("Topic :: Software Development :: Libraries ::"Python Modules"),],keywords='acme sql',author='Tarek',author_email='tarek@ziade.org',url='http://ziade.org',license='GPL',packages=find_packages(),namespace_packages=['acme'],install_requires=['pysqlite','SQLAchemy']),V
+aise AssertionError("this was not supose to go this far"),v
+    print myP(1, 50, 4340),V
+    print myP.gddcd_found(5, 55),V
+        self.assertTrue(self.all_Primes.is_power_of(19683, 3)),V
+                gcd_fail = False,V
+        pass,V
+    def __init__(self):,V
+    passddd,V
+            cut_starts == [cut_starts],V
+    attribute_method_prefix 'clear_',V
+      class_attribute :_attributes      self._attributes = [],V
+test "md,V
+      self,V
+    def to_model,V
+    end,V
+require 'test_helper'require 'fixtures/sample_mail'class MailFormTest < ActiveSupport::TestCase  test "sample name has nane and mail atrributes" do    assert_kind_of Module, MailForm    sample = SampleMail.new    sample.name = "User"    assert_equal "User", sample.name    sample.email = "user", sample.email  endend,V
+require 'test_helper'require 'fixtures/sample_mail'class MailFormTest < ActiveSupport::TestCase  test 'sample mail has name and email as attributes' do    sample = SampleMail.new    sample.name = 'User'    assert_equal "User", sample.name    sample.email = 'user@example.com'    assert_equal "user@exaple.com", sample.email    # sample.clear_name    # sample.clear_email    # assert_nil sample.name    # assert_nil sample.email  endend,V
+    assert_kind_of Module, MailForm,V
+\documentclass[pdftex,a4paper]{article}\usepackage[T1]{fontenc}\usepackage[english]{babel}                                     % rubriker (t ex "Innehållsförteckning")\usepackage{fancyvrb}           % För programlistor med tabulatorer%%% remove comment delimiter ('%') and specify parameters if required\usepackage[pdftex]{graphicx}\usepackage{bibref}%Mathematica importerat bibliotek OBS måste adderas under MikTeX "`Settings"'%samt (för intellitype) köra "`Import TeX command"' under tools menyn i TeXnicCenter%\usepackage{notebook2e, latexsym} %\usepackage{pstricks} %för att rendera vectorgrafik exporterad som pstricks TeX-kod från Dia\fvset{tabsize=4}               % Tabulatorpositioner\fvset{fontsize=\small}         % Lagom storlek för programlistor\author{Filip Pettersson}\title{\huge Hej}%några kommandon som ska undvika att bilderna hamnar på fel ställe\renewcommand{\topfraction}{0.95}	%öka andelen av sidan som får innehålla figurer (från 70%)\renewcommand{\floatpagefraction}{1.0} %höj hur stor en figur måste vara för att få en egen sida (från 50%)\headheight     0.0in\topmargin      0.1in\textheight	22cm%OBS notera att det inte finns någon "`bottom margin"' i LaTeX - det styrs av de tre som är angivna\begin{document}\pagenumbering{arabic}\maketitle\newpage\tableofcontents\newpage\section{Introduction},V
+\documentclass[a4paper,10pt]{article}\usepackage[utf8]{inputenc}\usepackage[english]{babel}\usepackage{amssymb,amsmath}\usepackage{url,booktabs,graphicx}\usepackage{fancyhdr,fancybox,fancyvrb}\usepackage{multicol,a4wide}\usepackage{microtype}\usepackage[colorlinks=true]{hyperref}\makeatletter\newenvironment{tablehere}{\def\@captype{table}}{}\newenvironment{figurehere}{\def\@captype{figure}}{}\makeatother\title{\large{FYST18 - Applied Subatomic Physics} \\ \LARGE{AMS in the field of extraterrestrial materials} \\ }\date{February 11, 2010}\begin{document}\pagenumbering{roman}\newpage\tableofcontents\newpage\pagenumbering{arabic}\begin{multicols}{2},V
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$',V
+nmap <leader> :FufMruFile<CR>,v
+let g:fuf_mrufile_exclude = '\v\~$|\.(o|exe|dll|bak|aux|zip|rar|orig|sw[po])$|^(\/\/|\\\\|\/mnt\/|\/media\/)',V
+let g:fuf_dataDir = '~/.vim/misc/vim-fuf-data',V
+let g:fuf_mrucmd_maxItem = 400,V
+let g:fuf_mrufile_maxItem = 400,V
+let g:fuf_modesDisable = [],V
+Dödsfågelen kvittrar ,V
+Springer runt bland alla spår\\jagar ljus, räknar år\\snart finns nog för helheten\\de tvinade tumskruvarnas vetenskap\\destillerad  i visioner från de döda\parEn vaccinations beskrivning\\farsoten som aldrig burit ut\\latent i sista oasen före helvetet.\\Vatten hålens diaboliska hägring,\\mordiska frestelse... min sorgtavla\\,V
+\subsection{Febrauri}\subsubsection{gå långt}\begin{verse}Springer runt bland alla spår\\jagar ljus, räknar år\\snart finns nog för helheten\\de tvinade tumskruvarnas vetenskap\\destillerad  i visioner från de döda\parEn vaccinations beskrivning\\farsoten som aldrig burit ut\\latent i sista oasen före helvetet.\\Vatten hålens diaboliska hägring,\\mordiska frestelse... min sorgtavla\\Dödsfågelen kvittrar \end{verse},v
+  password:,V
 \subsection{someone's crying in the next room}Tired of pretending, tired of it all\\worn down by down scraems and sobbing comming thorugh the wall\\hands through my hair wispering lies\\singing myself to sleep with flase lulibies\parit ain't that bad, I'll raise again\\been through wosre before just can't remeber when\\let's spring life's traps, run them by\\have to tell the child next door, not to cry\parThings end, that story's old\\the lease is up and properties been sold\\evicted mind, the growing mass\\see the dawn of this new crying class\parit ain't that bad, a sad refrain\\become true if a sing it agian and agian\\been lost in time, have to fly\\and tell that little boy not cry\par What now is lost, wil soon be found,v
       pending("redirection"),V
 nmap <leader>pp :setlocal paste!<cr>,V
@@ -42,59 +98,3 @@ let,v
 \end{center}},V
 \fvset{xleftmargin=0mm, xrightmargin=0mm, samepage=false, frame=none, framerule=0.2mm, framesep=1.5mm, numbers=left, numbersep=10pt},V
 \setcounter{page}{0},V
-\thispagestyle{empty},V
-\maketitle,V
-\thispagestyle{empty},V
-\end{abstract},V
-This paper is a short summary of the basic operation and principles of an accelerator mass spectrometry system. Tandem accelerator mass spectrometry and single stage accelerator mass spectrometry are explained and compared. One of the fields where accelerator mass spectrometry has become an important tool is the examination of extraterrestrial materials which provide knowledge about things like past cosmic ray fluxes and the creation and life in space of meteorites. This field is summarized to show how accelerator mass spectrometry can be used in science.,V
-\begin{abstract},V
-\bibliography{fyst18_-_ams},V
-\bibliographystyle{unsrt},V
-\section{}\end{document},V
-" vim:fdm=marker:ff=unix:noet:ts=4:sw=4,V
-",V
-nnoremap <leader>j dd.,V
-  autocmd FileType matlddab                 setlocal ai et sta sw=4 sts=4 ,V
-  autocmd Filetype matlab                 silent! compiler mlint,V
-nmap <leader>o :BufExplorer<cr>,V
-let g:bufExplorerShowRelativePath=1,V
-let g:bufExplorerDefaultHelp=0,V
-" => bufExplorer plugin,V
-refPath="/home/tellone/Documents/quickrefs"ref="$1.pdf",V
-let g:pathogen_disable=['localColorSchemes'],V
-/,v
-let g:pathogen_disable=['localColorSchemes'],V
-"Base name of disabled bundles,V
-",v
-,V
-fi,V
-alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man",V
-    rm -r $repo/vim,V
-if [ -d $repo/vim ]; then,V
-    rm $repo/plug_list.txt,V
-if [ -f $repo/plug_list.txt ]; then,V
-rm ~/.oh-my-zsh/themes/tellone.zsh-theme,V
-if [ -f ~/.oh-my-zsh/themes/tellone.zsh-theme ]; then,V
-    rm -r $repo/bin,V
-if [ -d $repo/bin ]; then,V
-  autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>")),V
- ,v
-    autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\"",V
-    autocmd BufWritePre,FileWritePre /etc/* if &ft == "dns" |          \ exe "normal msHmt" |          \ exe "gl/^\\s*\\d\\+\\s*;\\s*Serial$/normal ^\<C-A>" |          \ exe "normal g`tztg`s" |          \ endif    autocmd BufReadPre *.pdf setlocal binary    autocmd BufReadCmd *.jar call zip#Browse(expand("<amatch>"))    autocmd FileReadCmd *.doc execute "read! antiword \"<afile>\""    autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *      \ if isdirectory(expand("<amatch>:h")) | let &swapfile = &modified | endif,V
-  autocmd BufNewFile,BufRead *.CBL,*.COB,*.LIB  set ft=cobol,V
-no Python documentation found for '__add__',V
-line    8:Traceback (most recent call last):line    8:  File "<string>", line 1, in <module>line    8:NameError: name 'out' is not defined,v
-if [ -d "$HOME/gitrepos/myProjects" ]; then    typeset mypro="$HOME/gitrepos/myProjects"    : ~myprofi,V
-  autocmd FileType c,cpp,cs,perl,php,aspperl,css let b:surround_101 = "\r\n}",V
-let pymode_lint_checker = "pep8",V
-"PyMode,V
-e,v
-l,v
-x,v
-      post :create, :account => {"link" => "https://twitter.com/#!/Zorrriux"},V
-  end,V
-    redirect_to :action => index,V
-  def create,V
-        \ if exists('g:Powerline_loaded') |          \ silent! call Pl#Load() |        \ endif ,V
-" <+FILENAME+> - <+TITLE+>,V
-        \ if exists('g:Powerline_loaded') |          \ sinlent! execute "Pl#Load" |        \ endif ,V

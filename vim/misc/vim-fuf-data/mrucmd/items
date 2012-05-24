@@ -1,11 +1,23 @@
-{'word': ':w!', 'time': 1336392117}
-{'word': ':bn', 'time': 1336392103}
-{'word': ':bp', 'time': 1336392032}
-{'word': ':Bclose', 'time': 1336392030}
+{'word': ':q', 'time': 1336422469}
+{'word': ':bn', 'time': 1336422431}
+{'word': ':TagbarToggle', 'time': 1336422420}
+{'word': ':bp', 'time': 1336417453}
+{'word': ':tabprev', 'time': 1336417452}
+{'word': ':Bigger', 'time': 1336417401}
+{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1336411203}
+{'word': ':NERDTree', 'time': 1336410942}
+{'word': ':cd %:p:h', 'time': 1336410941}
+{'word': ':View', 'time': 1336410232}
+{'word': ':ViewOutput', 'time': 1336410226}
+{'word': ':TEX', 'time': 1336410207}
+{'word': ':w!', 'time': 1336410202}
+{'word': ':call atplib#motion#StartVisualMode(''V'')', 'time': 1336409918}
+{'word': ':call atplib#motion#StartVisualMode(''v'')', 'time': 1336409909}
+{'word': ':FufMruFile', 'time': 1336409457}
+{'word': ':Bclose', 'time': 1336409401}
+{'word': ':wq', 'time': 1336393698}
 {'word': ':tabnext', 'time': 1336392019}
-{'word': ':tabprev', 'time': 1336392018}
 {'word': ':e step_definitions/tracker_steps.rb', 'time': 1336391697}
-{'word': ':wq', 'time': 1336391389}
 {'word': ':sav! ../app/assets/stylesheets/application.css', 'time': 1336391375}
 {'word': ':sav ../app/assets/stylesheets/application.css', 'time': 1336391367}
 {'word': ':r http://github.com/rails3book/ticketee/raw/master/app/assets/stylecheats/application.css', 'time': 1336391324}
@@ -13,19 +25,12 @@
 {'word': ':TSkeletonSetup feat.feature', 'time': 1336383725}
 {'word': ':e features/tracker.feature', 'time': 1336383691}
 {'word': ':%s/root/phil/g', 'time': 1336383496}
-{'word': ':NERDTree', 'time': 1336383465}
 {'word': ':cd gitrepos/myProjects/ruby_stuff/rails_wiz/', 'time': 1336383311}
-{'word': ':FufMruFile', 'time': 1336383255}
 {'word': ':e! ~/.vim/.vimrc', 'time': 1336373618}
-{'word': ':View', 'time': 1336339592}
-{'word': ':TEX', 'time': 1336339584}
-{'word': ':cd %:p:h', 'time': 1336339398}
-{'word': ':q', 'time': 1336337457}
 {'word': ':w', 'time': 1336337454}
 {'word': ':r ../views/layouts/application.html.erb', 'time': 1336337448}
 {'word': ':e ../views/accounts/index.html.erb', 'time': 1336337430}
 {'word': ':Q', 'time': 1336337058}
-{'word': ':TagbarToggle', 'time': 1336328862}
 {'word': ':redraw', 'time': 1336328830}
 {'word': ':Redraw', 'time': 1336328824}
 {'word': ':Rake cucumber:all', 'time': 1336319358}
@@ -33,7 +38,6 @@
 {'word': ':cd Public/myres/', 'time': 1336319089}
 {'word': ':Rails Public/myres/', 'time': 1336318865}
 {'word': ':set nospell', 'time': 1336318797}
-{'word': ':execute "Globalscheme " . input("Enter global colorscheme [" . (exists("g:colorscheme") ? g:colorscheme : "NONE") . "]:  ")', 'time': 1336318763}
 {'word': ':less', 'time': 1336060877}
 {'word': ':help source', 'time': 1336060737}
 {'word': ':help section', 'time': 1336056035}
@@ -52,8 +56,6 @@
 {'word': ':MakeLatex', 'time': 1335951807}
 {'word': ':call atplib#motion#TexSyntaxMotion(0,1)', 'time': 1335951367}
 {'word': ':call atplib#motion#TexSyntaxMotion(1,1)', 'time': 1335951364}
-{'word': ':call atplib#motion#StartVisualMode(''v'')', 'time': 1335951200}
-{'word': ':call atplib#motion#StartVisualMode(''V'')', 'time': 1335951193}
 {'word': ':view', 'time': 1335951034}
 {'word': ':botright cope', 'time': 1335941896}
 {'word': ':bd!', 'time': 1335941235}
@@ -126,7 +128,6 @@
 {'word': ':TbarOpen', 'time': 1335373298}
 {'word': ':TlistOpen', 'time': 1335373254}
 {'word': ':Smaller', 'time': 1335371796}
-{'word': ':Bigger', 'time': 1335371795}
 {'word': ':help silent', 'time': 1335363530}
 {'word': ':sinlent', 'time': 1335363524}
 {'word': ':help sil!', 'time': 1335363520}
