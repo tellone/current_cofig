@@ -47,7 +47,6 @@ source $cofig1/aliases
 source $cofig1/zsh_config
 source $cofig1/zsh_completion
 source $cofig1/func_lib
-# Customize to your needs...
-export PATH=/home/tellone/.rvm/gems/ruby-1.9.2-p290/bin:/home/tellone/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/tellone/.rvm/rubies/ruby-1.9.2-p290/bin:/home/tellone/.rvm/bin:/home/tellone/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2011/bin/i386-linux:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86:/home/tellone/.sm/bin:/home/tellone/.sm/pkg/active/bin:/home/tellone/.sm/pkg/active/sbin
-
+# Customize to your needs...8
+export PATH=/home/tellone/.rvm/gems/ruby-1.9.2-p290/bin:/home/tellone/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/tellone/.rvm/rubies/ruby-1.9.2-p290/bin:/home/tellone/.rvm/bin:/home/tellone/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2011/bin/i386-linux:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86:/home/tellone/.sm/bin:/home/tellone/.sm/pkg/active/bin:/home/tellone/.sm/pkg/active/sbin:/home/tellone/gitrepos/myProjects/eclipse_workspace/eclipse
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -10,10 +10,17 @@ Email: filip.diloom@gmail.com
 import re
 import os
 
-geting = re.compile('[a-z]/S+')
+geting = re.compile('(^\d+-|^\d+\S\d+-)')
 
 for filename in  os.listdir('.'):
-    if re.match(geting, filename, flags=re.IGNORECASE) != None:
+    if re.match('\d', filename) is None:
         continue
-    newname = re.split(geting, filename, flags=re.IGNORECASE)
+    nameparts = re.split(geting, filename)
+    nr_parts = len(nameparts)
+    if nr_parts != 3:
+        print nameparts
+        continue
+    else:
+        newname = nameparts[2]
+    os.rename(filename, newname)
 

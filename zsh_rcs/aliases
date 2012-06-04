@@ -31,6 +31,7 @@ alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/gitrepos/current_config/zsh_rcs"
 alias ipy="ipython"
+alias gvim="UBUNTU_MENUPROXY=0 gvim"
 #Paths typsets
 
 
