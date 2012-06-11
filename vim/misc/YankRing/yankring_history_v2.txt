@@ -1,5 +1,29 @@
-http://di.fuge.it/rms.jpg,v
+,V
+getting wmv codecas,v
+codecs,v
+https://github.com/,v
+for(i = 0; i < count; i++) ,v
+,v
+#include <ctype.h>,v
+ int main(int argc, char *argv[])43  {,v
+1  #include <stdio.h>2  #include <assert.h>3  #include <stdlib.h>4  #include <string.h> ,v
+  #include <stdio.h>2  3  int main(int argc, char *argv[])4  { ,v
+apt-get --dry-run -u dist-upgrade,v
+apt-get --dry-run -u dist-upgrade,V
+            printf("arg %d: %s\n", i, argv[i]);,V
+Now weak and alone\\he need saving himeslefhow did he sink so very low\\he can't understand\par,V
+ruby rouges,v
+Now weak and alone\\he need saving himeslefhow did he sink so very low\\he can't understand\par,v
+My life is supermarket, and I am just it's revolving door.don't you know it's all for show and people come and goGreetings and gazes passes, its the same every day of the weekcome feel free this might be home for me but people come and goWhen things leaves me hanging, it is plenty of gossip for allTake it slow don't obstruct the flow and people come and goSpinning 120 turns per hour and my head keeps falling behindit all a race not to loose any face and people come and goGlass all around my bedroom so love will never stayI'm for sale completely unveiled and people come and goEverybody passes, our security will never be called,v
+one,v
 ',v
+- Högskoleutbildning inom projektadministration eller likvärdig utbildning,v
+Utvändig skötsel, Städning på byggen och allmänt drift och underhåll av interna och externa faciliteter,v
+Jag har under min tid i med Free Software och linux fått mycket träning i att läsa olika typer av manualer eller andra instuktionsböcker och bug/felrapporter. En vanna jag toror kan vara andvänbar i ett flertal uppdrag.Jag har en lugn och sansad approch till de flesta problem och gillar alla typer av problemlösnig. Dessutom har jag alltid haftlätt för att komma överense med människor i min omgivning.  ,v
+"""""""""""""""""""""""""""""""" => General""""""""""""""""""""""""""""""""{{{syntax enable" Sets how many lines of history VIM has to rememberset history=700" Enable filetype pluginfiletype plugin indent on"to avoid confusion tell vim which shell you useset shell=/bin/zsh" Set to auto read when a file is changed from the outsideset autoread"fixes for unixset winaltkeys=noset backspace=eol,start,indent" With a map leader is the shortcut for global pluginslet mapleader = ","let g:mapleader = ",""Like mapleader but should be used for filetype spefic pluginslet maplocalleader = ";"let g:maplocalleader = ";"" Fast savingnmap <leader>w :w!<cr>" Fast editing of the .vimrcnmap <leader>ee :e! ~/.vim/.vimrc<cr>" When vimrc is edited, reload itaugroup vimrcs  au!  au bufwritepost /home/tellone/.vim/.vimrc         \ source /home/tellone/.vim/.vimrc |        \ if exists('g:Powerline_loaded') |          \ silent! call Pl#Load() |        \ endif augroup END"get the viminfo-file out of the way:set viminfo +=n$HOME/.vim/misc/cens/.viminfo"Backup and swapfilesset nobackupset nowbset noswapfileset undodir=/home/tellone/.vim/undodirset undofileset hid "Change buffer - without saving"no backup on these filenamesset backupskip+=*.tmp,crontab.*"Sets hub for external evalif has("balloon_eval") && has("unix")  set balloonevalendifset magic "Set magic on, for regular expressionsset complete-=i     " Searching includes can be slowset display=lastline"}}},v
+" => General""""""""""""""""""""""""""""""""{{{syntax enable" Sets how many lines of history VIM has to rememberset history=700" Enable filetype pluginfiletype plugin indent on"to avoid confusion tell vim which shell you useset shell=/bin/zsh" Set to auto read when a file is changed from the outsideset autoread"fixes for unixset winaltkeys=noset backspace=eol,start,indent" With a map leader is the shortcut for global pluginslet mapleader = ","let g:mapleader = ",""Like mapleader but should be used for filetype spefic pluginslet maplocalleader = ";"let g:maplocalleader = ";"" Fast savingnmap <leader>w :w!<cr>" Fast editing of the .vimrcnmap <leader>ee :e! ~/.vim/.vimrc<cr>" When vimrc is edited, reload itaugroup vimrcs  au!  au bufwritepost /home/tellone/.vim/.vimrc         \ source /home/tellone/.vim/.vimrc |        \ if exists('g:Powerline_loaded') |          \ silent! call Pl#Load() |        \ endif augroup END"get the viminfo-file out of the way:set viminfo +=n$HOME/.vim/misc/cens/.viminfo"Backup and swapfilesset nobackupset nowbset noswapfileset undodir=/home/tellone/.vim/undodirset undofileset hid "Change buffer - without saving"no backup on these filenamesset backupskip+=*.tmp,crontab.*"Sets hub for external evalif has("balloon_eval") && has("unix")  set balloonevalendifset magic "Set magic on, for regular expressionsset complete-=i     " Searching includes can be slowset display=lastline"}}},v
+Utvändig sköttsel, Städning på byggen och almännt drift och underhåll av interna och externa facilliteter,v
+http://di.fuge.it/rms.jpg,v
 alias gvim="UBUNTU_MENUPROXY=0 gvim",v
 UBUNTU_MENUPROXY= gcalctool,v
 llone:~/exC:$ lstellone:~/exC:$ ,v
@@ -17,7 +41,6 @@ e.split('(-|\.)', filename),v
 hhhviiii,v
 os.listdir('.',v
 ,,v
-,v
 T,v
     os.rename(filename, newname),V
 \usepackage{epstopdf},V
@@ -34,7 +57,6 @@ if __name__=="main",V
 e('[a-z]/S+'),v
     newname = re.split(,V
     if re.match('^[a-z]', file, flags=IGNORECASE) != None:,V
-,V
 sqrt2 = math.sqrt,V
 function extract() {    if [ -f $1 ] ; then        case $1 in            *.tar.bz2) tar xvjf $1 ;;            *.tar.gz) tar xvzf $1 ;;            *.bz2) bunzip2 $1 ;;            *.rar) unrar x $1 ;;            *.gz) gunzip $1 ;;            *.tar) tar xvf $1 ;;            *.tbz2) tar xvjf $1 ;;            *.tgz) tar xvzf $1 ;;            *.zip) unzip $1 ;;            *.Z) uncompress $1 ;;            *.7z) 7z x $1 ;;            *) echo "'$1' cannot be extracted via >extract<" ;;        esac    else        echo "'$1' is not a valid file"    fi},V
                     continue,V
@@ -76,25 +98,3 @@ Dödsfågelen kvittrar ,V
 Springer runt bland alla spår\\jagar ljus, räknar år\\snart finns nog för helheten\\de tvinade tumskruvarnas vetenskap\\destillerad  i visioner från de döda\parEn vaccinations beskrivning\\farsoten som aldrig burit ut\\latent i sista oasen före helvetet.\\Vatten hålens diaboliska hägring,\\mordiska frestelse... min sorgtavla\\,V
 \subsection{Febrauri}\subsubsection{gå långt}\begin{verse}Springer runt bland alla spår\\jagar ljus, räknar år\\snart finns nog för helheten\\de tvinade tumskruvarnas vetenskap\\destillerad  i visioner från de döda\parEn vaccinations beskrivning\\farsoten som aldrig burit ut\\latent i sista oasen före helvetet.\\Vatten hålens diaboliska hägring,\\mordiska frestelse... min sorgtavla\\Dödsfågelen kvittrar \end{verse},v
   password:,V
-\subsection{someone's crying in the next room}Tired of pretending, tired of it all\\worn down by down scraems and sobbing comming thorugh the wall\\hands through my hair wispering lies\\singing myself to sleep with flase lulibies\parit ain't that bad, I'll raise again\\been through wosre before just can't remeber when\\let's spring life's traps, run them by\\have to tell the child next door, not to cry\parThings end, that story's old\\the lease is up and properties been sold\\evicted mind, the growing mass\\see the dawn of this new crying class\parit ain't that bad, a sad refrain\\become true if a sing it agian and agian\\been lost in time, have to fly\\and tell that little boy not cry\par What now is lost, wil soon be found,v
-      pending("redirection"),V
-nmap <leader>pp :setlocal paste!<cr>,V
-set showmatch "Show matching bracets when text indicator is over them,V
-#!/bin/zsh# Path to your oh-my-zsh configuration.ZSH=$HOME/.oh-my-zsh# Set name of the theme to load.# Look in ~/.oh-my-zsh/themes/# Optionally, if you set this to "random", it'll load a random theme each# time that oh-my-zsh is loaded.ZSH_THEME="tellone"if [ -d /home/tellone/gitrepos/current_config/zsh_rcs ]; then    cofig1=/home/tellone/gitrepos/current_config/zsh_rcselse,V
->MRU-File,V
->,v
-let,v
-\,v
-\author{Filip Pettersson}\title{\huge Hej},V
-\date{}           % Blir dagens datum om det utelämnas,V
-\author{ Filip Pettersson (tf06fp0) \\\\ <tf06fp0@student.lth.se> \\\\ 871026-3339},V
-\title{\hrule  Hartree-Fock-approximation \hrule},V
-\newpage,V
-\thispagestyle{empty} %inget sidnummer på omslagssidan,V
-\maketitle ,V
-\begin{document} ,V
-\documentclass[pdftex,a4paper]{article}\usepackage[T1]{fontenc}\usepackage[english]{babel}                                     % rubriker (t ex "Innehållsförteckning")\usepackage{fancyvrb}           % För programlistor med tabulatorer%%% remove comment delimiter ('%') and specify parameters if required\usepackage[pdftex]{graphicx}%Mathematica importerat bibliotek OBS måste adderas under MikTeX "`Settings"'%samt (för intellitype) köra "`Import TeX command"' under tools menyn i TeXnicCenter%\usepackage{notebook2e, latexsym} %\usepackage{pstricks} %för att rendera vectorgrafik exporterad som pstricks TeX-kod från Dia\fvset{tabsize=4}               % Tabulatorpositioner\fvset{fontsize=\small}         % Lagom storlek för programlistor\title{\hrule  Hartree-Fock-approximation \hrule}\author{ Filip Pettersson (tf06fp0) \\\\ <tf06fp0@student.lth.se> \\\\ 871026-3339}\date{}           % Blir dagens datum om det utelämnas%några kommandon som ska undvika att bilderna hamnar på fel ställe\renewcommand{\topfraction}{0.95}	%öka andelen av sidan som får innehålla figurer (från 70%)\renewcommand{\floatpagefraction}{1.0} %höj hur stor en figur måste vara för att få en egen sida (från 50%)\headheight     0.0in\topmargin      0.1in\textheight			22cm%OBS notera att det inte finns någon "`bottom margin"' i LaTeX - det styrs av de tre som är angivna\begin{document} \maketitle \thispagestyle{empty} %inget sidnummer på omslagssidan\newpage,V
-\begin{center},V
-\begin{left},V
-\end{center},V
-\begin{centering},V

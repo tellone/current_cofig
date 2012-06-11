@@ -402,6 +402,7 @@ nmap <leader>l :TagbarToggle<cr>
 let tskelUserName='Filip Pettersson'
 let tskelUserEmail='filip.diloom@gmail.com'
 let tskelLicence='Free Software'
+map <leader>s :TSkeletonSetup 
 
 " => Twitvim
 let twitvim_token_file = '/home/tellone/.vim/misc/cens/twitvim.token'
