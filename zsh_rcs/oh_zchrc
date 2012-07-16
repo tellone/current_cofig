@@ -9,15 +9,15 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="tellone"
 
 
-if [ -d /home/tellone/gitrepos/current_config/zsh_rcs ]; then
-    cofig1=/home/tellone/gitrepos/current_config/zsh_rcs
+if [ -d /home/tellone/current_config/zsh_rcs ]; then
+    cofig1=/home/tellone/current_config/zsh_rcs
 else
     echo "WARNING!! no zsh_configuration files"
 fi
 
 
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -32,15 +32,7 @@ fi
 # Example format: plugins=(rails git textmate ruby lighthouse)
 which vim &>/dev/null && editor="$(which vim)"
 
-export EDITOR="$editor -f"
-export VISUAL="$editor"
-
-export PAGER=/usr/local/bin/vimpager
-alias less=$PAGER
-alias zless=$PAGER
-
-
-plugins=(autojump extract gem git python pip rake ruby rvm terminator thor)
+plugins=(autojump extract git python pip rake ruby thor)
 
 source $ZSH/oh-my-zsh.sh
 source $cofig1/aliases
@@ -48,5 +40,4 @@ source $cofig1/zsh_config
 source $cofig1/zsh_completion
 source $cofig1/func_lib
 # Customize to your needs...8
-export PATH=/home/tellone/.rvm/gems/ruby-1.9.2-p290/bin:/home/tellone/.rvm/gems/ruby-1.9.2-p290@global/bin:/home/tellone/.rvm/rubies/ruby-1.9.2-p290/bin:/home/tellone/.rvm/bin:/home/tellone/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2011/bin/i386-linux:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86:/home/tellone/.sm/bin:/home/tellone/.sm/pkg/active/bin:/home/tellone/.sm/pkg/active/sbin:/home/tellone/gitrepos/myProjects/eclipse_workspace/eclipse
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/gitrepos/myProjects/eclipse_workspace/eclipse

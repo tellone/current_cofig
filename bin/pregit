@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+#
+#Created: 2012-01-30
+#Maintainer: tellone
+#Email: filip.diloom@gmail.com
+#Filename: pregit
+#///
+#Purpose: Changes too do before a git push
+#
+#
+check_sync() {
+    if [[ $# != 2 ]]; then
+        echo "check_sync needs two inputs"
+        exit 1
+    elif [[ -e "$2" ]]; then
+        rm -r "$2"
+    fi
+    cp -r "$1" "$2" 
+}
+
+repo="/home/tellone/current_config"
+
+
+check_sync /home/tellone/bin $repo/bin
+
+
+check_sync $repo/zsh_rcs/tellone.zsh-theme ~/.oh-my-zsh/themes/tellone.zsh-theme
+
+cd $repo
+
+git add -A
+git commit

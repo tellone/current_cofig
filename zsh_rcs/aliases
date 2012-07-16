@@ -30,7 +30,7 @@ alias fire='firefox &'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
-alias cofig="gvim /home/tellone/gitrepos/current_config/zsh_rcs"
+alias cofig="gvim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
 alias gvim="UBUNTU_MENUPROXY=0 gvim"
 #Paths typsets
