@@ -4,8 +4,8 @@
 
 #check for conig dir and give short name
 
-if [ -d /home/tellone/gitrepos/current_config/bash_rcs ]; then
-    cofig1=/home/tellone/gitrepos/current_config/bash_rcs
+if [ -d /home/tellone/current_config/bash_rcs ]; then
+    cofig1=/home/tellone/current_config/bash_rcs
 else
     echo "WARNING!! no bash_configuration files"
 fi
