@@ -1,19 +1,13 @@
 #!/bin/sh
 
-#apt and sudo related
-alias apt1='sudo apt-get install'
-alias apt2='sudo apt-get remove'
-alias apt3='sudo apt-get --dry-run -u dist-upgrade'
-alias apt0='sudo apt-get'
-alias purge='sudo apt-get --purge remove'
-alias ein='sudo easy_install'
 alias rmv='sudo rm -r'
-
+alias th='thunar .'
 #sytem commands
 alias rerc="source /home/tellone/.zshrc"
 alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
 alias aliases="cat $cofig1/aliases"
+alias tevim="vim -u /home/tellone/myProjects/tpope/.vimrc"
 #shorts for usual commands
 alias ce='clear'
 alias na='nautilus .'
