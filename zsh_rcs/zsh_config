@@ -9,7 +9,7 @@
 #Purpose: configurations part of the bash shell 
 #
 
-[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
+# [ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
 
 setopt HASH_CMDS # save cmd location to skip PATH lookup
 setopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom

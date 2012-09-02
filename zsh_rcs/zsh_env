@@ -93,5 +93,5 @@ if [ -x "`which ruby 2>/dev/null`" ]; then
     [ -z gems ] || : ~gems
 fi
 
-[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
+# [ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
 
