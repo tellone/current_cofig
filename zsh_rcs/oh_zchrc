@@ -40,4 +40,4 @@ source $cofig1/zsh_config
 source $cofig1/zsh_completion
 source $cofig1/func_lib
 # Customize to your needs...8
-export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
+setopt correct_all
