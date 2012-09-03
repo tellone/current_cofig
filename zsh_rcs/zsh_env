@@ -23,20 +23,20 @@ case "$TERM" in
     usercolor=$'\e[38;5;184m'
     dircolor=$'\e[38;5;27m'
     ;;
-    xterm*|rxvt-unicode)
-    usercolor=$'\e[93m'
-    dircolor=$'\e[94m'
-    ;;
+    xterm*)
+        if [ -f $cofig1/tellone.zsh-theme ]; then
+            . $cofig1/tellone.zsh-theme
+        else
+            echo "No file theme found found"
+        fi
 esac
-[ $UID = '0' ] && usercolor="$fg_bold[white]"
-reset_color=$'\e[00m'
-
-export PS1='%{$vccolor%}$(vcprompt)%{$usercolor%}%n:%{$dircolor%}%~:$%{$reset_color%} '
 
 #############################
 # Variables
 #############################
-HISTFILE=~/.zsh_history
+which vim &>/dev/null && editor="$(which vim)"
+
+ISTFILE=~/.zsh_history
 SAVEHIST=1000
 HISTSIZE=1000
 
@@ -46,7 +46,6 @@ LISTMAX=0 # ask to complete if top of list would scroll off screen
 # Make CTRL-W delete after other chars, not just spaces
 WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
 
-#General options
 
 # setopt PRINT_EXIT_VALUE
 
@@ -93,5 +92,15 @@ if [ -x "`which ruby 2>/dev/null`" ]; then
     [ -z gems ] || : ~gems
 fi
 
-# [ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
+#Setting up path and fpath
+
+export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
+fpath=($cofig1/func_lib $cofig1/completions $fpath)
+
+# if [[ -d $cofig1/comp_objects ]]; then 
+#     for plugin ($plugins); do
+#         fpath=($cofig1/comp/$plugin $fpath)
+
+#     done
+# fi
 

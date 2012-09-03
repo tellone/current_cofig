@@ -23,7 +23,7 @@ newrails() {
         rails new $1 -m "$wizpath/new_rails$2.rb" -T
     else
         echo "This function takes one or two inputs"
-        exit 1
+        # exit 1
     fi
     cd $1
     unset wizpath
@@ -33,7 +33,12 @@ function take {
     mkdir $1; cd $1
 }
 function checklist() {
-    dpkg -l |grep $1 | less
+
+    if [[ ! -d /usr/apt ]] ; then
+        echo "only for debian sytems"
+    else
+        dpkg -l |grep $1 | less
+    fi
 }
     
 namedir() { export $1=$PWD; : ~$1 }

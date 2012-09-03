@@ -27,7 +27,21 @@ alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
 alias gvim="UBUNTU_MENUPROXY=0 gvim"
-#Paths typsets
+
+
+# Turn off compleation for som
+
+
+alias man='nocorrect man'
+alias mv='nocorrect mv'
+alias mysql='nocorrect mysql'
+alias mkdir='nocorrect mkdir'
+alias gist='nocorrect gist'
+alias heroku='nocorrect heroku'
+alias ebuild='nocorrect ebuild'
+alias hpodder='nocorrect hpodder'
+
+#Paths typset
 
 
 if [ -d "$HOME/Documents" ]; then

@@ -21,6 +21,8 @@ zstyle ':completion::complete:rm::(all-|)files' ignored-patterns
 zstyle ':completion::complete:rmdir::(local-|)directories' ignored-patterns
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
+
 # NO NO NO!!! This makes things SLOW
 #zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors no=00 fi=00 di=01\;34 pi=33 so=01\;35 bd=00\;35 cd=00\;34 or=00\;41 mi=00\;45 ex=01\;32
@@ -35,7 +37,7 @@ zstyle ':completion:*' original true
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 zstyle ':completion:*' substitute 1
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' cache-path ~/.cashe/zsh
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:rm:*' ignore-line yes
 
