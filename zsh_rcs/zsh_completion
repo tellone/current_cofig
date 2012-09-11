@@ -43,5 +43,5 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:rm:*' ignore-line yes
 
 autoload -U compinit
-compinit
+compinit -i
 

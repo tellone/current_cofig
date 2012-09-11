@@ -34,10 +34,12 @@ function take {
 }
 function checklist() {
 
-    if [[ ! -d /usr/apt ]] ; then
-        echo "only for debian sytems"
-    else
+    if [[ -d /usr/apt ]] ; then
         dpkg -l |grep $1 | less
+    elif [[ -e /usr/bin/eix ]]; then
+        eix-installed all |ack $1| $PAGER
+    else
+        echo "only for debian or getoo with eix sytems"
     fi
 }
     

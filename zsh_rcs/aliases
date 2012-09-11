@@ -67,8 +67,8 @@ if [[ -d /usr/portage ]] ; then
     alias emr2='sudo emerge -f'
     alias emr0='sudo emerge -c --pretend'
     alias eix1='sudo eix-sync'
-    alias eix0='eix-installed | ack'
-    alias disco='sudo dispatch-config'
+    alias eix0='eix-installed all | grep'
+    alias disco='sudo dispatch-conf'
     alias esel='sudo eselect'
 fi
 #}}}
