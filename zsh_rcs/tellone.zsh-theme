@@ -10,3 +10,5 @@ PROMPT="${vc_info}${user_host}%B:${current_dir}%B:$%b "
 
 RPS1="${return_code}"
 
+# RPS1="%(?..(%{${e}[01;35m%}%?%{${e}[00m%}%)%<<)"
+

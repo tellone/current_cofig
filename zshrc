@@ -35,11 +35,6 @@ else
     echo "No aliases loaded"
 fi
 
-if [ -f $cofig1/dist_aliases ]; then
-    . $cofig1/dist_aliases
-else
-    echo "No dist-aliases loaded"
-fi
 
 if [ -f $cofig1/func_lib ]; then
     . $cofig1/func_lib

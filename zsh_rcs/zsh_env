@@ -36,7 +36,6 @@ esac
 #############################
 which vim &>/dev/null && editor="$(which vim)"
 
-ISTFILE=~/.zsh_history
 SAVEHIST=1000
 HISTSIZE=1000
 
@@ -49,22 +48,10 @@ WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
 
 # setopt PRINT_EXIT_VALUE
 
-setopt CORRECT
-setopt CORRECTALL
-
-setopt hist_ignore_dups     # ignore duplication command history list
-setopt share_history        # share command history data
-setopt HIST_IGNORE_SPACE
-setopt APPEND_HISTORY # write history only when closing
-setopt EXTENDED_HISTORY # add more info
-
 # Other tabbing options
 # setopt NO_AUTO_MENU
 # setopt BASH_AUTO_LIST
 
-if [[ $ZSH_VERSION == 4.<->* ]]; then
-    setopt histexpiredupsfirst histreduceblanks
-fi
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -93,9 +80,9 @@ if [ -x "`which ruby 2>/dev/null`" ]; then
 fi
 
 #Setting up path and fpath
-
+export PAGER=vimpager
 export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
-fpath=($cofig1/func_lib $cofig1/completions $fpath)
+export fpath=($cofig1/functions $cofig1/completions $fpath)
 
 # if [[ -d $cofig1/comp_objects ]]; then 
 #     for plugin ($plugins); do

@@ -20,8 +20,22 @@ setopt NUMERIC_GLOB_SORT # sort numerically first, before alpha
 
 setopt noclobber nonomatch
 setopt completeinword extendedglob
-setopt autocd
 
+setopt CORRECT
+setopt CORRECTALL
+
+# history opt go here
+if [[ $ZSH_VERSION == 4.<->* ]]; then
+    setopt histexpiredupsfirst histreduceblanks
+fi
+setopt share_history        # share command history data
+setopt HIST_IGNORE_SPACE
+setopt APPEND_HISTORY # write history only when closing
+setopt EXTENDED_HISTORY # add more info
+setopt autocd
+setopt auto_name_dirs
+setopt auto_pushd
+setopt pushd_ignore_dups
 #Auto load modules
 autoload -Uz colors && colors
 zmodload -i zsh/complist # colorful listingsh
@@ -34,12 +48,33 @@ autoload -U zsh-mime-setup
 #Grep
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
-#Edit command line settings
-# bindkey -e
 
-# autoload -U edit-command-line
-# zle -N edit-command-line
-# bindkey '\ee' edit-command-line
+#Edit command line settings
+bindkey -e
+bindkey -r '^Q'
+
+bindkey -M viins '^A' beginning-of-line
+bindkey -M viins '^B' backward-char
+bindkey -M viins '^D' delete-char-or-list
+bindkey -M viins '^E' end-of-line
+bindkey -M viins '^F' forward-char
+bindkey -M viins '^K' kill-line
+bindkey -M viins '^N' down-line-or-history
+bindkey -M viins '^P' up-line-or-history
+bindkey -M viins '^R' history-incremental-search-backward
+bindkey -M viins '^S' history-incremental-search-forward
+bindkey -M viins '^T' transpose-chars
+bindkey -M viins '^Y' yank
+
+bindkey -M emacs '^X^[' vi-cmd-mode
+
+bindkey -M emacs ' ' magic-space
+bindkey -M viins ' ' magic-space
+
+bindkey -M isearch '^J' accept-search
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\ee' edit-command-line
 
 # quote URLs
 autoload url-quote-magic

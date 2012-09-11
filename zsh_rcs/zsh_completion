@@ -3,6 +3,7 @@
 # put in more of fpath here cofig1
 # cofig1 is defined in .zshrc file
 #fpath=($fpath ~/.rvm/scripts/zsh/Completion $cofig1/compdefs)
+
 zstyle ':completion:*' add-space true
 zstyle -e ':completion:*' completer '
         if [[ $_last_try != "$HISTNO$BUFFER$CURSOR" ]]; then
@@ -37,7 +38,7 @@ zstyle ':completion:*' original true
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 zstyle ':completion:*' substitute 1
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.cashe/zsh
+zstyle ':completion:*' cache-path ~/.cache/zsh
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:rm:*' ignore-line yes
 

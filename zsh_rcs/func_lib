@@ -6,8 +6,8 @@
 #Email: filip.diloom@gmail.com
 #Filename: func_lib
 #
-#Purpose: To store my functions that i want souced
-#	  From the zshrc
+#Purpose: Fuctions not big enough
+#          To warrent an own file go here
 
 #vim section
 if [ -f ~/buffer ]; then
@@ -42,4 +42,21 @@ function checklist() {
 }
     
 namedir() { export $1=$PWD; : ~$1 }
+
+# Changing/making/removing directory
+
+cd () {
+  if   [[ "x$*" == "x..." ]]; then
+    cd ../..
+  elif [[ "x$*" == "x...." ]]; then
+    cd ../../..
+  elif [[ "x$*" == "x....." ]]; then
+    cd ../../..
+  elif [[ "x$*" == "x......" ]]; then
+    cd ../../../..
+  else
+    builtin cd "$@"
+  fi
+}
+
 

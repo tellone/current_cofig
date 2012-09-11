@@ -10,7 +10,7 @@ alias aliases="cat $cofig1/aliases"
 alias tevim="vim -u /home/tellone/myProjects/tpope/.vimrc"
 #shorts for usual commands
 alias ce='clear'
-alias na='nautilus .'
+# alias na='nautilus .'
 alias lsd='ls -ld *(-/DN)' # directories only
 alias zmv='noglob zmv'
 alias ru='noglob ru'
@@ -20,18 +20,27 @@ alias migrate='rake db:migrate && rake db:test:prepare'
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 #activtion
 alias sc_mode="source ~/bin/script_mode"
-alias fire='firefox &'
+alias fire='firefox-bin &'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
-alias gvim="UBUNTU_MENUPROXY=0 gvim"
+alias readvim="gvim -u /home/tellone/.vim/reading-rc.vim"
 
+#{{{Dir related
 
-# Turn off compleation for som
+alias ..='cd ..'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias cd/='cd /'
 
-
+alias rd=rmdir
+alias d='dirs -v | head -10'
+#}}}
+#{{{ Turn off compleation for som
 alias man='nocorrect man'
 alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
@@ -40,8 +49,30 @@ alias gist='nocorrect gist'
 alias heroku='nocorrect heroku'
 alias ebuild='nocorrect ebuild'
 alias hpodder='nocorrect hpodder'
+#}}}
+#{{{ Dist-dependent
+# if in debian
+if [[ -d /usr/apt ]] ; then
+    #apt and sudo related
+    alias apt1='sudo apt-get install'
+    alias apt2='sudo apt-get remove'
+    alias apt3='sudo apt-get --dry-run -u dist-upgrade'
+    alias apt0='sudo apt-get'
+    alias purge='sudo apt-get --purge remove'
+    alias ein='sudo easy_install'
+fi
 
-#Paths typset
+if [[ -d /usr/portage ]] ; then
+    alias emr1='sudo emerge'
+    alias emr2='sudo emerge -f'
+    alias emr0='sudo emerge -c --pretend'
+    alias eix1='sudo eix-sync'
+    alias eix0='eix-installed | ack'
+    alias disco='sudo dispatch-config'
+    alias esel='sudo eselect'
+fi
+#}}}
+#Paths typset#{{{
 
 
 if [ -d "$HOME/Documents" ]; then
@@ -53,3 +84,8 @@ if [ -d "$HOME/keep/ebooks" ]; then
     : ~books
 fi
 
+if [ -d "$HOME/keep/art/justMe" ]; then
+    typeset me="$HOME/keep/art/justMe"
+    : ~me
+fi
+#}}}
