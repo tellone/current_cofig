@@ -1,6 +1,4 @@
-#!/bin/zsh
-#
-#
+#!/bin/zsh # #
 #Created: 2012-03-26
 #Maintainer: Filip Pettersson
 #Email: filip.diloom@gmail.com
@@ -9,14 +7,24 @@
 #Purpose: Fuctions not big enough
 #          To warrent an own file go here
 
-#vim section
-if [ -f ~/buffer ]; then
-    rm ~/buffer
+#external functions
+
+[ ! -f "$HOME/.rvm/scripts/rvm" ] || . "$HOME/.rvm/scripts/rvm"
+
+fpath=($cofig1/functions $cofig1/comp_objects $fpath)
+
+autoload -U compinit
+compinit -i
+
+if [[ -d $cofig1/functions ]]; then
+    for item ($cofig1/functions/*.zsh); do
+        source $item
+    done
 fi
 
 
 newrails() { 
-    wizpath="$HOME/gitrepos/myProjects/ruby_stuff/rails_wiz"
+    wizpath="$HOME/myProjects/ruby_stuff/rails_wiz"
     if [ $# == 1 ]; then
         rails new $1 -m "$wizpath/new_rails1.rb" -T -d mysql
     elif [ $# == 2 ]; then

@@ -1,4 +1,6 @@
 #!/bin/zsh
+
+# Have to use oh-my-zsh? Then symlink this file to .zshrc
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -35,7 +37,6 @@ plugins=(extract git python pip rake ruby thor)
 
 source $ZSH/oh-my-zsh.sh
 source $cofig1/aliases
-source $cofig1/dist_aliases
 source $cofig1/zsh_config
 source $cofig1/zsh_completion
 source $cofig1/func_lib

@@ -81,13 +81,4 @@ fi
 
 #Setting up path and fpath
 export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
-# export fpath=($cofig1/functions $cofig1/comp_objects $fpath)
 export PAGER=/usr/bin/vimpager
-
-# if [[ -d $cofig1/comp_objects ]]; then 
-#     for plugin ($plugins); do
-#         fpath=($cofig1/comp/$plugin $fpath)
-
-#     done
-# fi
-

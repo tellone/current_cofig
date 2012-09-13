@@ -27,6 +27,7 @@ alias phil="mysql -u 'phil' -p"
 alias cofig="gvim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
 alias readvim="gvim -u /home/tellone/.vim/reading-rc.vim"
+alias cshaw="cc -Wall -g -DNDEBUG -c -o"
 
 #{{{Dir related
 
