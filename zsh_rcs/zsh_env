@@ -9,10 +9,20 @@
 #       and gereal option
 #
 
+#############################
+# Debug
+#############################
+# {{{
+# setopt NO_GLOBAL_RCS # ignore /etc/z{sh,profile,login,logout} files
+# setopt NO_AUTO_REMOVE_SLASH # don't remove slashes
+
+#unsetopt NOMATCH # stop ZSH from choking on glob-like strings (e.g. URLs passed to wget)
+# }}}
 
 ###########################
 #setting promt
 ##########################
+# {{{
 setopt prompt_subst
 
 local usercolor="$fg_bold[yellow]"
@@ -30,28 +40,57 @@ case "$TERM" in
             echo "No file theme found found"
         fi
 esac
+#}}}
 
 #############################
-# Variables
+# Histroy settings
 #############################
-which vim &>/dev/null && editor="$(which vim)"
-
-SAVEHIST=1000
+SAVEHIST=800 #{{{
 HISTSIZE=1000
+HISTFILE=/home/tellone/.zsh/zsh_history
+setopt APPEND_HISTORY # write history only when closing
+setopt EXTENDED_HISTORY # add more info
+setopt HIST_IGNORE_SPACE
+setopt histexpiredupsfirst histreduceblanks
+# }}}
 
+#################################
+# Output Input
+#################################
+setopt HASH_CMDS # save cmd location to skip PATH lookup # {{{
+setopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom
+
+setopt noclobber nonomatch # Output file restritions
+
+# cusor stays on comptetion and compete directories with ~ and #
+setopt completeinword extendedglob 
+setopt NUMERIC_GLOB_SORT # sort numerically first, before alpha
+
+setopt CORRECT #spell correct
+setopt CORRECTALL #more spell correction
 REPORTTIME=10 # Show elapsed time if command took more than X seconds
 LISTMAX=0 # ask to complete if top of list would scroll off screen
+# }}}
 
-# Make CTRL-W delete after other chars, not just spaces
-WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
+#################################
+# zle Line editor
+#################################
+# {{{
 
+setopt autocd # name of dir = cd dir
+setopt auto_name_dirs # check for typset names 
 
-# setopt PRINT_EXIT_VALUE
-
-# Other tabbing options
-# setopt NO_AUTO_MENU
-# setopt BASH_AUTO_LIST
-
+setopt auto_pushd # auto add dir to stack
+setopt pushd_ignore_dups # skip consecutive dups
+#Auto load modules
+# Cd opts
+autoload -Uz colors && colors
+zmodload -i zsh/complist # colorful listingsh
+zmodload -i zsh/mathfunc
+# zmodload -i zsh/complist
+autoload -U zrecompile # for changed functions
+autoload -U zmv # advanced mv
+autoload -U zsh-mime-setup # filetype recognition
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -65,20 +104,38 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
+
 WORDCHARS='*?_-.[]~&;!#$%^(){}<>'
 PERIOD=3600
 periodic() { rehash }
 
+#bindkeys in sep file
+if [ -f $cofig1/zsh_config ]; then
+    . $cofig1/zsh_config
+else
+    echo "No file zsh_config found"
+fi
 
-#domains=(`egrep '^(search|domain)' /etc/resolv.conf 2>/dev/null`)
-#[[ -z $domains ]] || shift 1 domains
+# }}}
 
 
-if [ -x "`which ruby 2>/dev/null`" ]; then
+###########################################
+# Pager Path and editor and ruby gempath
+###########################################
+if [ -x "`which ruby 2>/dev/null`" ]; then # {{{
     gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"
     [ -z gems ] || : ~gems
 fi
 
-#Setting up path and fpath
-export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
+which vim &>/dev/null && editor="$(which vim)"
+
 export PAGER=/usr/bin/vimpager
+
+#TODO find away to make vim/vimpager integrate most
+export MANPAGER=/usr/bin/most
+
+
+export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
+# }}}

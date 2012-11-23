@@ -10,46 +10,10 @@
 #
 
 
-setopt HASH_CMDS # save cmd location to skip PATH lookup
-setopt LIST_ROWS_FIRST # completion options left-to-right, top-to-bottom
-# setopt NO_GLOBAL_RCS # ignore /etc/z{sh,profile,login,logout} files
-# setopt NO_AUTO_REMOVE_SLASH # don't remove slashes
-setopt NUMERIC_GLOB_SORT # sort numerically first, before alpha
-#unsetopt NOMATCH # stop ZSH from choking on glob-like strings (e.g. URLs passed to wget)
 
-setopt noclobber nonomatch
-setopt completeinword extendedglob
-
-setopt CORRECT
-setopt CORRECTALL
-
-# history opt go here
-if [[ $ZSH_VERSION == 4.<->* ]]; then
-    setopt histexpiredupsfirst histreduceblanks
-fi
-setopt share_history        # share command history data
-setopt HIST_IGNORE_SPACE
-setopt APPEND_HISTORY # write history only when closing
-setopt EXTENDED_HISTORY # add more info
-setopt autocd
-setopt auto_name_dirs
-setopt auto_pushd
-setopt pushd_ignore_dups
-#Auto load modules
-autoload -Uz colors && colors
-zmodload -i zsh/complist # colorful listingsh
-zmodload -i zsh/mathfunc
-# zmodload -i zsh/complist
-autoload -U zrecompile
-autoload -U zmv
-autoload -U zsh-mime-setup
-
-#Grep
-export GREP_OPTIONS='--color=auto'
-export GREP_COLOR='1;32'
 
 #Edit command line settings
-bindkey -v
+bindkey -v #use vi-mode
 bindkey -r '^Q'
 
 bindkey -M viins '^A' beginning-of-line
@@ -82,4 +46,7 @@ zle -N self-insert url-quote-magic
 # bash style words, please
 autoload -U select-word-style
 select-word-style bash
+
+# Make CTRL-W delete after other chars, not just spaces
+WORDCHARS=${WORDCHARS//[&=\/;\!#%\{]}
 

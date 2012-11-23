@@ -18,12 +18,6 @@ else
     echo "No file zsh_env found"
 fi
 
-# setopts, zmodload and bindkeys
-if [ -f $cofig1/zsh_config ]; then
-    . $cofig1/zsh_config
-else
-    echo "No file zsh_config found"
-fi
 
 # zstyle compleastions
 if [ -f $cofig1/zsh_completion ]; then
