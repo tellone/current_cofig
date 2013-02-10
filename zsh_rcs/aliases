@@ -1,24 +1,21 @@
 #!/bin/sh
 
-alias rmv='sudo rm -r'
-alias th='thunar .'
 #sytem commands
+alias psid="ps -A | ack"
 alias rerc="source /home/tellone/.zshrc"
 alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
 alias aliases="cat $cofig1/aliases"
 alias tevim="vim -u /home/tellone/myProjects/tpope/.vimrc"
+
 #shorts for usual commands
+alias th='thunar .'
 alias ce='clear'
 # alias na='nautilus .'
 alias lsd='ls -ld *(-/DN)' # directories only
-alias zmv='noglob zmv'
-alias ru='noglob ru'
 alias lh="ls -d .*/" 
-alias cdr="cd ../.."
-alias migrate='rake db:migrate && rake db:test:prepare'
-alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
-#activtion
+alias profileme="cat $HISTFILE |awk 'BEGIN{FS=\";\"}{print \$2} '| awk '{print\$1}'| sort | uniq -c | sort -n | tail -n 20 | sort -nr"
+#Activtion
 alias sc_mode="source ~/bin/script_mode"
 alias fire='firefox-bin &'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
@@ -28,20 +25,29 @@ alias cofig="gvim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
 alias readvim="gvim -u /home/tellone/.vim/reading-rc.vim"
 alias cshaw="cc -Wall -g -DNDEBUG -c -o"
+alias migrate='rake db:migrate && rake db:test:prepare'
 
-#{{{Dir related
+#{{{java section
+alias junit='java -cp .:$(java-config -p junit-4) org.junit.runner.JUnitCore'
+alias juc='javac -d -cp .:$(java-config -p junit-4)'
+
+#}}}
+
+#{{{cd related
 
 alias ..='cd ..'
+alias ...='cd../..'
 alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
 alias cd/='cd /'
-
-alias rd=rmdir
+alias cdr="cd ../.."
+alias rd="rmdir"
 alias d='dirs -v | head -10'
 #}}}
-#{{{ Turn off compleation for som
+
+#{{{ Alterations
 alias man='nocorrect man'
 alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
@@ -50,7 +56,11 @@ alias gist='nocorrect gist'
 alias heroku='nocorrect heroku'
 alias ebuild='nocorrect ebuild'
 alias hpodder='nocorrect hpodder'
+alias zmv='noglob zmv'
+alias ru='noglob ru'
+
 #}}}
+
 #{{{ Dist-dependent
 # if in debian
 if [[ -d /usr/apt ]] ; then
@@ -63,6 +73,7 @@ if [[ -d /usr/apt ]] ; then
     alias ein='sudo easy_install'
 fi
 
+#if in gentoo
 if [[ -d /usr/portage ]] ; then
     alias emr1='sudo emerge'
     alias emr2='sudo emerge -f'
@@ -73,6 +84,7 @@ if [[ -d /usr/portage ]] ; then
     alias esel='sudo eselect'
 fi
 #}}}
+
 #Paths typset#{{{
 
 

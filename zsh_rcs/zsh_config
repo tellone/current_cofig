@@ -6,7 +6,8 @@
 #Email: filip.diloom@gmail.com
 #Filename: config
 #
-#Purpose: configurations part of the bash shell 
+#Purpose: configurations for the zsh line editor
+#           using vi mode
 #
 
 

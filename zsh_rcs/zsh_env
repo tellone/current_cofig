@@ -47,10 +47,15 @@ esac
 #############################
 SAVEHIST=800 #{{{
 HISTSIZE=1000
-HISTFILE=/home/tellone/.zsh/zsh_history
-setopt APPEND_HISTORY # write history only when closing
-setopt EXTENDED_HISTORY # add more info
-setopt HIST_IGNORE_SPACE
+HISTFILE="/home/tellone/.zsh/zsh_history"
+setopt append_history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups # ignore duplication command history list
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history # share command history data
 setopt histexpiredupsfirst histreduceblanks
 # }}}
 
@@ -120,7 +125,6 @@ fi
 
 # }}}
 
-
 ###########################################
 # Pager Path and editor and ruby gempath
 ###########################################
@@ -133,9 +137,11 @@ which vim &>/dev/null && editor="$(which vim)"
 
 export PAGER=/usr/bin/vimpager
 
+export VIMPAGER_RC=/home/tellone/.vim/pager_rc.vim 
+
 #TODO find away to make vim/vimpager integrate most
 export MANPAGER=/usr/bin/most
 
 
-export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/texlive/2011/bin/i386-linux:/home/tellone/myProjects/eclipse_workspace/eclipse
+export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin::/opt:/usr/sbin:/usr/bin:/sbin:/bin:/home/tellone/myProjects/eclipse_workspace/eclipse:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86
 # }}}
