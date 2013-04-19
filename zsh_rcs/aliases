@@ -26,13 +26,10 @@ alias ipy="ipython"
 alias readvim="gvim -u /home/tellone/.vim/reading-rc.vim"
 alias cshaw="cc -Wall -g -DNDEBUG -c -o"
 alias migrate='rake db:migrate && rake db:test:prepare'
-
 #{{{java section
 alias junit='java -cp .:$(java-config -p junit-4) org.junit.runner.JUnitCore'
-alias juc='javac -d -cp .:$(java-config -p junit-4)'
-
+alias juc='javac -cp .:$(java-config -p junit-4)'
 #}}}
-
 #{{{cd related
 
 alias ..='cd ..'
@@ -81,6 +78,7 @@ if [[ -d /usr/portage ]] ; then
     alias eix1='sudo eix-sync'
     alias eix0='eix-installed all | grep'
     alias disco='sudo dispatch-conf'
+    alias kercat='cat /usr/src/linux/.config | grep -i'
     alias esel='sudo eselect'
 fi
 #}}}

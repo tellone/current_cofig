@@ -32,12 +32,13 @@ zstyle ':completion:*' local localhost /var/www public_html
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'
 zstyle ':completion::full:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' '+r:|[._-/]=* r:|=* l:|[._-/]=* l:|=*'
 zstyle -e ':completion:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX+1)/3 )) numeric )'
+zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)' 
 zstyle ':completion:*' menu select
 zstyle ':completion:*:(xdvi|xpdf|gv|mpl):*' menu yes select
 zstyle ':completion:*' original true
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 zstyle ':completion:*' substitute 1
-zstyle ':completion:*' use-cache on
+zstyle ':completion:*' use-cache 1
 zstyle ':completion:*' cache-path /home/tellone/.zsh
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:rm:*' ignore-line yes

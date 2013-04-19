@@ -43,11 +43,11 @@ function take {
 function checklist() {
 
     if [[ -d /usr/apt ]] ; then
-        dpkg -l |grep $1 | less
+        dpkg -l |grep $1 | $PAGER
     elif [[ -e /usr/bin/eix ]]; then
         eix-installed all |ack $1| $PAGER
     else
-        echo "only for debian or getoo with eix sytems"
+        echo "only for debian or gentoo with eix sytems"
     fi
 }
     
