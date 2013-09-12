@@ -14,6 +14,7 @@ alias ce='clear'
 # alias na='nautilus .'
 alias lsd='ls -ld *(-/DN)' # directories only
 alias lh="ls -d .*/" 
+alias wpacon="wpa_supplicant -B -i interface -c <(wpa_passphrase \$1 \$2)"
 alias profileme="cat $HISTFILE |awk 'BEGIN{FS=\";\"}{print \$2} '| awk '{print\$1}'| sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 #Activtion
 alias sc_mode="source ~/bin/script_mode"

@@ -143,5 +143,6 @@ export VIMPAGER_RC=/home/tellone/.vim/pager_rc.vim
 export MANPAGER=/usr/bin/most
 export CATALINA_HOME=/usr/share/tomcat-7
 export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
+export PGDATA=/home/tellone/pgdata
 export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/local/heroku/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/tellone/myProjects/eclipse_workspace/eclipse:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86:/home/tellone/.gem/ruby/1.9.1/bin:${Ant_HOME}/bin
 # }}}
