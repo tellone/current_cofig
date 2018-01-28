@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #sytem commands
-alias psid="ps -A | ack"
+alias psid="ps -A | ag"
 alias rerc="source /home/tellone/.zshrc"
 alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
@@ -9,7 +9,7 @@ alias aliases="cat $cofig1/aliases"
 alias tevim="vim -u /home/tellone/myProjects/tpope/.vimrc"
 
 #shorts for usual commands
-alias th='thunar .'
+alias no='nemo .'
 alias ce='clear'
 # alias na='nautilus .'
 alias lsd='ls -ld *(-/DN)' # directories only
@@ -17,8 +17,10 @@ alias lh="ls -d .*/"
 alias wpacon="wpa_supplicant -B -i interface -c <(wpa_passphrase \$1 \$2)"
 alias profileme="cat $HISTFILE |awk 'BEGIN{FS=\";\"}{print \$2} '| awk '{print\$1}'| sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 #Activtion
+alias sirc='ssh -p 2229 ircuser@diloom.mynetgear.com'
 alias sc_mode="source ~/bin/script_mode"
 alias fire='firefox-bin &'
+alias goirc='ssh -p 2229 ircuser@diloom.mynetgear.com'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
@@ -56,31 +58,34 @@ alias ebuild='nocorrect ebuild'
 alias hpodder='nocorrect hpodder'
 alias zmv='noglob zmv'
 alias ru='noglob ru'
+alias mplayer='nocorrect mplayer'
 
 #}}}
 
 #{{{ Dist-dependent
 # if in debian
-if [[ -d /usr/apt ]] ; then
+if [[ -d /usr/lib/dpkg ]] ; then
     #apt and sudo related
     alias apt1='sudo apt-get install'
     alias apt2='sudo apt-get remove'
     alias apt3='sudo apt-get --dry-run -u dist-upgrade'
-    alias apt0='sudo apt-get'
+    alias apt0='sudo apt-cache search'
     alias purge='sudo apt-get --purge remove'
     alias ein='sudo easy_install'
 fi
 
 #if in gentoo
 if [[ -d /usr/portage ]] ; then
-    alias emr1='sudo emerge'
-    alias emr2='sudo emerge -f'
+    alias emr1='sudo emerge -av'
     alias emr0='sudo emerge -c --pretend'
+    alias emrup='sudo emerge --update --deep --newuse --with-bdeps=y -av @world'
+    alias emrmod='sudo emerge -av @module_rebuild'
     alias eix1='sudo eix-sync'
     alias eix0='eix-installed all | grep'
     alias disco='sudo dispatch-conf'
     alias kercat='cat /usr/src/linux/.config | grep -i'
     alias esel='sudo eselect'
+    alias asdep='equery d'
 fi
 #}}}
 
@@ -91,13 +96,13 @@ if [ -d "$HOME/Documents" ]; then
     typeset docs="$HOME/Documents"
     : ~docs
 fi
-if [ -d "$HOME/keep/ebooks" ]; then
-    typeset books="$HOME/keep/ebooks"
+if [ -d "$HOME/Keep/ebooks" ]; then
+    typeset books="$HOME/Keep/ebooks"
     : ~books
 fi
 
-if [ -d "$HOME/keep/art/justMe" ]; then
-    typeset me="$HOME/keep/art/justMe"
+if [ -d "$HOME/Keep/art/justMe" ]; then
+    typeset me="$HOME/Keep/art/justMe"
     : ~me
 fi
 #}}}
