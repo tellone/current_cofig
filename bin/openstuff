@@ -1,7 +1,0 @@
-#!/bin/bash
-function OpenSesame {
-
-xdg-open $1 
-
-}
-OpenSesame "/home/tellone/HISTORY"
