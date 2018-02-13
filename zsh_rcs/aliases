@@ -36,7 +36,7 @@ alias juc='javac -cp .:$(java-config -p junit-4)'
 #{{{cd related
 
 alias ..='cd ..'
-alias ...='cd../..'
+alias ...='cd ../..'
 alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
