@@ -142,7 +142,8 @@ export VIMPAGER_RC=/home/tellone/.vim/pager_rc.vim
 #TODO find away to make vim/vimpager integrate man in good way
 export MANPAGER=/usr/bin/most
 export CATALINA_HOME=/usr/share/tomcat-7
+export JAVA_HOME=/opt/java
 export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 export EIX_LIMIT=0
-export PATH=/home/tellone/bin:/usr/local/sbin:/usr/local/bin:/opt:/usr/local/heroku/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/tellone/myProjects/eclipse_workspace/eclipse:/usr/local/MATLAB/R2011a/bin:/usr/local/MATLAB/R2011a/bin/glnx86:/home/tellone/.gem/ruby/1.9.1/bin:${Ant_HOME}/bin
+export PATH=${HOME}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/tellone/myProjects/eclipse_workspace/eclipse:/home/tellone/.gem/ruby/1.9.1/bin:${JAVA_HOME}/bin:/opt/maven/bin
 # }}}

@@ -24,7 +24,7 @@ alias goirc='ssh -p 2229 ircuser@diloom.mynetgear.com'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'
 alias phil="mysql -u 'phil' -p"
-alias cofig="gvim /home/tellone/current_config/zsh_rcs"
+alias cofig="vim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
 alias readvim="gvim -u /home/tellone/.vim/reading-rc.vim"
 alias cshaw="cc -Wall -g -DNDEBUG -c -o"
@@ -48,6 +48,7 @@ alias d='dirs -v | head -10'
 #}}}
 
 #{{{ Alterations
+alias mvn='nocorrect mvn'
 alias man='nocorrect man'
 alias mv='nocorrect mv'
 alias mysql='nocorrect mysql'
