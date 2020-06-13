@@ -46,7 +46,7 @@ esac
 # Histroy settings
 #############################
 SAVEHIST=800 #{{{
-HISTSIZE=1000
+HISTSIZE=10000
 HISTFILE="/home/tellone/.zsh/zsh_history"
 setopt append_history
 setopt extended_history
@@ -135,7 +135,7 @@ fi
 
 which vim &>/dev/null && editor="$(which vim)"
 
-export PAGER=/usr/bin/vimpager
+export PAGER=/usr/bin/most
 
 export VIMPAGER_RC=/home/tellone/.vim/pager_rc.vim 
 

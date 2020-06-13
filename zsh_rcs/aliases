@@ -3,38 +3,37 @@
 #sytem commands
 alias psid="ps -A | ag"
 alias rerc="source /home/tellone/.zshrc"
-alias tu="top -o cpu" #processes sorted after cpu usage
 alias g="git status"
 alias aliases="cat $cofig1/aliases"
 alias tevim="vim -u /home/tellone/myProjects/tpope/.vimrc"
+alias zhist="tail -50 ${HOME}/.zsh/zsh_history | awk 'BEGIN{FS=\";\"};{print \$NF}'"
 
 #shorts for usual commands
-alias no='nemo .'
 alias ce='clear'
-# alias na='nautilus .'
 alias lsd='ls -ld *(-/DN)' # directories only
 alias lh="ls -d .*/" 
 alias wpacon="wpa_supplicant -B -i interface -c <(wpa_passphrase \$1 \$2)"
 alias profileme="cat $HISTFILE |awk 'BEGIN{FS=\";\"}{print \$2} '| awk '{print\$1}'| sort | uniq -c | sort -n | tail -n 20 | sort -nr"
-#Activtion
-alias sirc='ssh -p 2229 ircuser@diloom.mynetgear.com'
+
+#{{{Activtion
 alias sc_mode="source ~/bin/script_mode"
 alias fire='firefox-bin &'
 alias goirc='ssh -p 2229 ircuser@diloom.mynetgear.com'
 alias playgo='javaws http://files.gokgs.com/javaBin/cgoban.jnlp'
 alias trans='transmission-gtk &'
-alias phil="mysql -u 'phil' -p"
 alias cofig="vim /home/tellone/current_config/zsh_rcs"
 alias ipy="ipython"
 alias readvim="gvim -u /home/tellone/.vim/reading-rc.vim"
 alias cshaw="cc -Wall -g -DNDEBUG -c -o"
 alias migrate='rake db:migrate && rake db:test:prepare'
+#}}}
+
 #{{{java section
 alias junit='java -cp .:$(java-config -p junit-4) org.junit.runner.JUnitCore'
 alias juc='javac -cp .:$(java-config -p junit-4)'
 #}}}
-#{{{cd related
 
+#{{{cd related
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cd..='cd ..'
@@ -70,7 +69,7 @@ if [[ -d /usr/lib/dpkg ]] ; then
     alias apt1='sudo apt-get install'
     alias apt2='sudo apt-get remove'
     alias apt3='sudo apt-get --dry-run -u dist-upgrade'
-    alias apt0='sudo apt-cache search'
+    alias apt0='apt-cache search'
     alias purge='sudo apt-get --purge remove'
     alias ein='sudo easy_install'
 fi
@@ -105,5 +104,10 @@ fi
 if [ -d "$HOME/Keep/art/justMe" ]; then
     typeset me="$HOME/Keep/art/justMe"
     : ~me
+fi
+
+if [ -d "$HOME/work/code/Nortic" ]; then
+    typeset nortic="$HOME/work/code/Nortic"
+    : ~nortic
 fi
 #}}}
