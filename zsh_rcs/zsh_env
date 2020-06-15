@@ -128,22 +128,17 @@ fi
 ###########################################
 # Pager Path and editor and ruby gempath
 ###########################################
-if [ -x "`which ruby 2>/dev/null`" ]; then # {{{
+#{{{
+
+if [ -x "`which ruby 2>/dev/null`" ]; then
     gems="`ruby -rubygems -e 'puts Gem.dir + %{/gems}' 2>/dev/null`"
     [ -z gems ] || : ~gems
 fi
 
 which vim &>/dev/null && editor="$(which vim)"
 
-export PAGER=/usr/bin/most
+if [ -f "$cofig1/local_env" ]; then
+    . "$cofig1/local_env"
+fi
 
-export VIMPAGER_RC=/home/tellone/.vim/pager_rc.vim 
-
-#TODO find away to make vim/vimpager integrate man in good way
-export MANPAGER=/usr/bin/most
-export CATALINA_HOME=/usr/share/tomcat-7
-export JAVA_HOME=/opt/java
-export ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
-export EIX_LIMIT=0
-export PATH=${HOME}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/tellone/myProjects/eclipse_workspace/eclipse:/home/tellone/.gem/ruby/1.9.1/bin:${JAVA_HOME}/bin:/opt/maven/bin
 # }}}

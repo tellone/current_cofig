@@ -89,25 +89,3 @@ if [[ -d /usr/portage ]] ; then
 fi
 #}}}
 
-#Paths typset#{{{
-
-
-if [ -d "$HOME/Documents" ]; then
-    typeset docs="$HOME/Documents"
-    : ~docs
-fi
-if [ -d "$HOME/Keep/ebooks" ]; then
-    typeset books="$HOME/Keep/ebooks"
-    : ~books
-fi
-
-if [ -d "$HOME/Keep/art/justMe" ]; then
-    typeset me="$HOME/Keep/art/justMe"
-    : ~me
-fi
-
-if [ -d "$HOME/work/code/Nortic" ]; then
-    typeset nortic="$HOME/work/code/Nortic"
-    : ~nortic
-fi
-#}}}
